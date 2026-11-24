@@ -45,6 +45,16 @@ jobs:
       - name: Test
         run: make test
 
+      - name: Upload test results
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: glimt-test-results
+          path: |
+            build/scoped.noindex/safe-smoke/*.xcresult
+            build/scoped.noindex/safe-smoke/*.log
+          if-no-files-found: ignore
+
       - name: Package
         env:
           # Optional. Without these secrets the app is ad-hoc signed and not notarized.
