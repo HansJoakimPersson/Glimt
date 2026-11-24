@@ -1,0 +1,5 @@
+# Crack
+import crack.io cout;
+
+int count = 3;
+cout `Hej $count\n`;

@@ -1,0 +1,7 @@
+@prefix ex: <https://example.invalid/catalog#> .
+
+ex:alice a ex:Person ;
+    ex:name "Alice Example" ;
+    ex:age 42 .
+
+# Notation3 is shown as inert source.

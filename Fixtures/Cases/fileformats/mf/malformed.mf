@@ -1,0 +1,3 @@
+mode_setup;
+beginchar("A", 8u#, 7pt#, 0); endchar;
+"unterminated

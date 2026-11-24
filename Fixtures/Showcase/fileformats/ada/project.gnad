@@ -1,0 +1,7 @@
+with Ada.Text_IO;
+
+procedure GNAT_Project_Sample is
+   Build_Mode : constant String := "debug";
+begin
+   Ada.Text_IO.Put_Line (Build_Mode);
+end GNAT_Project_Sample;

@@ -1,0 +1,24 @@
+{
+  "originHash" : "b19779c399738115084b8a6ba0e067dea88eb926a2a4c4fc7a9cb42e6dee586e",
+  "pins" : [
+    {
+      "identity" : "mermaidkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/2389-research/MermaidKit.git",
+      "state" : {
+        "revision" : "8556a1b80a1f624d35a4c6e13dcb7a5d427f65c3",
+        "version" : "2.10.2"
+      }
+    },
+    {
+      "identity" : "yams",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jpsim/Yams.git",
+      "state" : {
+        "revision" : "a27b21e0c81c5bf42049b897a62aaf387e80f279",
+        "version" : "6.2.2"
+      }
+    }
+  ],
+  "version" : 3
+}

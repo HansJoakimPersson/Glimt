@@ -1,0 +1,1 @@
+{unquoted: 'value // text', answer: 42, /* comment */ quoted: 'say "ok"',}

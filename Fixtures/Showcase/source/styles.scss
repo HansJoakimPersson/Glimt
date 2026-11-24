@@ -1,0 +1,12 @@
+$accent: #3b82f6;
+$spacing: 1rem;
+
+// Card styles with a darker hover accent.
+.preview {
+  color: $accent;
+  padding: $spacing;
+
+  &:hover {
+    color: darken($accent, 10%);
+  }
+}

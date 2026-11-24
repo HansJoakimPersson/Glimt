@@ -1,0 +1,5 @@
+# Icon
+procedure main()
+    every i := 1 to 3 do
+        write("Hej ", i)
+end

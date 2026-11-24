@@ -1,0 +1,7 @@
+* CHARMM-indata
+*
+read rtf card name top_all36_prot.rtf
+read param card name par_all36_prot.prm
+! minimera
+mini sd nstep 100
+stop

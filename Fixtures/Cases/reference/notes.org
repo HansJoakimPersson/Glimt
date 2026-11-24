@@ -1,0 +1,8 @@
+#+TITLE: Glimt
+* TODO Masterlista
+  DEADLINE: <2026-11-20 Fri>
+** Delpunkt
+   - [X] Fixtures
+#+BEGIN_SRC swift
+print("Hej")
+#+END_SRC

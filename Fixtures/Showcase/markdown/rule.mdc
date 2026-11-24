@@ -1,0 +1,10 @@
+---
+description: Swift source conventions
+globs: "**/*.swift"
+alwaysApply: false
+---
+
+# Project conventions
+
+- Keep implementation details `private` where practical.
+- Preserve the original frontmatter as visible document text.

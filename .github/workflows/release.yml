@@ -1,0 +1,55 @@
+name: Release
+
+# Pushing a tag v<semver> that matches Config/Version.xcconfig builds, tests and packages it with
+# ci.yml, then publishes a GitHub Release with the zip, its SHA-256 checksums and
+# release-notes/<tag>.md. alpha, beta and rc versions are published as pre-releases.
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  ci:
+    uses: ./.github/workflows/ci.yml
+    secrets: inherit
+
+  publish:
+    name: Publish GitHub Release
+    needs: ci
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: glimt-dist
+          path: dist
+
+      - name: Verify tag, artifact and checksums
+        run: |
+          bash scripts/version.sh --check-tag "$GITHUB_REF_NAME"
+          test -f "dist/$(bash scripts/version.sh --get ARCHIVE_NAME)"
+          (cd dist && shasum -a 256 -c "$(bash ../scripts/version.sh --get CHECKSUMS_NAME)")
+
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          bash scripts/release-notes.sh dist >"$RUNNER_TEMP/notes.md"
+          flags=()
+          [[ "$(bash scripts/version.sh --get IS_PRERELEASE)" == true ]] && flags+=(--prerelease) || flags+=(--latest)
+          gh release create "$GITHUB_REF_NAME" dist/* \
+            --verify-tag \
+            --title "$(bash scripts/version.sh --get RELEASE_TITLE)" \
+            --notes-file "$RUNNER_TEMP/notes.md" \
+            "${flags[@]}"

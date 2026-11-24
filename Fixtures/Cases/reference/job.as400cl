@@ -1,0 +1,5 @@
+PGM        PARM(&NAME)
+DCL        VAR(&NAME) TYPE(*CHAR) LEN(10)
+/* Skicka ett meddelande */
+SNDPGMMSG  MSG('Hej ' *CAT &NAME)
+ENDPGM

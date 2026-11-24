@@ -1,0 +1,14 @@
+#+TITLE: Glimt notes
+#+AUTHOR: Glimt
+
+* TODO Format inspection
+  DEADLINE: <2026-11-20 Fri>
+** Supported source views
+   - [X] Preserve original text
+   - [ ] Evaluate Org Babel blocks
+
+#+BEGIN_SRC swift
+let preview = "source only"
+#+END_SRC
+
+# Review before the next release.

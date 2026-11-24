@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+
+; Per-user application settings.
+[HKEY_CURRENT_USER\Software\Glimt]
+"Enabled"=dword:00000001
+"DisplayName"="Glimt Preview"
+@="Glimt application settings"
+
+[HKEY_CURRENT_USER\Software\Glimt\Paths]
+"DataDirectory"="C:\\Users\\Example\\AppData"

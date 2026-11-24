@@ -1,0 +1,4 @@
+% GNU Octave
+x = linspace(0, 1, 5);
+y = x .^ 2;
+printf("Summa: %f\n", sum(y));

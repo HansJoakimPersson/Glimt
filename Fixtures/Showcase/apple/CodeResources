@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>files2</key><dict>
+    <key>Resources/Info.txt</key><dict><key>hash2</key><data>AQID</data></dict>
+  </dict>
+  <key>rules2</key><dict><key>^Resources/</key><true/></dict>
+</dict></plist>

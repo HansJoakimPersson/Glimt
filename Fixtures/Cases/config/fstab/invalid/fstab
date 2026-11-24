@@ -1,0 +1,3 @@
+tmpfs /demo tmpfs defaults 0 0
+broken
+proc /proc proc defaults 0 0

@@ -1,0 +1,3 @@
+msgid "missing translation"
+msgstr
+msgid_plural "missing plural translation"

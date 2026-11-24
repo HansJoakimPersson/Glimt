@@ -1,0 +1,7 @@
+hello: MODULE
+  DCL n INT := 3;
+  /* CHILL */
+  DO FOR i := 1 TO n;
+    WRITETEXT(STDOUT, "Hej%C%/", i);
+  OD;
+END hello;

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events>
+  <event timestamp="2026-11-18T12:00:00Z" level="INFO"><message>service started</message></event>
+  <event timestamp="2026-11-18T12:00:05Z" level="ERROR"><message>database timeout</message></event>
+</events>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="22505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <objects>
+        <customView id="c1">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+        </customView>
+    </objects>
+</document>

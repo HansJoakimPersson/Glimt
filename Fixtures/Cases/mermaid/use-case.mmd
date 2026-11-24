@@ -1,0 +1,11 @@
+usecase-beta
+  direction LR
+  actor Reader("Technical reader")
+  systemBoundary "Glimt Preview"
+    Inspect("Inspect file")
+    Source("View source")
+    Diagram("View diagram")
+  end
+  Reader --> Inspect
+  Reader --> Source
+  Reader --> Diagram

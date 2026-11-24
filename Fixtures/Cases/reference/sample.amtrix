@@ -1,0 +1,8 @@
+/* Greet when a name is set */
+func main()
+{
+  string name = "Glimt";
+  if (name != "") {
+    print("Hej " + name);
+  }
+}

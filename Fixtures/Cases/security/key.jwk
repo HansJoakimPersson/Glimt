@@ -1,0 +1,8 @@
+{
+  "kty": "RSA",
+  "kid": "glimt-test",
+  "use": "sig",
+  "alg": "RS256",
+  "n": "lZ1lyou0XafNgoN8Sud-LnEyM7iv38dut8K-pi05B89-07Pgj1jzX3gJnukFeRp41ATTdogOmdmQ54-9J7jkHdQExnbYr_1-90nY0epV7nusS5nKZSX-cgkOPUXE8sV_wluAk2110kS4lw0Qv0IehI-gG_wwDffbFihKcl3mo-eVzTMVwymPL8oMnRWlObGsXMKKBoYWmP_O4-TXC00y8tTNqzB_cY6ahjIuOYTN5E-aniaLBsT7Io9ffwXFZWshLBUrqCGd7RrD0KaAorB0sA7GSb0suwuW2BGSUc59DZAcfdoWXGLUWKMZ_NjKh9KKmJ5RTpRU1H2FtQ511nNhvQ",
+  "e": "AQAB"
+}

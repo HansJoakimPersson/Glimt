@@ -1,0 +1,9 @@
+module glimt {
+  yang-version 1.1;
+  namespace "urn:example:glimt";
+  prefix g;
+  // YANG
+  container settings {
+    leaf enabled { type boolean; default true; }
+  }
+}

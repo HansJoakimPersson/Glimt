@@ -1,0 +1,8 @@
+<!doctype html>
+<html><body>
+<h1>{{ user.name }}</h1>
+{% if user.active %}
+  <p>{{ user.name | e }}</p>
+{% endif %}
+{# Jinja comment #}
+</body></html>

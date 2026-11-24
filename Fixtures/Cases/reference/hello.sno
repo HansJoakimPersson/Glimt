@@ -1,0 +1,6 @@
+* SNOBOL4
+        OUTPUT = 'Hej'
+        WORD = 'GLIMT'
+        WORD 'IM' = 'LO'
+        OUTPUT = WORD
+END

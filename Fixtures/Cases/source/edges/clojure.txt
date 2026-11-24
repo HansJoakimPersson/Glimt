@@ -1,0 +1,1 @@
+(defn answer [] "if 42" :answer) ; if 99

@@ -1,0 +1,2 @@
+project(answer) # if 99
+set(TEXT "if 42")

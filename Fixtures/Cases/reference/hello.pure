@@ -1,0 +1,4 @@
+// Pure
+using system;
+square x = x * x;
+puts ("Hej " + str (square 3));

@@ -1,0 +1,8 @@
+// KDL
+package {
+  name "glimt"
+  version "1.2.0"
+  dependencies platform="macos" {
+    inspector-core "^1.0"
+  }
+}

@@ -1,0 +1,3 @@
+# Build the viewer by default.
+Program("viewer", ["main.py", "support.py"])
+Default("viewer")

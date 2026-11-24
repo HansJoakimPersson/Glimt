@@ -1,0 +1,5 @@
+# PATROL Script Language
+count = 3;
+foreach line (lines(cat("/tmp/glimt.txt"))) {
+  print("Hej ".line."\n");
+}

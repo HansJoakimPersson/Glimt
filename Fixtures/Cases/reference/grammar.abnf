@@ -1,0 +1,4 @@
+; RFC 5234 style rules
+greeting   = "hello" SP name CRLF
+name       = 1*ALPHA *(ALPHA / DIGIT / "-")
+version    = 1*DIGIT "." 1*DIGIT

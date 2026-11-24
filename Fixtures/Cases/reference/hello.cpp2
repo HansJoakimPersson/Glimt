@@ -1,0 +1,6 @@
+main: () -> int = {
+    count: int = 3;
+    // Cpp2
+    std::cout << "Hej (count)$\n";
+    return 0;
+}

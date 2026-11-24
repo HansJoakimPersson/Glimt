@@ -1,0 +1,7 @@
+---
+description: Kodregler
+globs: "**/*.swift"
+alwaysApply: false
+---
+
+- Använd `private` där det går.

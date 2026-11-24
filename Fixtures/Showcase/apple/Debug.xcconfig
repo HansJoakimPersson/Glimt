@@ -1,0 +1,5 @@
+// xcconfig
+#include "Shared.xcconfig"
+SWIFT_VERSION = 5.0
+MACOSX_DEPLOYMENT_TARGET = 13.0
+OTHER_SWIFT_FLAGS = $(inherited) -DDEBUG

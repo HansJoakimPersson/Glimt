@@ -1,0 +1,19 @@
+From: Alex Example <alex@example.test>
+To: Sam Example <sam@example.test>
+Date: Sat, 21 Nov 2026 10:00:00 +0000
+Subject: Project notes
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="glimt-demo"
+
+--glimt-demo
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello Sam,=0A=0AHere are the notes from today's meeting.
+--glimt-demo
+Content-Type: application/pdf; name="notes.pdf"
+Content-Disposition: attachment; filename="notes.pdf"
+Content-Transfer-Encoding: base64
+
+U0VDUkVUUEFZTE9BRA==
+--glimt-demo--

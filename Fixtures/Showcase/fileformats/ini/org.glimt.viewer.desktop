@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Glimt Viewer
+Comment=Inspect a local file
+Exec=glimt %f
+Terminal=false
+Categories=Utility;Development;

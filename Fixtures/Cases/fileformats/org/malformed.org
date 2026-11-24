@@ -1,0 +1,4 @@
+#+BEGIN_SRC swift
+print("unterminated block")
+* TODO Truncated section
+#+TITLE

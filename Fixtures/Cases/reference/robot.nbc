@@ -1,0 +1,9 @@
+; NeXT Byte Codes
+dseg segment
+  count byte 3
+dseg ends
+thread main
+  OnFwd(OUT_A, 75)
+  wait 1000
+  exit
+endt

@@ -1,0 +1,6 @@
+{
+  // JSONC comment
+  "url": "https://example.invalid/a/*literal*/",
+  /* block comment */
+  "answer": 42,
+}

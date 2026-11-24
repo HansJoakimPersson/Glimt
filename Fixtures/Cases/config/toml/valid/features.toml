@@ -1,0 +1,11 @@
+# Feature flags
+title = "Glimt"
+enabled = true
+limit = 3
+labels = ["preview", "offline"]
+quoted."key with spaces" = 'literal # value'
+[preview]
+theme = "system"
+multiline = """A value
+that spans lines"""
+

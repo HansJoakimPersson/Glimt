@@ -1,0 +1,13 @@
+# Swedish translations for Glimt.
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Open file 42"
+msgstr "Öppna fil 42"
+
+#, fuzzy
+msgid "%d file"
+msgid_plural "%d files"
+msgstr[0] "%d fil"
+msgstr[1] "%d filer"

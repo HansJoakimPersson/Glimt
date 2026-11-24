@@ -1,0 +1,6 @@
+// Clipper
+FUNCTION Main()
+   LOCAL nCount := 3
+   ? "Hej", nCount
+   USE customers NEW
+   RETURN NIL

@@ -1,0 +1,14 @@
+spdxVersion: SPDX-2.3
+dataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+name: Glimt SBOM
+documentNamespace: https://example.invalid/spdx/glimt
+creationInfo:
+  creators:
+    - Tool: glimt-1.0
+  created: '2026-01-01T00:00:00Z'
+packages:
+  - SPDXID: SPDXRef-Package-Glimt
+    name: Glimt
+    downloadLocation: NOASSERTION
+    filesAnalyzed: false

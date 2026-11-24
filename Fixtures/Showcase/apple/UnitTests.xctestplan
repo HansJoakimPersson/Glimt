@@ -1,0 +1,20 @@
+{
+  "configurations" : [
+    {
+      "id" : "A1B2C3D4-E5F6-47A8-9012-3456789ABCDE",
+      "name" : "Default",
+      "options" : {}
+    }
+  ],
+  "defaultOptions" : {},
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Glimt.xcodeproj",
+        "identifier" : "1234567890ABCDEF",
+        "name" : "GlimtTests"
+      }
+    }
+  ],
+  "version" : 1
+}

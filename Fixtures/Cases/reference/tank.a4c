@@ -1,0 +1,7 @@
+REQUIRE "atoms.a4l";
+MODEL tank;
+    level IS_A distance;
+    flow IS_A volume_rate;
+    (* balans *)
+    flow = 2.0 {m^3/s};
+END tank;

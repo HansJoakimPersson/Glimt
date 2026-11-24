@@ -1,0 +1,10 @@
+[Unit]
+Description=Schedule the Glimt worker
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+Unit=worker.service
+
+[Install]
+WantedBy=timers.target

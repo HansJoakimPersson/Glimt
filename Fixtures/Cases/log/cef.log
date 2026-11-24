@@ -1,0 +1,1 @@
+CEF:0|Acme|Gateway|1.0|AUTH-07|Suspicious login|8|src=192.0.2.8 dst=192.0.2.9 msg=failed\ login

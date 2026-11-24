@@ -1,0 +1,7 @@
+// Not eXactly C
+task main()
+{
+  OnFwd(OUT_AB, 75);
+  Wait(1000);
+  Off(OUT_AB);
+}

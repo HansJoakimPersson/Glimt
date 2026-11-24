@@ -1,0 +1,7 @@
+format ELF64 executable 3
+segment readable executable
+entry start
+start:
+    mov rax, 60     ; exit
+    xor rdi, rdi
+    syscall

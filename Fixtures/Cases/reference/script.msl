@@ -1,0 +1,6 @@
+; mIRC
+alias hej {
+  var %count = 3
+  echo -a Hej $nick (%count)
+}
+on *:JOIN:#glimt: { msg $chan Välkommen $nick }

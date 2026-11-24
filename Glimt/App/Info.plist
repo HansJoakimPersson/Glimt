@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.glimt.json-lines</string>
+			<key>UTTypeDescription</key>
+			<string>JSON Lines</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.ndjson</string>
+				<string>public.text</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>jsonl</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.glimt.bezel-text</string>
+			<key>UTTypeDescription</key>
+			<string>Bezel plain text</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.plain-text</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>bezel</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.glimt.clojure-source</string>
+			<key>UTTypeDescription</key>
+			<string>Clojure source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>bb</string>
+					<string>cli</string>
+					<string>clj</string>
+					<string>cljc</string>
+					<string>cljs</string>
+					<string>edn</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.glimt.cpp-source</string>
+			<key>UTTypeDescription</key>
+			<string>C++ source alias</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.c-plus-plus-source</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>cp</string>
+					<string>c++</string>
+					<string>ipp</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.glimt.cuda-source</string>
+			<key>UTTypeDescription</key>
+			<string>CUDA source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.c-plus-plus-source</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>cu</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.glimt.csh-source</string>
+			<key>UTTypeDescription</key>
+			<string>C shell source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>csh</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.glimt.csharp-source</string>
+			<key>UTTypeDescription</key>
+			<string>C# source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>cs</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.glimt.cmake-source</string>
+			<key>UTTypeDescription</key>
+			<string>CMake source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>cmake</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.glimt.cocoapods-spec</string>
+			<key>UTTypeDescription</key>
+			<string>CocoaPods specification</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>podspec</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.glimt.coffeescript-source</string>
+			<key>UTTypeDescription</key>
+			<string>CoffeeScript source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>coffee</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.glimt.coldfusion-source</string>
+			<key>UTTypeDescription</key>
+			<string>ColdFusion source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>cfc</string>
+					<string>cfm</string>
+					<string>cfml</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.glimt.crystal-source</string>
+			<key>UTTypeDescription</key>
+			<string>Crystal source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>cr</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.glimt.cson-source</string>
+			<key>UTTypeDescription</key>
+			<string>CSON source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>cson</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.glimt.css-source</string>
+			<key>UTTypeDescription</key>
+			<string>CSS source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>css</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.glimt.bibtex-source</string>
+			<key>UTTypeDescription</key>
+			<string>BibTeX source</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>bib</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.glimt.configuration-text</string>
+			<key>UTTypeDescription</key>
+			<string>Configuration text</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.text</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>conf</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key><string>com.glimt.autohotkey-source</string>
+			<key>UTTypeDescription</key><string>AutoHotkey source</string>
+			<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+			<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>ahk</string></array></dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key><string>com.glimt.inno-setup-source</string>
+			<key>UTTypeDescription</key><string>Inno Setup script</string>
+			<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+			<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>iss</string></array></dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key><string>com.glimt.nsis-source</string>
+			<key>UTTypeDescription</key><string>NSIS script</string>
+			<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+			<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>nsi</string><string>nsh</string></array></dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key><string>com.glimt.textbundle-package</string>
+			<key>UTTypeDescription</key><string>Markdown TextBundle package</string>
+			<key>UTTypeConformsTo</key><array><string>com.apple.package</string></array>
+			<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>textbundle</string></array></dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key><string>com.glimt.gpx-xml</string>
+			<key>UTTypeDescription</key><string>GPS Exchange Format</string>
+			<key>UTTypeConformsTo</key><array><string>public.xml</string></array>
+			<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>gpx</string></array></dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key><string>com.glimt.kml-xml</string>
+			<key>UTTypeDescription</key><string>Keyhole Markup Language</string>
+			<key>UTTypeConformsTo</key><array><string>public.xml</string></array>
+			<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>kml</string></array></dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key><string>com.glimt.geojson-data</string>
+			<key>UTTypeDescription</key><string>GeoJSON geographic data</string>
+			<key>UTTypeConformsTo</key><array><string>public.json</string></array>
+			<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>geojson</string></array></dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key><string>com.glimt.rego-source</string>
+			<key>UTTypeDescription</key><string>Rego policy source</string>
+			<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+			<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>rego</string></array></dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key><string>com.glimt.ldif-text</string>
+			<key>UTTypeDescription</key><string>LDAP directory interchange text</string>
+			<key>UTTypeConformsTo</key><array><string>public.text</string></array>
+			<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>ldif</string></array></dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key><string>com.glimt.rdf-turtle-source</string>
+			<key>UTTypeDescription</key><string>Turtle and N3 RDF source</string>
+			<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+			<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>ttl</string><string>n3</string><string>nt</string></array></dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key><string>com.glimt.ada-source</string>
+			<key>UTTypeDescription</key><string>Ada source aliases</string>
+			<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+			<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>gnad</string></array></dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key><string>com.glimt.gentoo-source</string>
+			<key>UTTypeDescription</key><string>Gentoo ebuild and eclass source</string>
+			<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+			<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>ebuild</string><string>eclass</string></array></dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key><string>com.glimt.fortran-source</string>
+			<key>UTTypeDescription</key><string>Fortran source alias</string>
+			<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+			<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>ftn</string></array></dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key><string>com.glimt.ini-source</string>
+			<key>UTTypeDescription</key><string>INI-style configuration source</string>
+			<key>UTTypeConformsTo</key><array><string>public.text</string></array>
+			<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>desktop</string><string>doxyfile</string><string>kdev3</string></array></dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key><string>com.glimt.eiffel-source</string>
+			<key>UTTypeDescription</key><string>Eiffel source alias</string>
+			<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+			<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>se</string></array></dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key><string>com.glimt.python-source-alias</string>
+			<key>UTTypeDescription</key><string>Python-family source alias</string>
+			<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+			<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>pyi</string><string>pyw</string><string>py3</string><string>cpy</string><string>gyp</string><string>gypi</string><string>pxd</string><string>pxi</string><string>rpy</string></array></dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key><string>com.glimt.pyrex-source</string>
+			<key>UTTypeDescription</key><string>Pyrex and Cython source</string>
+			<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+			<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>pyx</string></array></dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.glimt.mobileconfig-xml</string>
+			<key>UTTypeDescription</key>
+			<string>Apple configuration profile XML</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.xml</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>mobileconfig</string>
+				</array>
+			</dict>
+		</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.kermeta-source</string>
+				<key>UTTypeDescription</key><string>Kermeta source</string>
+				<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>kmt</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.kotlin-source</string>
+				<key>UTTypeDescription</key><string>Kotlin source</string>
+				<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>kt</string><string>kts</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.less-stylesheet</string>
+				<key>UTTypeDescription</key><string>LESS stylesheet</string>
+				<key>UTTypeConformsTo</key><array><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>less</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.lilypond-source</string>
+				<key>UTTypeDescription</key><string>LilyPond source</string>
+				<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>ly</string><string>ily</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.lisp-source</string>
+				<key>UTTypeDescription</key><string>Lisp source</string>
+				<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>lisp</string><string>lsp</string><string>asd</string><string>el</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.logos-source</string>
+				<key>UTTypeDescription</key><string>Logos source</string>
+				<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>xm</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.lua-source</string>
+				<key>UTTypeDescription</key><string>Lua source</string>
+				<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>lua</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.metatrader-source</string>
+				<key>UTTypeDescription</key><string>MetaTrader source</string>
+				<key>UTTypeConformsTo</key><array><string>public.c-plus-plus-source</string><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>mq4</string><string>mq5</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.makefile</string>
+				<key>UTTypeDescription</key><string>Makefile source</string>
+				<key>UTTypeConformsTo</key><array><string>public.make-source</string><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>mk</string><string>mak</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.metafont-source</string>
+				<key>UTTypeDescription</key><string>Metafont source</string>
+				<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>mf</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.asp-source</string>
+				<key>UTTypeDescription</key><string>Active Server Pages source</string>
+				<key>UTTypeConformsTo</key><array><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>asp</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.aspx-source</string>
+				<key>UTTypeDescription</key><string>ASP.NET source</string>
+				<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>aspx</string><string>ascx</string><string>ashx</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.jinja-source</string>
+				<key>UTTypeDescription</key><string>Jinja template source</string>
+				<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>jinja</string><string>jinja2</string><string>j2</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.twig-source</string>
+				<key>UTTypeDescription</key><string>Twig template source</string>
+				<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>twig</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.powershell-script</string>
+				<key>UTTypeDescription</key><string>PowerShell script</string>
+				<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>ps1</string><string>psm1</string><string>psd1</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.miniscript-source</string>
+				<key>UTTypeDescription</key><string>MiniScript source</string>
+				<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>ms</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.r-markdown</string>
+				<key>UTTypeDescription</key><string>R Markdown document</string>
+				<key>UTTypeConformsTo</key><array><string>net.daringfireball.markdown</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>rmd</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.mermaid-source</string>
+				<key>UTTypeDescription</key><string>Mermaid source</string>
+				<key>UTTypeConformsTo</key><array><string>public.plain-text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>mmd</string><string>mermaid</string></array></dict>
+			</dict>
+			<dict><key>UTTypeIdentifier</key><string>com.glimt.app.email-message</string><key>UTTypeDescription</key><string>Email message</string><key>UTTypeConformsTo</key><array><string>public.plain-text</string></array><key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>eml</string></array></dict></dict>
+			<dict><key>UTTypeIdentifier</key><string>com.glimt.app.icalendar</string><key>UTTypeDescription</key><string>iCalendar file</string><key>UTTypeConformsTo</key><array><string>public.plain-text</string></array><key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>ics</string></array></dict></dict>
+			<dict><key>UTTypeIdentifier</key><string>com.glimt.app.vcard</string><key>UTTypeDescription</key><string>vCard contact</string><key>UTTypeConformsTo</key><array><string>public.plain-text</string></array><key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>vcf</string></array></dict></dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.html-source</string>
+				<key>UTTypeDescription</key><string>HTML source</string>
+				<key>UTTypeConformsTo</key><array><string>public.html</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>html</string><string>htm</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.sql-source</string>
+				<key>UTTypeDescription</key><string>SQL source</string>
+				<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>sql</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.rust-source</string>
+				<key>UTTypeDescription</key><string>Rust source</string>
+				<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>rs</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.php-source</string>
+				<key>UTTypeDescription</key><string>PHP source</string>
+				<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>php</string><string>php3</string><string>php4</string><string>php5</string><string>php6</string><string>php7</string><string>phps</string><string>phpt</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.ruby-source</string>
+				<key>UTTypeDescription</key><string>Ruby source</string>
+				<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>rb</string><string>rbx</string><string>ruby</string><string>rake</string><string>gemspec</string><string>jbuilder</string><string>prawn</string><string>rabl</string><string>rjs</string><string>thor</string><string>fcgi</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.objective-c-source</string>
+				<key>UTTypeDescription</key><string>Objective-C source</string>
+				<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>mm</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.perl-source</string>
+				<key>UTTypeDescription</key><string>Perl source</string>
+				<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>pl</string><string>pm</string><string>cgi</string><string>plex</string><string>plx</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.r-source</string>
+				<key>UTTypeDescription</key><string>R source</string>
+				<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>r</string><string>R</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.scala-source</string>
+				<key>UTTypeDescription</key><string>Scala source</string>
+				<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>scala</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.julia-source</string>
+				<key>UTTypeDescription</key><string>Julia source</string>
+				<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>jl</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.terraform-source</string>
+				<key>UTTypeDescription</key><string>Terraform source</string>
+				<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>tf</string><string>tfvars</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.scss-source</string>
+				<key>UTTypeDescription</key><string>SCSS stylesheet</string>
+				<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>scss</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.tsx-source</string>
+				<key>UTTypeDescription</key><string>TypeScript JSX source</string>
+				<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>tsx</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.vue-source</string>
+				<key>UTTypeDescription</key><string>Vue component source</string>
+				<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>vue</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.svelte-source</string>
+				<key>UTTypeDescription</key><string>Svelte component source</string>
+				<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>svelte</string></array></dict>
+			</dict>
+			<dict>
+				<key>UTTypeIdentifier</key><string>com.glimt.asciidoc</string>
+				<key>UTTypeDescription</key><string>AsciiDoc document</string>
+				<key>UTTypeConformsTo</key><array><string>public.text</string></array>
+				<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>adoc</string><string>asciidoc</string></array></dict>
+			</dict>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.plain-text</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>dotenv Environment Configuration</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.glimt.app.dotenv</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>env</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.plain-text</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Windows Registry Export</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.glimt.app.windows-registry</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array><string>reg</string></array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.plain-text</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Java Properties Configuration</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.glimt.app.java-properties</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>properties</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key>
+			<string>com.glimt.log</string>
+			<key>UTTypeDescription</key>
+			<string>Glimt log file</string>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.text</string>
+			</array>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>syslog</string>
+					<string>cef</string>
+					<string>leef</string>
+				</array>
+				<key>public.mime-type</key>
+				<string>text/plain</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key><string>com.glimt.ocaml-source</string>
+			<key>UTTypeDescription</key><string>OCaml source</string>
+			<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+			<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>ml</string><string>mli</string></array></dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key><string>com.glimt.tcl-source</string>
+			<key>UTTypeDescription</key><string>Tcl/Tk source</string>
+			<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+			<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>tcl</string><string>tk</string><string>itcl</string><string>wish</string></array></dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key><string>com.glimt.applescript-source</string>
+			<key>UTTypeDescription</key><string>AppleScript source</string>
+			<key>UTTypeConformsTo</key><array><string>public.source-code</string><string>public.text</string></array>
+			<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>applescript</string></array></dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key><string>com.glimt.yang-source</string>
+			<key>UTTypeDescription</key><string>YANG source</string>
+			<key>UTTypeConformsTo</key><array><string>public.plain-text</string></array>
+			<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>yang</string></array></dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key><string>com.glimt.elm-source</string>
+			<key>UTTypeDescription</key><string>Elm source</string>
+			<key>UTTypeConformsTo</key><array><string>public.plain-text</string></array>
+			<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>elm</string></array></dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key><string>com.glimt.bison-source</string>
+			<key>UTTypeDescription</key><string>Bison Grammar Source</string>
+			<key>UTTypeConformsTo</key><array><string>public.yacc-source</string></array>
+			<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>y</string><string>yy</string></array></dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key><string>com.glimt.graphviz-dot-source</string>
+			<key>UTTypeDescription</key><string>Graphviz DOT Source</string>
+			<key>UTTypeConformsTo</key><array><string>public.plain-text</string></array>
+			<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>dot</string><string>gv</string></array></dict>
+		</dict>
+		<dict>
+			<key>UTTypeIdentifier</key><string>com.glimt.pkcs7-certificate-bundle</string>
+			<key>UTTypeDescription</key><string>PKCS#7 certificate bundle</string>
+			<key>UTTypeConformsTo</key><array><string>public.data</string></array>
+			<key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>p7b</string><string>p7c</string></array></dict>
+		</dict>
+	</array>
+	<key>GlimtPrerelease</key>
+	<string>$(GLIMT_PRERELEASE)</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2026 Glimt contributors.</string>
+</dict>
+</plist>

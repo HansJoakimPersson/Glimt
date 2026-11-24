@@ -1,0 +1,8 @@
+sequenceDiagram
+  actor User
+  participant Finder
+  participant Glimt as Preview Extension
+  User->>Finder: Press Space
+  Finder->>Glimt: Preview request
+  Glimt-->>Finder: Rendered preview
+  Finder-->>User: Show result

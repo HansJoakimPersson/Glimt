@@ -1,0 +1,2 @@
+class Answer { string Text = "if 42"; // if 99
+ return 7; }

@@ -1,0 +1,3 @@
+# Glimt
+
+Anteckning utan bilagor.

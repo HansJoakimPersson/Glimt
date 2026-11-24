@@ -1,0 +1,6 @@
+digraph Glimt {
+  rankdir=LR;
+  // noder
+  file -> detect -> inspect -> render;
+  detect [shape=diamond, label="Detektera"];
+}

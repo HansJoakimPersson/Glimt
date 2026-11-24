@@ -1,0 +1,11 @@
+# Build products
+.build/
+DerivedData/
+
+# Secrets
+.env
+!.env.example
+
+*.log
+!fixtures/important.log
+\#literal-name

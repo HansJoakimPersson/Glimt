@@ -1,0 +1,17 @@
+= Glimt Format Preview
+:toc:
+
+Glimt previews files locally and keeps their original source available.
+
+== Supported syntax
+
+* Source files are read-only.
+* External resources are never loaded.
+
+[source,swift]
+----
+let preview = "offline"
+print(preview)
+----
+
+See https://example.invalid/docs[the local documentation reference].

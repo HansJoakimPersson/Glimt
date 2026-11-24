@@ -1,0 +1,4 @@
+name = "Glimt"
+enabled = true
+[preview]
+limit = 3

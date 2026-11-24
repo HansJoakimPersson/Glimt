@@ -1,0 +1,2 @@
+#!/bin/csh
+if ( 1 ) echo "if 42" # if 99

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Placemark><name>Office</name><Point><coordinates>18.06,59.33,0</coordinates></Point></Placemark>
+</kml>

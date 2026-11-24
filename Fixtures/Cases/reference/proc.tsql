@@ -1,0 +1,8 @@
+-- T-SQL
+CREATE PROCEDURE dbo.Greet @Name NVARCHAR(50)
+AS
+BEGIN
+    SET NOCOUNT ON;
+    DECLARE @Count INT = 3;
+    PRINT N'Hej ' + @Name;
+END;

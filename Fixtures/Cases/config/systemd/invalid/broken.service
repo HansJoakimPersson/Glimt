@@ -1,0 +1,5 @@
+[Unit
+Description=Broken section header
+
+[Service]
+ExecStart=/usr/bin/printf malformed

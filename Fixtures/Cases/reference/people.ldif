@@ -1,0 +1,7 @@
+version: 1
+# Användare
+dn: uid=glimt,ou=people,dc=example,dc=test
+objectClass: inetOrgPerson
+cn: Glimt Test
+sn: Test
+mail: glimt@example.test

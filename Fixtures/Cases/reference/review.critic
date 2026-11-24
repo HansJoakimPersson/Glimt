@@ -1,0 +1,3 @@
+Detta är {++tillagd++} text och {--borttagen--} text.
+Byt {~~gammalt~>nytt~~} ord.
+{==Markerat==}{>>Kommentar<<}

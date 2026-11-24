@@ -1,0 +1,5 @@
+-- FAME monthly series
+freq monthly
+date jan2026 to dec2026
+series sales : precision by date
+type sales

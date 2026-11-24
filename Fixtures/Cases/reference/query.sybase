@@ -1,0 +1,7 @@
+-- Sybase
+SELECT name, count
+FROM formats
+WHERE status = "planned"
+go
+exec sp_help formats
+go

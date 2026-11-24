@@ -1,0 +1,5 @@
+# Qu greeting
+def greet(name)
+  print "Hej ", name
+end
+greet("Glimt")

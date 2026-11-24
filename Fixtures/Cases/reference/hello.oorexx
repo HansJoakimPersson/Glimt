@@ -1,0 +1,7 @@
+/* ooRexx */
+greeter = .Greeter~new
+greeter~hello("Glimt")
+::class Greeter
+::method hello
+  use arg name
+  say "Hej" name

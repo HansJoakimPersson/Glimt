@@ -1,0 +1,64 @@
+# macOS
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+Icon?
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Build output: scoped builds, resolved packages and release artifacts (make package)
+/build/
+dist/
+
+# Xcode user data and workspace state
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcuserdatad/
+*.xcuserstate
+
+# Derived data
+DerivedData/
+*.xcresult/
+*.xcarchive/
+*.dSYM/
+*.dSYM.zip
+
+# Common editor temp files
+*.swp
+*.swo
+*.log
+!Fixtures/**/*.log
+*.orig
+*.rej
+.idea/
+.vscode/
+.direnv/
+.envrc
+
+# Local Clarity Framework templates
+/docs/*.md
+docs/plans/.runs/
+
+# Local client settings
+.claude/
+.codex
+.agents/
+
+# Signing material and credentials; never commit them (Fixtures hold only synthetic test certificates)
+*.p8
+*.keychain
+*.keychain-db
+*.provisionprofile
+/*.p12
+/*.cer
+ExportOptions.plist
+
+# Python helper bytecode
+__pycache__/
+/artifacts/

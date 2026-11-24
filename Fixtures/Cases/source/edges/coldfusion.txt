@@ -1,0 +1,2 @@
+<!--- if 99 --->
+<cfif true><cfset text = "if 42"><cfoutput>7</cfoutput></cfif>

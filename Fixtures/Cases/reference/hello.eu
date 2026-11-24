@@ -1,0 +1,7 @@
+-- Euphoria
+include std/io.e
+
+integer count = 3
+for i = 1 to count do
+    printf(1, "Hej %d\n", i)
+end for

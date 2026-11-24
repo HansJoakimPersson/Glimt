@@ -1,0 +1,1292 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A0100000000000000000006 /* SwiftMath in Frameworks */ = {isa = PBXBuildFile; productRef = 0A0100000000000000000002 /* SwiftMath */; };
+		0A0100000000000000000007 /* SwiftMath in Frameworks */ = {isa = PBXBuildFile; productRef = 0A0100000000000000000003 /* SwiftMath */; };
+		0A0100000000000000000008 /* SwiftMath in Frameworks */ = {isa = PBXBuildFile; productRef = 0A0100000000000000000004 /* SwiftMath */; };
+		930000000000000000000001 /* MermaidRender in Frameworks */ = {isa = PBXBuildFile; productRef = 930000000000000000000004 /* MermaidRender app */; };
+		930000000000000000000002 /* MermaidRender in Frameworks */ = {isa = PBXBuildFile; productRef = 930000000000000000000005 /* MermaidRender preview */; };
+		930000000000000000000003 /* MermaidRender in Frameworks */ = {isa = PBXBuildFile; productRef = 930000000000000000000006 /* MermaidRender tests */; };
+		7A0000000000000000000001 /* MarkdownTOCPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000000005 /* MarkdownTOCPanel.swift */; };
+		7A0000000000000000000002 /* MarkdownTOCPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000000005 /* MarkdownTOCPanel.swift */; };
+		7A0000000000000000000003 /* MarkdownTOCPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0000000000000000000005 /* MarkdownTOCPanel.swift */; };
+		7B0000000000000000000001 /* GlimtDebugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0000000000000000000010 /* GlimtDebugLog.swift */; };
+		7B0000000000000000000002 /* GlimtDebugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0000000000000000000010 /* GlimtDebugLog.swift */; };
+		7B0000000000000000000003 /* GlimtDebugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0000000000000000000010 /* GlimtDebugLog.swift */; };
+		7B0000000000000000000004 /* GlimtDebugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0000000000000000000010 /* GlimtDebugLog.swift */; };
+		7B0000000000000000000005 /* GlimtDebugLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0000000000000000000011 /* GlimtDebugLogTests.swift */; };
+		A00000000000000000000420 /* ThumbnailRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00000000000000000000021 /* ThumbnailRenderer.swift */; };
+		AB00000000000000000000a1 /* GlimtSettingsV3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000F1 /* GlimtSettingsV3.swift */; };
+		AB00000000000000000000a2 /* GlimtSettingsV3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000F1 /* GlimtSettingsV3.swift */; };
+		AB00000000000000000000a3 /* GlimtSettingsV3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000F1 /* GlimtSettingsV3.swift */; };
+		AB00000000000000000000a4 /* GlimtSettingsV3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000F1 /* GlimtSettingsV3.swift */; };
+		AB00000000000000000001C1 /* SettingsSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000C1 /* SettingsSession.swift */; };
+		AB00000000000000000001C2 /* SettingsSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000C2 /* SettingsSessionTests.swift */; };
+		AB00000000000000000001C3 /* SettingsControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000C3 /* SettingsControls.swift */; };
+		AB00000000000000000001C4 /* PreviewPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000C4 /* PreviewPane.swift */; };
+		AB00000000000000000001C5 /* GeneralSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000C5 /* GeneralSettingsViewController.swift */; };
+		AB00000000000000000001C7 /* SettingsSheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000C7 /* SettingsSheets.swift */; };
+		AB00000000000000000001C8 /* SettingsRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000C8 /* SettingsRootViewController.swift */; };
+		AB00000000000000000001C9 /* SettingsWindowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000C9 /* SettingsWindowTests.swift */; };
+		AB00000000000000000001F2 /* EffectiveSettingsResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000F2 /* EffectiveSettingsResolver.swift */; };
+		AB00000000000000000001F3 /* SettingsV3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000F3 /* SettingsV3Tests.swift */; };
+		AB00000000000000000001F4 /* SettingsMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000F4 /* SettingsMigration.swift */; };
+		AB00000000000000000001F5 /* SettingsMigrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000F5 /* SettingsMigrationTests.swift */; };
+		AB00000000000000000001F6 /* SettingsStoreV3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000F6 /* SettingsStoreV3Tests.swift */; };
+		AB00000000000000000001F7 /* HardWrapLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000F7 /* HardWrapLayout.swift */; };
+		AB00000000000000000001F8 /* HardWrapLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000F8 /* HardWrapLayoutTests.swift */; };
+		AB00000000000000000002C1 /* SettingsSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000C1 /* SettingsSession.swift */; };
+		AB00000000000000000002C3 /* SettingsControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000C3 /* SettingsControls.swift */; };
+		AB00000000000000000002C4 /* PreviewPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000C4 /* PreviewPane.swift */; };
+		AB00000000000000000002C5 /* GeneralSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000C5 /* GeneralSettingsViewController.swift */; };
+		AB00000000000000000002C7 /* SettingsSheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000C7 /* SettingsSheets.swift */; };
+		AB00000000000000000002C8 /* SettingsRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000C8 /* SettingsRootViewController.swift */; };
+		AB00000000000000000002F2 /* EffectiveSettingsResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000F2 /* EffectiveSettingsResolver.swift */; };
+		AB00000000000000000002F4 /* SettingsMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000F4 /* SettingsMigration.swift */; };
+		AB00000000000000000002F7 /* HardWrapLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000F7 /* HardWrapLayout.swift */; };
+		AB00000000000000000003F2 /* EffectiveSettingsResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000F2 /* EffectiveSettingsResolver.swift */; };
+		AB00000000000000000003F4 /* SettingsMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000F4 /* SettingsMigration.swift */; };
+		AB00000000000000000003F7 /* HardWrapLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000F7 /* HardWrapLayout.swift */; };
+		AB00000000000000000004F2 /* EffectiveSettingsResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000F2 /* EffectiveSettingsResolver.swift */; };
+		AB00000000000000000004F4 /* SettingsMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB00000000000000000000F4 /* SettingsMigration.swift */; };
+		AC0000000000000000000001 /* ViewCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0000000000000000000000 /* ViewCategory.swift */; };
+		AC0000000000000000000002 /* ViewCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0000000000000000000000 /* ViewCategory.swift */; };
+		AC0000000000000000000003 /* ViewCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0000000000000000000000 /* ViewCategory.swift */; };
+		AC0000000000000000000004 /* ViewCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0000000000000000000000 /* ViewCategory.swift */; };
+		AC0000000000000000000006 /* ViewResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0000000000000000000005 /* ViewResolver.swift */; };
+		AC0000000000000000000007 /* ViewResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0000000000000000000005 /* ViewResolver.swift */; };
+		AC0000000000000000000008 /* ViewResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0000000000000000000005 /* ViewResolver.swift */; };
+		AC0000000000000000000009 /* ViewResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0000000000000000000005 /* ViewResolver.swift */; };
+		AC000000000000000000000B /* ViewResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC000000000000000000000A /* ViewResolverTests.swift */; };
+		AC000000000000000000000D /* FormatsAndViewsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC000000000000000000000C /* FormatsAndViewsSheet.swift */; };
+		AC000000000000000000000E /* FormatsAndViewsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC000000000000000000000C /* FormatsAndViewsSheet.swift */; };
+		AC0000000000000000000010 /* FormatOptionsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC000000000000000000000F /* FormatOptionsSheet.swift */; };
+		AC0000000000000000000011 /* FormatOptionsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC000000000000000000000F /* FormatOptionsSheet.swift */; };
+		AC0000000000000000000013 /* FormatsAndViewsSheetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0000000000000000000012 /* FormatsAndViewsSheetTests.swift */; };
+		B00000000000000000000001 /* GlimtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000001 /* GlimtApp.swift */; };
+		B10000000000000000000001 /* GlimtQuickLookDiagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000001 /* GlimtQuickLookDiagnostics.swift */; };
+		B10000000000000000000002 /* GlimtQuickLookDiagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000001 /* GlimtQuickLookDiagnostics.swift */; };
+		B10000000000000000000003 /* QuickLookProviderProvenance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000002 /* QuickLookProviderProvenance.swift */; };
+		B10000000000000000000004 /* QuickLookProviderProvenance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000002 /* QuickLookProviderProvenance.swift */; };
+		B10000000000000000000005 /* QuickLookProviderProvenance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000002 /* QuickLookProviderProvenance.swift */; };
+		B10000000000000000000006 /* GlimtQuickLookDiagnosticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000003 /* GlimtQuickLookDiagnosticsTests.swift */; };
+		B30000000000000000000001 /* GlimtVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30000000000000000000011 /* GlimtVersion.swift */; };
+		B30000000000000000000002 /* GlimtVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30000000000000000000011 /* GlimtVersion.swift */; };
+		B30000000000000000000003 /* GlimtVersionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30000000000000000000012 /* GlimtVersionTests.swift */; };
+		C00000000000000000000004 /* PreviewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000001 /* PreviewExtension.swift */; };
+		C00000000000000000000005 /* InspectorCore in Frameworks */ = {isa = PBXBuildFile; productRef = C00000000000000000000017 /* InspectorCore */; };
+		C00000000000000000000014 /* GlimtPreview.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C00000000000000000000003 /* GlimtPreview.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C00000000000000000000071 /* GitInspection in Frameworks */ = {isa = PBXBuildFile; productRef = C00000000000000000000070 /* GitInspection */; };
+		C10000000000000000000001 /* MermaidDiagramRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000004 /* MermaidDiagramRenderer.swift */; };
+		C10000000000000000000002 /* MermaidDiagramRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000004 /* MermaidDiagramRenderer.swift */; };
+		C10000000000000000000003 /* MermaidDiagramRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000004 /* MermaidDiagramRenderer.swift */; };
+		C10000000000000000000010 /* MermaidKitRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000005 /* MermaidKitRenderer.swift */; };
+		C10000000000000000000011 /* MermaidKitRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000005 /* MermaidKitRenderer.swift */; };
+		C10000000000000000000012 /* MermaidKitRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000005 /* MermaidKitRenderer.swift */; };
+		C10000000000000000000016 /* MermaidKitRendererTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000008 /* MermaidKitRendererTests.swift */; };
+		D00000000000000000000004 /* ThumbnailExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00000000000000000000001 /* ThumbnailExtension.swift */; };
+		D00000000000000000000005 /* GlimtThumbnail.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D00000000000000000000003 /* GlimtThumbnail.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D00000000000000000000020 /* ThumbnailRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00000000000000000000021 /* ThumbnailRenderer.swift */; };
+		D00000000000000000000022 /* InspectorCore in Frameworks */ = {isa = PBXBuildFile; productRef = D00000000000000000000023 /* InspectorCore */; };
+		D00000000000000000000029 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000002 /* SettingsStore.swift */; };
+		D00000000000000000000030 /* GlimtSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000001 /* GlimtSettings.swift */; };
+		D00000000000000000000031 /* RenderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0000000000000000000002 /* RenderConfiguration.swift */; };
+		D00000000000000000000032 /* SourceTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000001 /* SourceTheme.swift */; };
+		D00000000000000000000033 /* FileAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000005 /* FileAssociation.swift */; };
+		D00000000000000000000034 /* SourceThemeRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00000000000000000000028 /* SourceThemeRendering.swift */; };
+		D00000000000000000000035 /* SourceThemeRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00000000000000000000028 /* SourceThemeRendering.swift */; };
+		D00000000000000000000036 /* SourceThemeRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00000000000000000000028 /* SourceThemeRendering.swift */; };
+		D00000000000000000000037 /* SourceThemeRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00000000000000000000028 /* SourceThemeRendering.swift */; };
+		E00000000000000000000005 /* PreviewViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000001 /* PreviewViewControllerTests.swift */; };
+		E00000000000000000000006 /* PreviewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000001 /* PreviewExtension.swift */; };
+		E00000000000000000000007 /* InspectorCore in Frameworks */ = {isa = PBXBuildFile; productRef = E00000000000000000000018 /* InspectorCore */; };
+		E00000000000000000000020 /* ThumbnailRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00000000000000000000021 /* ThumbnailRenderer.swift */; };
+		E00000000000000000000022 /* ThumbnailRendererTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000024 /* ThumbnailRendererTests.swift */; };
+		E00000000000000000000025 /* ThumbnailExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00000000000000000000001 /* ThumbnailExtension.swift */; };
+		E00000000000000000000071 /* GitInspection in Frameworks */ = {isa = PBXBuildFile; productRef = E00000000000000000000070 /* GitInspection */; };
+		E10000000000000000000001 /* Showcase in Resources */ = {isa = PBXBuildFile; fileRef = F40000000000000000000002 /* Showcase */; };
+		F10000000000000000000905 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000904 /* LICENSE */; };
+		F10000000000000000000907 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000906 /* Assets.xcassets */; };
+		F30000000000000000000002 /* SourceTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000001 /* SourceTheme.swift */; };
+		F30000000000000000000003 /* SourceTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000001 /* SourceTheme.swift */; };
+		F30000000000000000000004 /* SourceTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000001 /* SourceTheme.swift */; };
+		F30000000000000000000006 /* FileAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000005 /* FileAssociation.swift */; };
+		F30000000000000000000007 /* FileAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000005 /* FileAssociation.swift */; };
+		F30000000000000000000008 /* FileAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000005 /* FileAssociation.swift */; };
+		F3000000000000000000000A /* InquiryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000009 /* InquiryViewController.swift */; };
+		F3000000000000000000000B /* InquiryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000009 /* InquiryViewController.swift */; };
+		F3000000000000000000000D /* InquiryPreviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3000000000000000000000C /* InquiryPreviewTests.swift */; };
+		F40000000000000000000001 /* Showcase in Resources */ = {isa = PBXBuildFile; fileRef = F40000000000000000000002 /* Showcase */; };
+		F80000000000000000000001 /* StructuredTreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80000000000000000000003 /* StructuredTreeView.swift */; };
+		F80000000000000000000002 /* StructuredTreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80000000000000000000003 /* StructuredTreeView.swift */; };
+		F81000000000000000000001 /* CSVTablePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81000000000000000000002 /* CSVTablePreviewView.swift */; };
+		F81000000000000000000003 /* CSVTablePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81000000000000000000002 /* CSVTablePreviewView.swift */; };
+		F81000000000000000000004 /* CSVTablePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81000000000000000000002 /* CSVTablePreviewView.swift */; };
+		F90000000000000000000011 /* ThirdPartyNotices.txt in Resources */ = {isa = PBXBuildFile; fileRef = F90000000000000000000014 /* ThirdPartyNotices.txt */; };
+		F90000000000000000000012 /* ThirdPartyNotices.txt in Resources */ = {isa = PBXBuildFile; fileRef = F90000000000000000000014 /* ThirdPartyNotices.txt */; };
+		F90000000000000000000013 /* ThirdPartyNotices.txt in Resources */ = {isa = PBXBuildFile; fileRef = F90000000000000000000014 /* ThirdPartyNotices.txt */; };
+		FA0000000000000000000001 /* SourceCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000003 /* SourceCodeView.swift */; };
+		FA0000000000000000000002 /* SourceCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000003 /* SourceCodeView.swift */; };
+		FA0000000000000000000004 /* SourceCodePreviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000005 /* SourceCodePreviewTests.swift */; };
+		FB0000000000000000000001 /* FixturePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0000000000000000000002 /* FixturePaths.swift */; };
+		FC0000000000000000000001 /* MarkdownRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0000000000000000000003 /* MarkdownRenderer.swift */; };
+		FC0000000000000000000002 /* MarkdownRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0000000000000000000003 /* MarkdownRenderer.swift */; };
+		FC0000000000000000000004 /* MarkdownPreviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0000000000000000000005 /* MarkdownPreviewTests.swift */; };
+		FD0000000000000000000001 /* XMLPlistPreviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0000000000000000000002 /* XMLPlistPreviewTests.swift */; };
+		FE0000000000000000000011 /* PreviewPreparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0000000000000000000001 /* PreviewPreparation.swift */; };
+		FE0000000000000000000012 /* PreviewPreparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0000000000000000000001 /* PreviewPreparation.swift */; };
+		FE0000000000000000000013 /* PreviewPreparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0000000000000000000001 /* PreviewPreparation.swift */; };
+		FE0000000000000000000021 /* RenderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0000000000000000000002 /* RenderConfiguration.swift */; };
+		FE0000000000000000000022 /* RenderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0000000000000000000002 /* RenderConfiguration.swift */; };
+		FE0000000000000000000023 /* RenderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0000000000000000000002 /* RenderConfiguration.swift */; };
+		FE0000000000000000000031 /* SharedPreviewPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0000000000000000000003 /* SharedPreviewPipeline.swift */; };
+		FE0000000000000000000032 /* SharedPreviewPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0000000000000000000003 /* SharedPreviewPipeline.swift */; };
+		FE0000000000000000000033 /* SharedPreviewPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0000000000000000000003 /* SharedPreviewPipeline.swift */; };
+		FE0000000000000000000041 /* SharedPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0000000000000000000004 /* SharedPreviewViewController.swift */; };
+		FE0000000000000000000042 /* SharedPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0000000000000000000004 /* SharedPreviewViewController.swift */; };
+		FE0000000000000000000043 /* SharedPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0000000000000000000004 /* SharedPreviewViewController.swift */; };
+		FE0000000000000000000201 /* StructuredTreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80000000000000000000003 /* StructuredTreeView.swift */; };
+		FE0000000000000000000202 /* SourceCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000003 /* SourceCodeView.swift */; };
+		FE0000000000000000000203 /* MarkdownRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0000000000000000000003 /* MarkdownRenderer.swift */; };
+		FE0000000000000000000501 /* InspectorCore in Frameworks */ = {isa = PBXBuildFile; productRef = FE0000000000000000000500 /* InspectorCore */; };
+		FE0000000000000000000511 /* GitInspection in Frameworks */ = {isa = PBXBuildFile; productRef = FE0000000000000000000510 /* GitInspection */; };
+		FE0000000000000000000601 /* SharedPreviewPipelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0000000000000000000600 /* SharedPreviewPipelineTests.swift */; };
+		FF0000000000000000000011 /* GlimtSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000001 /* GlimtSettings.swift */; };
+		FF0000000000000000000012 /* GlimtSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000001 /* GlimtSettings.swift */; };
+		FF0000000000000000000013 /* GlimtSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000001 /* GlimtSettings.swift */; };
+		FF0000000000000000000021 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000002 /* SettingsStore.swift */; };
+		FF0000000000000000000022 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000002 /* SettingsStore.swift */; };
+		FF0000000000000000000023 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000002 /* SettingsStore.swift */; };
+		FF0000000000000000000201 /* SettingsStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000200 /* SettingsStoreTests.swift */; };
+		FF0000000000000000000301 /* PreviewSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000300 /* PreviewSamples.swift */; };
+		FF0000000000000000000302 /* PreviewSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0000000000000000000300 /* PreviewSamples.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C00000000000000000000011 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000000000000000000015 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C00000000000000000000009;
+			remoteInfo = GlimtPreview;
+		};
+		D00000000000000000000011 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000000000000000000015 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D00000000000000000000009;
+			remoteInfo = GlimtThumbnail;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C00000000000000000000013 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C00000000000000000000014 /* GlimtPreview.appex in Embed Foundation Extensions */,
+				D00000000000000000000005 /* GlimtThumbnail.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7A0000000000000000000005 /* MarkdownTOCPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownTOCPanel.swift; sourceTree = "<group>"; };
+		7B0000000000000000000010 /* GlimtDebugLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlimtDebugLog.swift; sourceTree = "<group>"; };
+		7B0000000000000000000011 /* GlimtDebugLogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlimtDebugLogTests.swift; sourceTree = "<group>"; };
+		A00000000000000000000001 /* GlimtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlimtApp.swift; sourceTree = "<group>"; };
+		A00000000000000000000002 /* Glimt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glimt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000000003 /* GlimtThumbnail.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GlimtThumbnail.entitlements; sourceTree = "<group>"; };
+		AB00000000000000000000C1 /* SettingsSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSession.swift; sourceTree = "<group>"; };
+		AB00000000000000000000C2 /* SettingsSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSessionTests.swift; sourceTree = "<group>"; };
+		AB00000000000000000000C3 /* SettingsControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsControls.swift; sourceTree = "<group>"; };
+		AB00000000000000000000C4 /* PreviewPane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPane.swift; sourceTree = "<group>"; };
+		AB00000000000000000000C5 /* GeneralSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsViewController.swift; sourceTree = "<group>"; };
+		AB00000000000000000000C7 /* SettingsSheets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSheets.swift; sourceTree = "<group>"; };
+		AB00000000000000000000C8 /* SettingsRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRootViewController.swift; sourceTree = "<group>"; };
+		AB00000000000000000000C9 /* SettingsWindowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindowTests.swift; sourceTree = "<group>"; };
+		AB00000000000000000000F1 /* GlimtSettingsV3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlimtSettingsV3.swift; sourceTree = "<group>"; };
+		AB00000000000000000000F2 /* EffectiveSettingsResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectiveSettingsResolver.swift; sourceTree = "<group>"; };
+		AB00000000000000000000F3 /* SettingsV3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsV3Tests.swift; sourceTree = "<group>"; };
+		AB00000000000000000000F4 /* SettingsMigration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMigration.swift; sourceTree = "<group>"; };
+		AB00000000000000000000F5 /* SettingsMigrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMigrationTests.swift; sourceTree = "<group>"; };
+		AB00000000000000000000F6 /* SettingsStoreV3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStoreV3Tests.swift; sourceTree = "<group>"; };
+		AB00000000000000000000F7 /* HardWrapLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardWrapLayout.swift; sourceTree = "<group>"; };
+		AB00000000000000000000F8 /* HardWrapLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardWrapLayoutTests.swift; sourceTree = "<group>"; };
+		AC0000000000000000000000 /* ViewCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCategory.swift; sourceTree = "<group>"; };
+		AC0000000000000000000005 /* ViewResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewResolver.swift; sourceTree = "<group>"; };
+		AC000000000000000000000A /* ViewResolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewResolverTests.swift; sourceTree = "<group>"; };
+		AC000000000000000000000C /* FormatsAndViewsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatsAndViewsSheet.swift; sourceTree = "<group>"; };
+		AC000000000000000000000F /* FormatOptionsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatOptionsSheet.swift; sourceTree = "<group>"; };
+		AC0000000000000000000012 /* FormatsAndViewsSheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatsAndViewsSheetTests.swift; sourceTree = "<group>"; };
+		B20000000000000000000001 /* GlimtQuickLookDiagnostics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlimtQuickLookDiagnostics.swift; sourceTree = "<group>"; };
+		B20000000000000000000002 /* QuickLookProviderProvenance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLookProviderProvenance.swift; sourceTree = "<group>"; };
+		B30000000000000000000011 /* GlimtVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlimtVersion.swift; sourceTree = "<group>"; };
+		B30000000000000000000012 /* GlimtVersionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlimtVersionTests.swift; sourceTree = "<group>"; };
+		B30000000000000000000013 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Version.xcconfig; path = Config/Version.xcconfig; sourceTree = "<group>"; };
+		B20000000000000000000003 /* GlimtQuickLookDiagnosticsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlimtQuickLookDiagnosticsTests.swift; sourceTree = "<group>"; };
+		C00000000000000000000001 /* PreviewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewExtension.swift; sourceTree = "<group>"; };
+		C00000000000000000000002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C00000000000000000000003 /* GlimtPreview.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GlimtPreview.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C10000000000000000000004 /* MermaidDiagramRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MermaidDiagramRenderer.swift; sourceTree = "<group>"; };
+		C10000000000000000000005 /* MermaidKitRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MermaidKitRenderer.swift; sourceTree = "<group>"; };
+		C10000000000000000000008 /* MermaidKitRendererTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MermaidKitRendererTests.swift; sourceTree = "<group>"; };
+		D00000000000000000000001 /* ThumbnailExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailExtension.swift; sourceTree = "<group>"; };
+		D00000000000000000000002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D00000000000000000000003 /* GlimtThumbnail.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GlimtThumbnail.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00000000000000000000021 /* ThumbnailRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailRenderer.swift; sourceTree = "<group>"; };
+		D00000000000000000000028 /* SourceThemeRendering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceThemeRendering.swift; sourceTree = "<group>"; };
+		E00000000000000000000001 /* PreviewViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewControllerTests.swift; sourceTree = "<group>"; };
+		E00000000000000000000004 /* GlimtPreviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlimtPreviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E00000000000000000000024 /* ThumbnailRendererTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailRendererTests.swift; sourceTree = "<group>"; };
+		F10000000000000000000904 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
+		F10000000000000000000906 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F30000000000000000000001 /* SourceTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceTheme.swift; sourceTree = "<group>"; };
+		F30000000000000000000005 /* FileAssociation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileAssociation.swift; sourceTree = "<group>"; };
+		F30000000000000000000009 /* InquiryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InquiryViewController.swift; sourceTree = "<group>"; };
+		F3000000000000000000000C /* InquiryPreviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InquiryPreviewTests.swift; sourceTree = "<group>"; };
+		F40000000000000000000002 /* Showcase */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Showcase; sourceTree = "<group>"; };
+		F80000000000000000000003 /* StructuredTreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuredTreeView.swift; sourceTree = "<group>"; };
+		F81000000000000000000002 /* CSVTablePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVTablePreviewView.swift; sourceTree = "<group>"; };
+		F90000000000000000000014 /* ThirdPartyNotices.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ThirdPartyNotices.txt; sourceTree = "<group>"; };
+		FA0000000000000000000003 /* SourceCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceCodeView.swift; sourceTree = "<group>"; };
+		FA0000000000000000000005 /* SourceCodePreviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceCodePreviewTests.swift; sourceTree = "<group>"; };
+		FB0000000000000000000002 /* FixturePaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturePaths.swift; sourceTree = "<group>"; };
+		FC0000000000000000000003 /* MarkdownRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownRenderer.swift; sourceTree = "<group>"; };
+		FC0000000000000000000005 /* MarkdownPreviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownPreviewTests.swift; sourceTree = "<group>"; };
+		FD0000000000000000000002 /* XMLPlistPreviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLPlistPreviewTests.swift; sourceTree = "<group>"; };
+		FE0000000000000000000001 /* PreviewPreparation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPreparation.swift; sourceTree = "<group>"; };
+		FE0000000000000000000002 /* RenderConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderConfiguration.swift; sourceTree = "<group>"; };
+		FE0000000000000000000003 /* SharedPreviewPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedPreviewPipeline.swift; sourceTree = "<group>"; };
+		FE0000000000000000000004 /* SharedPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedPreviewViewController.swift; sourceTree = "<group>"; };
+		FE0000000000000000000600 /* SharedPreviewPipelineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedPreviewPipelineTests.swift; sourceTree = "<group>"; };
+		FF0000000000000000000001 /* GlimtSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlimtSettings.swift; sourceTree = "<group>"; };
+		FF0000000000000000000002 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		FF0000000000000000000200 /* SettingsStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStoreTests.swift; sourceTree = "<group>"; };
+		FF0000000000000000000300 /* PreviewSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSamples.swift; sourceTree = "<group>"; };
+		FF0000000000000000000700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF0000000000000000000701 /* GlimtHost.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GlimtHost.entitlements; sourceTree = "<group>"; };
+		FF0000000000000000000702 /* GlimtPreview.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GlimtPreview.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A00000000000000000000004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE0000000000000000000501 /* InspectorCore in Frameworks */,
+				FE0000000000000000000511 /* GitInspection in Frameworks */,
+				0A0100000000000000000006 /* SwiftMath in Frameworks */,
+				930000000000000000000001 /* MermaidRender in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C00000000000000000000007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C00000000000000000000005 /* InspectorCore in Frameworks */,
+				C00000000000000000000071 /* GitInspection in Frameworks */,
+				0A0100000000000000000007 /* SwiftMath in Frameworks */,
+				930000000000000000000002 /* MermaidRender in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00000000000000000000007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00000000000000000000022 /* InspectorCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0000000000000000000000D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E00000000000000000000007 /* InspectorCore in Frameworks */,
+				E00000000000000000000071 /* GitInspection in Frameworks */,
+				0A0100000000000000000008 /* SwiftMath in Frameworks */,
+				930000000000000000000003 /* MermaidRender in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A00000000000000000000005 = {
+			isa = PBXGroup;
+			children = (
+				B30000000000000000000013 /* Version.xcconfig */,
+				FF0000000000000000000600 /* Canonical Preview Samples */,
+				A00000000000000000000006 /* Glimt */,
+				E0000000000000000000000B /* GlimtPreviewTests */,
+				A00000000000000000000007 /* Products */,
+				A00000000000000000000008 /* Package Dependencies */,
+			);
+			sourceTree = "<group>";
+		};
+		A00000000000000000000006 /* Glimt */ = {
+			isa = PBXGroup;
+			children = (
+				FF0000000000000000000100 /* Settings */,
+				FE0000000000000000000100 /* Preview */,
+				A00000000000000000000009 /* App */,
+				A00000000000000000000010 /* Shared */,
+				C00000000000000000000016 /* PreviewExtension */,
+				D00000000000000000000015 /* ThumbnailExtension */,
+			);
+			path = Glimt;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000002 /* Glimt.app */,
+				C00000000000000000000003 /* GlimtPreview.appex */,
+				D00000000000000000000003 /* GlimtThumbnail.appex */,
+				E00000000000000000000004 /* GlimtPreviewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000008 /* Package Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Package Dependencies";
+			sourceTree = "<group>";
+		};
+		A00000000000000000000009 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AB00000000000000000000C8 /* SettingsRootViewController.swift */,
+				AB00000000000000000000C7 /* SettingsSheets.swift */,
+				AC000000000000000000000F /* FormatOptionsSheet.swift */,
+				AC000000000000000000000C /* FormatsAndViewsSheet.swift */,
+				AB00000000000000000000C5 /* GeneralSettingsViewController.swift */,
+				AB00000000000000000000C4 /* PreviewPane.swift */,
+				AB00000000000000000000C3 /* SettingsControls.swift */,
+				AB00000000000000000000C1 /* SettingsSession.swift */,
+				F30000000000000000000009 /* InquiryViewController.swift */,
+				B20000000000000000000001 /* GlimtQuickLookDiagnostics.swift */,
+				B30000000000000000000011 /* GlimtVersion.swift */,
+				F10000000000000000000904 /* LICENSE */,
+				F10000000000000000000906 /* Assets.xcassets */,
+				FF0000000000000000000700 /* Info.plist */,
+				FF0000000000000000000701 /* GlimtHost.entitlements */,
+				FF0000000000000000000300 /* PreviewSamples.swift */,
+				A00000000000000000000001 /* GlimtApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000010 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F90000000000000000000014 /* ThirdPartyNotices.txt */,
+				7B0000000000000000000010 /* GlimtDebugLog.swift */,
+				B20000000000000000000002 /* QuickLookProviderProvenance.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		C00000000000000000000016 /* PreviewExtension */ = {
+			isa = PBXGroup;
+			children = (
+				FF0000000000000000000702 /* GlimtPreview.entitlements */,
+				C00000000000000000000001 /* PreviewExtension.swift */,
+				C00000000000000000000002 /* Info.plist */,
+			);
+			path = PreviewExtension;
+			sourceTree = "<group>";
+		};
+		D00000000000000000000015 /* ThumbnailExtension */ = {
+			isa = PBXGroup;
+			children = (
+				D00000000000000000000001 /* ThumbnailExtension.swift */,
+				D00000000000000000000021 /* ThumbnailRenderer.swift */,
+				D00000000000000000000002 /* Info.plist */,
+				A00000000000000000000003 /* GlimtThumbnail.entitlements */,
+			);
+			path = ThumbnailExtension;
+			sourceTree = "<group>";
+		};
+		E0000000000000000000000B /* GlimtPreviewTests */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000008 /* MermaidKitRendererTests.swift */,
+				AB00000000000000000000C9 /* SettingsWindowTests.swift */,
+				AB00000000000000000000C2 /* SettingsSessionTests.swift */,
+				AB00000000000000000000F8 /* HardWrapLayoutTests.swift */,
+				AB00000000000000000000F6 /* SettingsStoreV3Tests.swift */,
+				AB00000000000000000000F5 /* SettingsMigrationTests.swift */,
+				AB00000000000000000000F3 /* SettingsV3Tests.swift */,
+				AC0000000000000000000012 /* FormatsAndViewsSheetTests.swift */,
+				AC000000000000000000000A /* ViewResolverTests.swift */,
+				F3000000000000000000000C /* InquiryPreviewTests.swift */,
+				7B0000000000000000000011 /* GlimtDebugLogTests.swift */,
+				B20000000000000000000003 /* GlimtQuickLookDiagnosticsTests.swift */,
+				B30000000000000000000012 /* GlimtVersionTests.swift */,
+				FF0000000000000000000200 /* SettingsStoreTests.swift */,
+				FE0000000000000000000600 /* SharedPreviewPipelineTests.swift */,
+				FD0000000000000000000002 /* XMLPlistPreviewTests.swift */,
+				FC0000000000000000000005 /* MarkdownPreviewTests.swift */,
+				FB0000000000000000000002 /* FixturePaths.swift */,
+				FA0000000000000000000005 /* SourceCodePreviewTests.swift */,
+				E00000000000000000000001 /* PreviewViewControllerTests.swift */,
+				E00000000000000000000024 /* ThumbnailRendererTests.swift */,
+			);
+			path = GlimtPreviewTests;
+			sourceTree = "<group>";
+		};
+		FE0000000000000000000100 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				AB00000000000000000000F7 /* HardWrapLayout.swift */,
+				F80000000000000000000003 /* StructuredTreeView.swift */,
+				F81000000000000000000002 /* CSVTablePreviewView.swift */,
+				FA0000000000000000000003 /* SourceCodeView.swift */,
+				D00000000000000000000028 /* SourceThemeRendering.swift */,
+				FC0000000000000000000003 /* MarkdownRenderer.swift */,
+				7A0000000000000000000005 /* MarkdownTOCPanel.swift */,
+				C10000000000000000000004 /* MermaidDiagramRenderer.swift */,
+				C10000000000000000000005 /* MermaidKitRenderer.swift */,
+				FE0000000000000000000001 /* PreviewPreparation.swift */,
+				FE0000000000000000000003 /* SharedPreviewPipeline.swift */,
+				FE0000000000000000000004 /* SharedPreviewViewController.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		FF0000000000000000000100 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AB00000000000000000000F4 /* SettingsMigration.swift */,
+				AB00000000000000000000F2 /* EffectiveSettingsResolver.swift */,
+				AC0000000000000000000005 /* ViewResolver.swift */,
+				AC0000000000000000000000 /* ViewCategory.swift */,
+				AB00000000000000000000F1 /* GlimtSettingsV3.swift */,
+				F30000000000000000000005 /* FileAssociation.swift */,
+				F30000000000000000000001 /* SourceTheme.swift */,
+				FE0000000000000000000002 /* RenderConfiguration.swift */,
+				FF0000000000000000000001 /* GlimtSettings.swift */,
+				FF0000000000000000000002 /* SettingsStore.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		FF0000000000000000000600 /* Canonical Preview Samples */ = {
+			isa = PBXGroup;
+			children = (
+				F40000000000000000000002 /* Showcase */,
+			);
+			name = "Canonical Preview Samples";
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00000000000000000000011 /* Glimt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000012 /* Build configuration list for PBXNativeTarget "Glimt" */;
+			buildPhases = (
+				A00000000000000000000013 /* Sources */,
+				B10000000000000000000040 /* Lint */,
+				A00000000000000000000004 /* Frameworks */,
+				A00000000000000000000014 /* Resources */,
+				C00000000000000000000013 /* Embed Foundation Extensions */,
+				A10000000000000000000020 /* Prune SwiftMath build helper */,
+				B10000000000000000000030 /* Write build provenance */,
+				B10000000000000000000031 /* Sign embedded Quick Look extensions */,
+				559A983430AE2E2B00BAB458 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C00000000000000000000012 /* PBXTargetDependency */,
+				D00000000000000000000012 /* PBXTargetDependency */,
+			);
+			name = Glimt;
+			packageProductDependencies = (
+				FE0000000000000000000500 /* InspectorCore */,
+				FE0000000000000000000510 /* GitInspection */,
+				0A0100000000000000000002 /* SwiftMath */,
+				930000000000000000000004 /* MermaidRender app */,
+			);
+			productName = Glimt;
+			productReference = A00000000000000000000002 /* Glimt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C00000000000000000000009 /* GlimtPreview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C00000000000000000000010 /* Build configuration list for PBXNativeTarget "GlimtPreview" */;
+			buildPhases = (
+				C00000000000000000000006 /* Sources */,
+				C00000000000000000000007 /* Frameworks */,
+				C00000000000000000000008 /* Resources */,
+				C10000000000000000000020 /* Prune SwiftMath build helper */,
+				C10000000000000000000021 /* Write build provenance */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlimtPreview;
+			packageProductDependencies = (
+				C00000000000000000000017 /* InspectorCore */,
+				C00000000000000000000070 /* GitInspection */,
+				0A0100000000000000000003 /* SwiftMath */,
+				930000000000000000000005 /* MermaidRender preview */,
+			);
+			productName = GlimtPreview;
+			productReference = C00000000000000000000003 /* GlimtPreview.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D00000000000000000000009 /* GlimtThumbnail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D00000000000000000000010 /* Build configuration list for PBXNativeTarget "GlimtThumbnail" */;
+			buildPhases = (
+				D00000000000000000000006 /* Sources */,
+				D00000000000000000000007 /* Frameworks */,
+				D00000000000000000000008 /* Resources */,
+				D10000000000000000000021 /* Write build provenance */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlimtThumbnail;
+			packageProductDependencies = (
+				D00000000000000000000023 /* InspectorCore */,
+			);
+			productName = GlimtThumbnail;
+			productReference = D00000000000000000000003 /* GlimtThumbnail.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E0000000000000000000000F /* GlimtPreviewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E00000000000000000000010 /* Build configuration list for PBXNativeTarget "GlimtPreviewTests" */;
+			buildPhases = (
+				E00000000000000000000011 /* Sources */,
+				E0000000000000000000000D /* Frameworks */,
+				E0000000000000000000000E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlimtPreviewTests;
+			packageProductDependencies = (
+				E00000000000000000000018 /* InspectorCore */,
+				E00000000000000000000070 /* GitInspection */,
+				0A0100000000000000000004 /* SwiftMath */,
+				930000000000000000000006 /* MermaidRender tests */,
+			);
+			productName = GlimtPreviewTests;
+			productReference = E00000000000000000000004 /* GlimtPreviewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000000000000000000015 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					A00000000000000000000011 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					C00000000000000000000009 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					D00000000000000000000009 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					E0000000000000000000000F = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = A00000000000000000000016 /* Build configuration list for PBXProject "Glimt" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A00000000000000000000005;
+			packageReferences = (
+				A00000000000000000000017 /* XCLocalSwiftPackageReference "InspectorCore" */,
+				0A0100000000000000000001 /* XCRemoteSwiftPackageReference "SwiftMath" */,
+				930000000000000000000010 /* XCRemoteSwiftPackageReference "MermaidKit" */,
+			);
+			productRefGroup = A00000000000000000000007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00000000000000000000011 /* Glimt */,
+				C00000000000000000000009 /* GlimtPreview */,
+				D00000000000000000000009 /* GlimtThumbnail */,
+				E0000000000000000000000F /* GlimtPreviewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A00000000000000000000014 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F10000000000000000000907 /* Assets.xcassets in Resources */,
+				F40000000000000000000001 /* Showcase in Resources */,
+				F10000000000000000000905 /* LICENSE in Resources */,
+				F90000000000000000000011 /* ThirdPartyNotices.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C00000000000000000000008 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F90000000000000000000012 /* ThirdPartyNotices.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00000000000000000000008 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F90000000000000000000013 /* ThirdPartyNotices.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0000000000000000000000E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E10000000000000000000001 /* Showcase in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		559A983430AE2E2B00BAB458 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/scripts/glimt-cleanup.sh\" --clean --keep \\\n\"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}\"\n";
+		};
+		A10000000000000000000020 /* Prune SwiftMath build helper */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Prune SwiftMath build helper";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "\"${SRCROOT}/scripts/prune-swiftmath-build-helper.sh\" \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SwiftMath_SwiftMath.bundle\"\n";
+		};
+		B10000000000000000000040 /* Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Lint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "\"${SRCROOT}/scripts/lint.sh\" --swift\n";
+		};
+		B10000000000000000000030 /* Write build provenance */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Write build provenance";
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(FULL_PRODUCT_NAME)/Contents/Resources/GlimtBuildProvenance.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "\"${SRCROOT}/scripts/write-build-provenance.sh\"\n";
+		};
+		B10000000000000000000031 /* Sign embedded Quick Look extensions */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Sign embedded Quick Look extensions";
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(FULL_PRODUCT_NAME)/Contents/PlugIns/GlimtPreview.appex/Contents/_CodeSignature/CodeResources",
+				"$(TARGET_BUILD_DIR)/$(FULL_PRODUCT_NAME)/Contents/PlugIns/GlimtThumbnail.appex/Contents/_CodeSignature/CodeResources",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "\"${SRCROOT}/scripts/sign-embedded-quicklook-extensions.sh\"\n";
+		};
+		C10000000000000000000020 /* Prune SwiftMath build helper */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Prune SwiftMath build helper";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "\"${SRCROOT}/scripts/prune-swiftmath-build-helper.sh\" \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SwiftMath_SwiftMath.bundle\"\n";
+		};
+		C10000000000000000000021 /* Write build provenance */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Write build provenance";
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(FULL_PRODUCT_NAME)/Contents/Resources/GlimtBuildProvenance.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "\"${SRCROOT}/scripts/write-build-provenance.sh\"\n";
+		};
+		D10000000000000000000021 /* Write build provenance */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Write build provenance";
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(FULL_PRODUCT_NAME)/Contents/Resources/GlimtBuildProvenance.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "\"${SRCROOT}/scripts/write-build-provenance.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A00000000000000000000013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B0000000000000000000001 /* GlimtDebugLog.swift in Sources */,
+				AB00000000000000000001C8 /* SettingsRootViewController.swift in Sources */,
+				AB00000000000000000001C7 /* SettingsSheets.swift in Sources */,
+				AC0000000000000000000010 /* FormatOptionsSheet.swift in Sources */,
+				AC000000000000000000000D /* FormatsAndViewsSheet.swift in Sources */,
+				AB00000000000000000001C5 /* GeneralSettingsViewController.swift in Sources */,
+				AB00000000000000000001C4 /* PreviewPane.swift in Sources */,
+				AB00000000000000000001C3 /* SettingsControls.swift in Sources */,
+				AB00000000000000000001C1 /* SettingsSession.swift in Sources */,
+				AB00000000000000000001F7 /* HardWrapLayout.swift in Sources */,
+				AB00000000000000000001F4 /* SettingsMigration.swift in Sources */,
+				AB00000000000000000001F2 /* EffectiveSettingsResolver.swift in Sources */,
+				AC0000000000000000000006 /* ViewResolver.swift in Sources */,
+				AC0000000000000000000001 /* ViewCategory.swift in Sources */,
+				AB00000000000000000000a1 /* GlimtSettingsV3.swift in Sources */,
+				F3000000000000000000000A /* InquiryViewController.swift in Sources */,
+				F30000000000000000000006 /* FileAssociation.swift in Sources */,
+				F30000000000000000000002 /* SourceTheme.swift in Sources */,
+				FF0000000000000000000301 /* PreviewSamples.swift in Sources */,
+				FF0000000000000000000021 /* SettingsStore.swift in Sources */,
+				FF0000000000000000000011 /* GlimtSettings.swift in Sources */,
+				FE0000000000000000000203 /* MarkdownRenderer.swift in Sources */,
+				C10000000000000000000002 /* MermaidDiagramRenderer.swift in Sources */,
+				C10000000000000000000011 /* MermaidKitRenderer.swift in Sources */,
+				FE0000000000000000000202 /* SourceCodeView.swift in Sources */,
+				FE0000000000000000000201 /* StructuredTreeView.swift in Sources */,
+				FE0000000000000000000041 /* SharedPreviewViewController.swift in Sources */,
+				7A0000000000000000000001 /* MarkdownTOCPanel.swift in Sources */,
+				FE0000000000000000000031 /* SharedPreviewPipeline.swift in Sources */,
+				FE0000000000000000000021 /* RenderConfiguration.swift in Sources */,
+				FE0000000000000000000011 /* PreviewPreparation.swift in Sources */,
+				B00000000000000000000001 /* GlimtApp.swift in Sources */,
+				B10000000000000000000001 /* GlimtQuickLookDiagnostics.swift in Sources */,
+				B30000000000000000000001 /* GlimtVersion.swift in Sources */,
+				D00000000000000000000035 /* SourceThemeRendering.swift in Sources */,
+				A00000000000000000000420 /* ThumbnailRenderer.swift in Sources */,
+				F81000000000000000000004 /* CSVTablePreviewView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C00000000000000000000006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B0000000000000000000002 /* GlimtDebugLog.swift in Sources */,
+				AB00000000000000000002F7 /* HardWrapLayout.swift in Sources */,
+				AB00000000000000000002F4 /* SettingsMigration.swift in Sources */,
+				AB00000000000000000002F2 /* EffectiveSettingsResolver.swift in Sources */,
+				AC0000000000000000000007 /* ViewResolver.swift in Sources */,
+				AC0000000000000000000002 /* ViewCategory.swift in Sources */,
+				AB00000000000000000000a2 /* GlimtSettingsV3.swift in Sources */,
+				F30000000000000000000007 /* FileAssociation.swift in Sources */,
+				F30000000000000000000003 /* SourceTheme.swift in Sources */,
+				FF0000000000000000000022 /* SettingsStore.swift in Sources */,
+				FF0000000000000000000012 /* GlimtSettings.swift in Sources */,
+				FE0000000000000000000042 /* SharedPreviewViewController.swift in Sources */,
+				7A0000000000000000000002 /* MarkdownTOCPanel.swift in Sources */,
+				FE0000000000000000000032 /* SharedPreviewPipeline.swift in Sources */,
+				FE0000000000000000000022 /* RenderConfiguration.swift in Sources */,
+				FE0000000000000000000012 /* PreviewPreparation.swift in Sources */,
+				FC0000000000000000000001 /* MarkdownRenderer.swift in Sources */,
+				C10000000000000000000001 /* MermaidDiagramRenderer.swift in Sources */,
+				C10000000000000000000010 /* MermaidKitRenderer.swift in Sources */,
+				FA0000000000000000000001 /* SourceCodeView.swift in Sources */,
+				D00000000000000000000036 /* SourceThemeRendering.swift in Sources */,
+				F80000000000000000000001 /* StructuredTreeView.swift in Sources */,
+				F81000000000000000000001 /* CSVTablePreviewView.swift in Sources */,
+				C00000000000000000000004 /* PreviewExtension.swift in Sources */,
+				B10000000000000000000003 /* QuickLookProviderProvenance.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00000000000000000000006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B0000000000000000000003 /* GlimtDebugLog.swift in Sources */,
+				AB00000000000000000003F4 /* SettingsMigration.swift in Sources */,
+				AB00000000000000000003F2 /* EffectiveSettingsResolver.swift in Sources */,
+				AC0000000000000000000008 /* ViewResolver.swift in Sources */,
+				AC0000000000000000000003 /* ViewCategory.swift in Sources */,
+				AB00000000000000000000a3 /* GlimtSettingsV3.swift in Sources */,
+				D00000000000000000000004 /* ThumbnailExtension.swift in Sources */,
+				D00000000000000000000020 /* ThumbnailRenderer.swift in Sources */,
+				D00000000000000000000029 /* SettingsStore.swift in Sources */,
+				D00000000000000000000030 /* GlimtSettings.swift in Sources */,
+				D00000000000000000000031 /* RenderConfiguration.swift in Sources */,
+				D00000000000000000000032 /* SourceTheme.swift in Sources */,
+				D00000000000000000000033 /* FileAssociation.swift in Sources */,
+				D00000000000000000000034 /* SourceThemeRendering.swift in Sources */,
+				B10000000000000000000004 /* QuickLookProviderProvenance.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00000000000000000000011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B0000000000000000000004 /* GlimtDebugLog.swift in Sources */,
+				7B0000000000000000000005 /* GlimtDebugLogTests.swift in Sources */,
+				AB00000000000000000001C9 /* SettingsWindowTests.swift in Sources */,
+				AB00000000000000000002C8 /* SettingsRootViewController.swift in Sources */,
+				AB00000000000000000002C7 /* SettingsSheets.swift in Sources */,
+				AC0000000000000000000011 /* FormatOptionsSheet.swift in Sources */,
+				AC000000000000000000000E /* FormatsAndViewsSheet.swift in Sources */,
+				AB00000000000000000002C5 /* GeneralSettingsViewController.swift in Sources */,
+				AB00000000000000000002C4 /* PreviewPane.swift in Sources */,
+				AB00000000000000000002C3 /* SettingsControls.swift in Sources */,
+				AB00000000000000000001C2 /* SettingsSessionTests.swift in Sources */,
+				AB00000000000000000002C1 /* SettingsSession.swift in Sources */,
+				AB00000000000000000001F8 /* HardWrapLayoutTests.swift in Sources */,
+				AB00000000000000000003F7 /* HardWrapLayout.swift in Sources */,
+				AB00000000000000000001F6 /* SettingsStoreV3Tests.swift in Sources */,
+				AB00000000000000000001F5 /* SettingsMigrationTests.swift in Sources */,
+				AB00000000000000000004F4 /* SettingsMigration.swift in Sources */,
+				AB00000000000000000001F3 /* SettingsV3Tests.swift in Sources */,
+				AC0000000000000000000013 /* FormatsAndViewsSheetTests.swift in Sources */,
+				AC000000000000000000000B /* ViewResolverTests.swift in Sources */,
+				AB00000000000000000004F2 /* EffectiveSettingsResolver.swift in Sources */,
+				AC0000000000000000000009 /* ViewResolver.swift in Sources */,
+				AC0000000000000000000004 /* ViewCategory.swift in Sources */,
+				AB00000000000000000000a4 /* GlimtSettingsV3.swift in Sources */,
+				F3000000000000000000000D /* InquiryPreviewTests.swift in Sources */,
+				F3000000000000000000000B /* InquiryViewController.swift in Sources */,
+				F30000000000000000000008 /* FileAssociation.swift in Sources */,
+				F30000000000000000000004 /* SourceTheme.swift in Sources */,
+				FF0000000000000000000302 /* PreviewSamples.swift in Sources */,
+				FF0000000000000000000201 /* SettingsStoreTests.swift in Sources */,
+				FF0000000000000000000023 /* SettingsStore.swift in Sources */,
+				FF0000000000000000000013 /* GlimtSettings.swift in Sources */,
+				FE0000000000000000000601 /* SharedPreviewPipelineTests.swift in Sources */,
+				FE0000000000000000000043 /* SharedPreviewViewController.swift in Sources */,
+				7A0000000000000000000003 /* MarkdownTOCPanel.swift in Sources */,
+				FE0000000000000000000033 /* SharedPreviewPipeline.swift in Sources */,
+				FE0000000000000000000023 /* RenderConfiguration.swift in Sources */,
+				FE0000000000000000000013 /* PreviewPreparation.swift in Sources */,
+				FD0000000000000000000001 /* XMLPlistPreviewTests.swift in Sources */,
+				FC0000000000000000000004 /* MarkdownPreviewTests.swift in Sources */,
+				FC0000000000000000000002 /* MarkdownRenderer.swift in Sources */,
+				C10000000000000000000003 /* MermaidDiagramRenderer.swift in Sources */,
+				C10000000000000000000012 /* MermaidKitRenderer.swift in Sources */,
+				C10000000000000000000016 /* MermaidKitRendererTests.swift in Sources */,
+				FB0000000000000000000001 /* FixturePaths.swift in Sources */,
+				FA0000000000000000000004 /* SourceCodePreviewTests.swift in Sources */,
+				FA0000000000000000000002 /* SourceCodeView.swift in Sources */,
+				D00000000000000000000037 /* SourceThemeRendering.swift in Sources */,
+				F80000000000000000000002 /* StructuredTreeView.swift in Sources */,
+				F81000000000000000000003 /* CSVTablePreviewView.swift in Sources */,
+				E00000000000000000000005 /* PreviewViewControllerTests.swift in Sources */,
+				E00000000000000000000006 /* PreviewExtension.swift in Sources */,
+				E00000000000000000000020 /* ThumbnailRenderer.swift in Sources */,
+				E00000000000000000000022 /* ThumbnailRendererTests.swift in Sources */,
+				E00000000000000000000025 /* ThumbnailExtension.swift in Sources */,
+				B10000000000000000000002 /* GlimtQuickLookDiagnostics.swift in Sources */,
+				B10000000000000000000005 /* QuickLookProviderProvenance.swift in Sources */,
+				B10000000000000000000006 /* GlimtQuickLookDiagnosticsTests.swift in Sources */,
+				B30000000000000000000002 /* GlimtVersion.swift in Sources */,
+				B30000000000000000000003 /* GlimtVersionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C00000000000000000000012 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C00000000000000000000009 /* GlimtPreview */;
+			targetProxy = C00000000000000000000011 /* PBXContainerItemProxy */;
+		};
+		D00000000000000000000012 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D00000000000000000000009 /* GlimtThumbnail */;
+			targetProxy = D00000000000000000000011 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A00000000000000000000018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Glimt/App/GlimtHost.entitlements;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_APP_SANDBOX = YES;
+				INFOPLIST_FILE = Glimt/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Glimt;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				PRODUCT_BUNDLE_IDENTIFIER = com.glimt.app;
+			};
+			name = Debug;
+		};
+		A00000000000000000000019 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Glimt/App/GlimtHost.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Glimt/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Glimt;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				PRODUCT_BUNDLE_IDENTIFIER = com.glimt.app;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		A0000000000000000000001A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B30000000000000000000013 /* Version.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		A0000000000000000000001B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B30000000000000000000013 /* Version.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		C00000000000000000000018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Glimt/PreviewExtension/GlimtPreview.entitlements;
+				ENABLE_APP_SANDBOX = YES;
+				INFOPLIST_FILE = Glimt/PreviewExtension/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glimt.app.preview;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C00000000000000000000019 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Glimt/PreviewExtension/GlimtPreview.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Glimt/PreviewExtension/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glimt.app.preview;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D00000000000000000000018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Glimt/ThumbnailExtension/GlimtThumbnail.entitlements;
+				ENABLE_APP_SANDBOX = YES;
+				INFOPLIST_FILE = Glimt/ThumbnailExtension/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glimt.app.thumbnail;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D00000000000000000000019 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Glimt/ThumbnailExtension/GlimtThumbnail.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Glimt/ThumbnailExtension/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glimt.app.thumbnail;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E00000000000000000000012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glimt.app.preview.tests;
+			};
+			name = Debug;
+		};
+		E00000000000000000000013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.glimt.app.preview.tests;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) GLIMT_TESTING";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A00000000000000000000012 /* Build configuration list for PBXNativeTarget "Glimt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000018 /* Debug */,
+				A00000000000000000000019 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000000016 /* Build configuration list for PBXProject "Glimt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0000000000000000000001A /* Debug */,
+				A0000000000000000000001B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C00000000000000000000010 /* Build configuration list for PBXNativeTarget "GlimtPreview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C00000000000000000000018 /* Debug */,
+				C00000000000000000000019 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D00000000000000000000010 /* Build configuration list for PBXNativeTarget "GlimtThumbnail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D00000000000000000000018 /* Debug */,
+				D00000000000000000000019 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E00000000000000000000010 /* Build configuration list for PBXNativeTarget "GlimtPreviewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E00000000000000000000012 /* Debug */,
+				E00000000000000000000013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		A00000000000000000000017 /* XCLocalSwiftPackageReference "InspectorCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = InspectorCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A0100000000000000000001 /* XCRemoteSwiftPackageReference "SwiftMath" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mgriebling/SwiftMath.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.7.3;
+			};
+		};
+		930000000000000000000010 /* XCRemoteSwiftPackageReference "MermaidKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/2389-research/MermaidKit.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A0100000000000000000002 /* SwiftMath */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A0100000000000000000001 /* XCRemoteSwiftPackageReference "SwiftMath" */;
+			productName = SwiftMath;
+		};
+		0A0100000000000000000003 /* SwiftMath */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A0100000000000000000001 /* XCRemoteSwiftPackageReference "SwiftMath" */;
+			productName = SwiftMath;
+		};
+		0A0100000000000000000004 /* SwiftMath */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A0100000000000000000001 /* XCRemoteSwiftPackageReference "SwiftMath" */;
+			productName = SwiftMath;
+		};
+		930000000000000000000004 /* MermaidRender app */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 930000000000000000000010 /* XCRemoteSwiftPackageReference "MermaidKit" */;
+			productName = MermaidRender;
+		};
+		930000000000000000000005 /* MermaidRender preview */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 930000000000000000000010 /* XCRemoteSwiftPackageReference "MermaidKit" */;
+			productName = MermaidRender;
+		};
+		930000000000000000000006 /* MermaidRender tests */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 930000000000000000000010 /* XCRemoteSwiftPackageReference "MermaidKit" */;
+			productName = MermaidRender;
+		};
+		C00000000000000000000017 /* InspectorCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A00000000000000000000017 /* XCLocalSwiftPackageReference "InspectorCore" */;
+			productName = InspectorCore;
+		};
+		C00000000000000000000070 /* GitInspection */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A00000000000000000000017 /* XCLocalSwiftPackageReference "InspectorCore" */;
+			productName = GitInspection;
+		};
+		D00000000000000000000023 /* InspectorCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A00000000000000000000017 /* XCLocalSwiftPackageReference "InspectorCore" */;
+			productName = InspectorCore;
+		};
+		E00000000000000000000018 /* InspectorCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A00000000000000000000017 /* XCLocalSwiftPackageReference "InspectorCore" */;
+			productName = InspectorCore;
+		};
+		E00000000000000000000070 /* GitInspection */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A00000000000000000000017 /* XCLocalSwiftPackageReference "InspectorCore" */;
+			productName = GitInspection;
+		};
+		FE0000000000000000000500 /* InspectorCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A00000000000000000000017 /* XCLocalSwiftPackageReference "InspectorCore" */;
+			productName = InspectorCore;
+		};
+		FE0000000000000000000510 /* GitInspection */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A00000000000000000000017 /* XCLocalSwiftPackageReference "InspectorCore" */;
+			productName = GitInspection;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A00000000000000000000015 /* Project object */;
+}

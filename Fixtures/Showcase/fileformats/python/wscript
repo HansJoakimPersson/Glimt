@@ -1,0 +1,3 @@
+# Build the viewer from its C source.
+def build(context):
+    context.program(source="main.c", target="viewer")

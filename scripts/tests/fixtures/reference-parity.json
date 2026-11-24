@@ -1,0 +1,3861 @@
+{
+  "source": "https://github.com/sbarex/SourceCodeSyntaxHighlight/blob/676298341741bd343ac81f5142da90c74be6a44f/SyntaxHighlightRenderXPC/languages.json",
+  "revision": "676298341741bd343ac81f5142da90c74be6a44f",
+  "sha256": "03444ed68813de8ef28e5ba9f9e1c9f97ec8f7ac75cd8defc6167c172e5a1910",
+  "aliasNote": "Upstream arrays mix lexer identifiers and filename aliases; these are parity signals, not automatically installed extension claims.",
+  "definitions": [
+    {
+      "reference": "ABAP/4",
+      "referenceAliases": [
+        "abap"
+      ],
+      "formatIDs": [
+        "reference-abap-4"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "ABC",
+      "referenceAliases": [
+        "abc"
+      ],
+      "formatIDs": [
+        "reference-abc"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Advanced Backus-Naur Form",
+      "referenceAliases": [
+        "abnf"
+      ],
+      "formatIDs": [
+        "reference-advanced-backus-naur-form"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "ActionScript",
+      "referenceAliases": [
+        "actionscript",
+        "as"
+      ],
+      "formatIDs": [
+        "actionscript"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Bounded ActionScript source highlighting and a verified showcase cover the .as alias",
+      "unverifiedAliases": [
+        "as"
+      ]
+    },
+    {
+      "reference": "ADA95",
+      "referenceAliases": [
+        "ada",
+        "a",
+        "adb",
+        "ads",
+        "gnad"
+      ],
+      "formatIDs": [
+        "ada",
+        "reference-ada95"
+      ],
+      "status": "PLANNED",
+      "reason": "The .ada alias has bounded source highlighting; additional Ada aliases remain unverified",
+      "unverifiedAliases": [
+        "a",
+        "adb",
+        "ads",
+        "gnad"
+      ]
+    },
+    {
+      "reference": "Agda",
+      "referenceAliases": [
+        "agda"
+      ],
+      "formatIDs": [
+        "reference-agda"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "ALAN Interactive Fiction Language",
+      "referenceAliases": [
+        "alan",
+        "alan",
+        "i"
+      ],
+      "formatIDs": [
+        "reference-alan-interactive-fiction-language"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "alan",
+        "i"
+      ]
+    },
+    {
+      "reference": "ALGOL 68",
+      "referenceAliases": [
+        "algol",
+        "alg"
+      ],
+      "formatIDs": [
+        "reference-algol-68"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "alg"
+      ]
+    },
+    {
+      "reference": "AMPL",
+      "referenceAliases": [
+        "ampl",
+        "dat",
+        "run"
+      ],
+      "formatIDs": [
+        "reference-ampl"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "dat",
+        "run"
+      ]
+    },
+    {
+      "reference": "AMTrix",
+      "referenceAliases": [
+        "amtrix",
+        "hnd",
+        "s4",
+        "s4h",
+        "s4t",
+        "t4"
+      ],
+      "formatIDs": [
+        "reference-amtrix"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "hnd",
+        "s4",
+        "s4h",
+        "s4t",
+        "t4"
+      ]
+    },
+    {
+      "reference": "AppleScript",
+      "referenceAliases": [
+        "applescript"
+      ],
+      "formatIDs": [
+        "applescript"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Bounded AppleScript source highlighting and a verified showcase cover the .applescript alias",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Arc",
+      "referenceAliases": [
+        "arc"
+      ],
+      "formatIDs": [
+        "reference-arc"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "ARM",
+      "referenceAliases": [
+        "arm"
+      ],
+      "formatIDs": [
+        "reference-arm"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "AS/400 CL",
+      "referenceAliases": [
+        "as400cl"
+      ],
+      "formatIDs": [
+        "reference-as-400-cl"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "ASCEND",
+      "referenceAliases": [
+        "ascend",
+        "a4c"
+      ],
+      "formatIDs": [
+        "reference-ascend"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "a4c"
+      ]
+    },
+    {
+      "reference": "AsciiDoc",
+      "referenceAliases": [
+        "asciidoc"
+      ],
+      "formatIDs": [
+        "asciidoc"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Active Server Pages",
+      "referenceAliases": [
+        "asp",
+        "ascx",
+        "ashx",
+        "aspx"
+      ],
+      "formatIDs": [
+        "reference-active-server-pages"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "ascx",
+        "ashx",
+        "aspx"
+      ]
+    },
+    {
+      "reference": "Abstract",
+      "referenceAliases": [
+        "aspect",
+        "was",
+        "wud"
+      ],
+      "formatIDs": [
+        "reference-abstract"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "was",
+        "wud"
+      ]
+    },
+    {
+      "reference": "Generic Assembler",
+      "referenceAliases": [
+        "assembler",
+        "29k",
+        "68s",
+        "68x",
+        "a51",
+        "asm",
+        "x86"
+      ],
+      "formatIDs": [
+        "assembly"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "29k",
+        "68s",
+        "68x",
+        "a51",
+        "x86"
+      ]
+    },
+    {
+      "reference": "Applied Type System",
+      "referenceAliases": [
+        "ats",
+        "dats"
+      ],
+      "formatIDs": [
+        "reference-applied-type-system"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "dats"
+      ]
+    },
+    {
+      "reference": "AutoHotKey",
+      "referenceAliases": [
+        "autohotkey",
+        "ahk"
+      ],
+      "formatIDs": [
+        "reference-autohotkey"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "ahk"
+      ]
+    },
+    {
+      "reference": "AutoIt",
+      "referenceAliases": [
+        "autoit",
+        "au3"
+      ],
+      "formatIDs": [
+        "reference-autoit"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "au3"
+      ]
+    },
+    {
+      "reference": "Avenue",
+      "referenceAliases": [
+        "avenue"
+      ],
+      "formatIDs": [
+        "reference-avenue"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "(G)AWK",
+      "referenceAliases": [
+        "awk"
+      ],
+      "formatIDs": [
+        "awk"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Bounded AWK source highlighting and a verified showcase cover the .awk alias",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Ballerina",
+      "referenceAliases": [
+        "ballerina"
+      ],
+      "formatIDs": [
+        "reference-ballerina"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "MS DOS Batch",
+      "referenceAliases": [
+        "bat",
+        "cmd"
+      ],
+      "formatIDs": [
+        "batch"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "BBcode",
+      "referenceAliases": [
+        "bbcode"
+      ],
+      "formatIDs": [
+        "reference-bbcode"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "BCPL",
+      "referenceAliases": [
+        "bcpl"
+      ],
+      "formatIDs": [
+        "reference-bcpl"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "BibTeX",
+      "referenceAliases": [
+        "bibtex",
+        "bib"
+      ],
+      "formatIDs": [
+        "bibtex"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Biferno",
+      "referenceAliases": [
+        "biferno",
+        "bfr"
+      ],
+      "formatIDs": [
+        "reference-biferno"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "bfr"
+      ]
+    },
+    {
+      "reference": "Bison",
+      "referenceAliases": [
+        "bison",
+        "y"
+      ],
+      "formatIDs": [
+        "reference-bison"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "y"
+      ]
+    },
+    {
+      "reference": "Blitz Basic",
+      "referenceAliases": [
+        "blitzbasic",
+        "bb"
+      ],
+      "formatIDs": [
+        "reference-blitz-basic"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "bb"
+      ]
+    },
+    {
+      "reference": "BM Script",
+      "referenceAliases": [
+        "bms"
+      ],
+      "formatIDs": [
+        "reference-bm-script"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Backus-Naur Form",
+      "referenceAliases": [
+        "bnf"
+      ],
+      "formatIDs": [
+        "reference-backus-naur-form"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Boo",
+      "referenceAliases": [
+        "boo"
+      ],
+      "formatIDs": [
+        "reference-boo"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "C and C++",
+      "referenceAliases": [
+        "c",
+        "c++",
+        "cc",
+        "cpp",
+        "cu",
+        "cxx",
+        "h",
+        "hh",
+        "hpp",
+        "hxx"
+      ],
+      "formatIDs": [
+        "c",
+        "cpp"
+      ],
+      "status": "PLANNED",
+      "reason": "Core format supported; full reference definition has unverified aliases or additional grammars. Not counted as complete parity.",
+      "unverifiedAliases": [
+        "c++",
+        "cu"
+      ]
+    },
+    {
+      "reference": "Carbon",
+      "referenceAliases": [
+        "carbon"
+      ],
+      "formatIDs": [
+        "reference-carbon"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Ceylon",
+      "referenceAliases": [
+        "ceylon"
+      ],
+      "formatIDs": [
+        "reference-ceylon"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Charmm",
+      "referenceAliases": [
+        "charmm",
+        "inp"
+      ],
+      "formatIDs": [
+        "reference-charmm"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "inp"
+      ]
+    },
+    {
+      "reference": "CHILL",
+      "referenceAliases": [
+        "chill",
+        "chl"
+      ],
+      "formatIDs": [
+        "reference-chill"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "chl"
+      ]
+    },
+    {
+      "reference": "Chapel",
+      "referenceAliases": [
+        "chpl"
+      ],
+      "formatIDs": [
+        "reference-chapel"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Clean",
+      "referenceAliases": [
+        "clean",
+        "icl"
+      ],
+      "formatIDs": [
+        "reference-clean"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "icl"
+      ]
+    },
+    {
+      "reference": "ClearBasic",
+      "referenceAliases": [
+        "clearbasic",
+        "cb"
+      ],
+      "formatIDs": [
+        "reference-clearbasic"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "cb"
+      ]
+    },
+    {
+      "reference": "Clipper",
+      "referenceAliases": [
+        "clipper"
+      ],
+      "formatIDs": [
+        "reference-clipper"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Clojure",
+      "referenceAliases": [
+        "clojure",
+        "clj"
+      ],
+      "formatIDs": [
+        "clojure"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Clips",
+      "referenceAliases": [
+        "clp"
+      ],
+      "formatIDs": [
+        "reference-clips"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "CMake",
+      "referenceAliases": [
+        "cmake"
+      ],
+      "formatIDs": [
+        "cmake"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "COBOL",
+      "referenceAliases": [
+        "cobol",
+        "cbl",
+        "cob"
+      ],
+      "formatIDs": [
+        "cobol"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Bounded case-insensitive COBOL source highlighting covers .cob and .cbl, fixed-format comments and malformed/truncated fixtures",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Coffeescript",
+      "referenceAliases": [
+        "coffeescript"
+      ],
+      "formatIDs": [
+        "reference-coffeescript"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "ColdFusion MX",
+      "referenceAliases": [
+        "coldfusion",
+        "cfc",
+        "cfm"
+      ],
+      "formatIDs": [
+        "reference-coldfusion-mx"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "cfc",
+        "cfm"
+      ]
+    },
+    {
+      "reference": "Generic config files",
+      "referenceAliases": [
+        "conf",
+        "anacrontab"
+      ],
+      "formatIDs": [
+        "reference-generic-config-files"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "anacrontab"
+      ]
+    },
+    {
+      "reference": "Cpp2",
+      "referenceAliases": [
+        "cpp2"
+      ],
+      "formatIDs": [
+        "reference-cpp2"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "CriticMarkup",
+      "referenceAliases": [
+        "critic"
+      ],
+      "formatIDs": [
+        "reference-criticmarkup"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Crack",
+      "referenceAliases": [
+        "crk"
+      ],
+      "formatIDs": [
+        "reference-crack"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Crystal",
+      "referenceAliases": [
+        "crystal",
+        "cr"
+      ],
+      "formatIDs": [
+        "reference-crystal"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "cr"
+      ]
+    },
+    {
+      "reference": "Coffeescript Block Regex",
+      "referenceAliases": [
+        "cs_block_regex"
+      ],
+      "formatIDs": [
+        "reference-coffeescript-block-regex"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "C#",
+      "referenceAliases": [
+        "csharp",
+        "cs"
+      ],
+      "formatIDs": [
+        "csharp"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "C# Unity",
+      "referenceAliases": [
+        "csharp_unity"
+      ],
+      "formatIDs": [
+        "reference-c-unity"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "CSS",
+      "referenceAliases": [
+        "css"
+      ],
+      "formatIDs": [
+        "css"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "CUE",
+      "referenceAliases": [
+        "cue"
+      ],
+      "formatIDs": [
+        "cue"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "D",
+      "referenceAliases": [
+        "d"
+      ],
+      "formatIDs": [
+        "reference-d"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Dart",
+      "referenceAliases": [
+        "dart"
+      ],
+      "formatIDs": [
+        "dart"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "delphi",
+      "referenceAliases": [
+        "delphi",
+        "dpr pas"
+      ],
+      "formatIDs": [
+        "reference-delphi"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "dpr pas"
+      ]
+    },
+    {
+      "reference": "Diff",
+      "referenceAliases": [
+        "diff",
+        "patch"
+      ],
+      "formatIDs": [
+        "diff"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Dockerfile",
+      "referenceAliases": [
+        "dockerfile"
+      ],
+      "formatIDs": [
+        "dockerfile"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Device Tree Source",
+      "referenceAliases": [
+        "dts",
+        "dtsi"
+      ],
+      "formatIDs": [
+        "device-tree-source"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Bounded Device Tree Source highlighting covers .dts and .dtsi with showcase and malformed/truncated fixtures",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Dylan",
+      "referenceAliases": [
+        "dylan"
+      ],
+      "formatIDs": [
+        "reference-dylan"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Extended Backus-Naur Form",
+      "referenceAliases": [
+        "ebnf"
+      ],
+      "formatIDs": [
+        "reference-extended-backus-naur-form"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "EBNF2",
+      "referenceAliases": [
+        "ebnf2"
+      ],
+      "formatIDs": [
+        "reference-ebnf2"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Eiffel",
+      "referenceAliases": [
+        "eiffel",
+        "e",
+        "se"
+      ],
+      "formatIDs": [
+        "reference-eiffel"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "e",
+        "se"
+      ]
+    },
+    {
+      "reference": "Elixir",
+      "referenceAliases": [
+        "elixir",
+        "ex",
+        "exs"
+      ],
+      "formatIDs": [
+        "elixir"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Elm",
+      "referenceAliases": [
+        "elm"
+      ],
+      "formatIDs": [
+        "reference-elm"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "E-Mail treated as Markup",
+      "referenceAliases": [
+        "email"
+      ],
+      "formatIDs": [
+        "reference-e-mail-treated-as-markup"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "ERB Templates",
+      "referenceAliases": [
+        "erb"
+      ],
+      "formatIDs": [
+        "erb"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Bounded mixed HTML/Ruby token highlighting for .erb with preserved source; template code is never evaluated",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Erlang",
+      "referenceAliases": [
+        "erlang",
+        "erl",
+        "hrl"
+      ],
+      "formatIDs": [
+        "erlang"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Euphoria",
+      "referenceAliases": [
+        "euphoria",
+        "eu",
+        "ew",
+        "exw ",
+        "wxu"
+      ],
+      "formatIDs": [
+        "reference-euphoria"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "eu",
+        "ew",
+        "exw ",
+        "wxu"
+      ]
+    },
+    {
+      "reference": "EXAPUNKS",
+      "referenceAliases": [
+        "exapunks",
+        "exa",
+        "exapunks"
+      ],
+      "formatIDs": [
+        "reference-exapunks"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "exa",
+        "exapunks"
+      ]
+    },
+    {
+      "reference": "Excel Formulas",
+      "referenceAliases": [
+        "excel"
+      ],
+      "formatIDs": [
+        "reference-excel-formulas"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Express",
+      "referenceAliases": [
+        "express",
+        "exp"
+      ],
+      "formatIDs": [
+        "reference-express"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "exp"
+      ]
+    },
+    {
+      "reference": "Factor",
+      "referenceAliases": [
+        "factor"
+      ],
+      "formatIDs": [
+        "reference-factor"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "FAME",
+      "referenceAliases": [
+        "fame",
+        "fame"
+      ],
+      "formatIDs": [
+        "reference-fame"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "fame"
+      ]
+    },
+    {
+      "reference": "fasm",
+      "referenceAliases": [
+        "fasm",
+        "inc"
+      ],
+      "formatIDs": [
+        "reference-fasm"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "inc"
+      ]
+    },
+    {
+      "reference": "OpenType Feature File",
+      "referenceAliases": [
+        "fea"
+      ],
+      "formatIDs": [
+        "reference-opentype-feature-file"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Felix",
+      "referenceAliases": [
+        "felix",
+        "flx"
+      ],
+      "formatIDs": [
+        "reference-felix"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "flx"
+      ]
+    },
+    {
+      "reference": "Fish",
+      "referenceAliases": [
+        "fish"
+      ],
+      "formatIDs": [
+        "fish"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Validated Fish showcase, extension detection and bounded lexical highlighting",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Fortran 77",
+      "referenceAliases": [
+        "fortran77",
+        "f",
+        "for",
+        "ftn"
+      ],
+      "formatIDs": [
+        "fortran"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Fortran .f and .for are supported; the .ftn alias remains unimplemented",
+      "unverifiedAliases": [
+        "ftn"
+      ]
+    },
+    {
+      "reference": "Fortran 90",
+      "referenceAliases": [
+        "fortran90",
+        "f90",
+        "f95"
+      ],
+      "formatIDs": [
+        "fortran"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Validated free-form Fortran showcase, suffix routing and bounded lexical highlighting",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Frink",
+      "referenceAliases": [
+        "frink"
+      ],
+      "formatIDs": [
+        "reference-frink"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "F#",
+      "referenceAliases": [
+        "fsharp",
+        "fs",
+        "fsx"
+      ],
+      "formatIDs": [
+        "fsharp"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Validated F# showcase, both suffixes and bounded lexical highlighting; .fs filename evidence outranks the system GLSL type",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "fstab config file",
+      "referenceAliases": [
+        "fstab"
+      ],
+      "formatIDs": [
+        "reference-fstab-config-file"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Java FX",
+      "referenceAliases": [
+        "fx"
+      ],
+      "formatIDs": [
+        "reference-java-fx"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Gambas",
+      "referenceAliases": [
+        "gambas",
+        "class"
+      ],
+      "formatIDs": [
+        "reference-gambas"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "class"
+      ]
+    },
+    {
+      "reference": "gdb",
+      "referenceAliases": [
+        "gdb"
+      ],
+      "formatIDs": [
+        "reference-gdb"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "GDScript",
+      "referenceAliases": [
+        "gdscript",
+        "gd"
+      ],
+      "formatIDs": [
+        "gdscript"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Validated GDScript showcase, suffix routing and bounded lexical highlighting",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Gleam",
+      "referenceAliases": [
+        "gleam"
+      ],
+      "formatIDs": [
+        "gleam"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Validated Gleam showcase, suffix routing and bounded lexical highlighting",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Go",
+      "referenceAliases": [
+        "go"
+      ],
+      "formatIDs": [
+        "go"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Validated Go showcase, suffix routing and bounded lexical highlighting",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Graphviz",
+      "referenceAliases": [
+        "graphviz",
+        "dot"
+      ],
+      "formatIDs": [
+        "graphviz"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Haml (HTML Abstraction Markup Language)",
+      "referenceAliases": [
+        "haml"
+      ],
+      "formatIDs": [
+        "reference-haml-html-abstraction-markup-language"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Hare",
+      "referenceAliases": [
+        "hare"
+      ],
+      "formatIDs": [
+        "reference-hare"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Haskell",
+      "referenceAliases": [
+        "haskell",
+        "hs"
+      ],
+      "formatIDs": [
+        "haskell"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Validated Haskell showcase, suffix routing and bounded lexical highlighting",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "haXe",
+      "referenceAliases": [
+        "haxe",
+        "hx"
+      ],
+      "formatIDs": [
+        "reference-haxe"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "hx"
+      ]
+    },
+    {
+      "reference": "Hecl",
+      "referenceAliases": [
+        "hcl"
+      ],
+      "formatIDs": [
+        "reference-hecl"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "HTML",
+      "referenceAliases": [
+        "html",
+        "htm",
+        "jinja",
+        "twig",
+        "xhtml"
+      ],
+      "formatIDs": [
+        "html"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "jinja",
+        "twig"
+      ]
+    },
+    {
+      "reference": "Apache Config",
+      "referenceAliases": [
+        "httpd"
+      ],
+      "formatIDs": [
+        "reference-apache-config"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Hugo",
+      "referenceAliases": [
+        "hugo",
+        "hug"
+      ],
+      "formatIDs": [
+        "reference-hugo"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "hug"
+      ]
+    },
+    {
+      "reference": "Icon",
+      "referenceAliases": [
+        "icon",
+        "icn"
+      ],
+      "formatIDs": [
+        "reference-icon"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "icn"
+      ]
+    },
+    {
+      "reference": "IDL",
+      "referenceAliases": [
+        "idl"
+      ],
+      "formatIDs": [
+        "reference-idl"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Interactive Data Language",
+      "referenceAliases": [
+        "idlang"
+      ],
+      "formatIDs": [
+        "reference-interactive-data-language"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Lua (for LuaTeX)",
+      "referenceAliases": [
+        "inc_luatex"
+      ],
+      "formatIDs": [
+        "reference-lua-for-luatex"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Svelte template block (nested in svelte.lang)",
+      "referenceAliases": [
+        "inc_svelteblock"
+      ],
+      "formatIDs": [
+        "reference-svelte-template-block-nested-in-svelte-lang"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Informix",
+      "referenceAliases": [
+        "informix",
+        "4gl"
+      ],
+      "formatIDs": [
+        "reference-informix"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "4gl"
+      ]
+    },
+    {
+      "reference": "INI",
+      "referenceAliases": [
+        "ini",
+        "desktop",
+        "doxyfile",
+        "kdev3"
+      ],
+      "formatIDs": [
+        "ini"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "desktop",
+        "doxyfile",
+        "kdev3"
+      ]
+    },
+    {
+      "reference": "Inno Setup",
+      "referenceAliases": [
+        "innosetup",
+        "iss"
+      ],
+      "formatIDs": [
+        "reference-inno-setup"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "iss"
+      ]
+    },
+    {
+      "reference": "INTERLIS",
+      "referenceAliases": [
+        "interlis",
+        "ili"
+      ],
+      "formatIDs": [
+        "reference-interlis"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "ili"
+      ]
+    },
+    {
+      "reference": "IO",
+      "referenceAliases": [
+        "io"
+      ],
+      "formatIDs": [
+        "reference-io"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Jam",
+      "referenceAliases": [
+        "jam",
+        "ham",
+        "jam"
+      ],
+      "formatIDs": [
+        "reference-jam"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "ham",
+        "jam"
+      ]
+    },
+    {
+      "reference": "Jasmin",
+      "referenceAliases": [
+        "jasmin",
+        "j"
+      ],
+      "formatIDs": [
+        "reference-jasmin"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "j"
+      ]
+    },
+    {
+      "reference": "Java",
+      "referenceAliases": [
+        "java",
+        "gradle",
+        "groovy",
+        "grv",
+        "jenkinsfile"
+      ],
+      "formatIDs": [
+        "java"
+      ],
+      "status": "PLANNED",
+      "reason": "Java, Gradle Groovy DSL and Groovy files are supported; full reference definition still has unverified aliases.",
+      "unverifiedAliases": [
+        "grv",
+        "jenkinsfile"
+      ]
+    },
+    {
+      "reference": "Javascript",
+      "referenceAliases": [
+        "javascript"
+      ],
+      "formatIDs": [
+        "javascript"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Validated showcase and normal inspection/rendering",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Javascript Regex",
+      "referenceAliases": [
+        "js_regex"
+      ],
+      "formatIDs": [
+        "reference-javascript-regex"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "JSON",
+      "referenceAliases": [
+        "json"
+      ],
+      "formatIDs": [
+        "json"
+      ],
+      "status": "REPLACED_BY_BETTER_GLIMT_INSPECTOR",
+      "reason": "Validated showcase and normal inspection/rendering",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "JavaServer Pages",
+      "referenceAliases": [
+        "jsp"
+      ],
+      "formatIDs": [
+        "jsp"
+      ],
+      "status": "REPLACED_BY_BETTER_GLIMT_INSPECTOR",
+      "reason": "Bounded JSP source highlighting and a verified showcase cover the .jsp alias",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "JSX",
+      "referenceAliases": [
+        "jsx"
+      ],
+      "formatIDs": [
+        "jsx"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Bounded JSX source highlighting and a verified showcase cover the .jsx alias",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Julia",
+      "referenceAliases": [
+        "julia",
+        "jl"
+      ],
+      "formatIDs": [
+        "julia"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "KDL",
+      "referenceAliases": [
+        "kdl"
+      ],
+      "formatIDs": [
+        "kdl"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Kotlin",
+      "referenceAliases": [
+        "kotlin",
+        "kt"
+      ],
+      "formatIDs": [
+        "kotlin"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "LDAP",
+      "referenceAliases": [
+        "ldif"
+      ],
+      "formatIDs": [
+        "reference-ldap"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "LESS",
+      "referenceAliases": [
+        "less"
+      ],
+      "formatIDs": [
+        "less"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Haskell LHS",
+      "referenceAliases": [
+        "lhs"
+      ],
+      "formatIDs": [
+        "haskell"
+      ],
+      "status": "REPLACED_BY_BETTER_GLIMT_INSPECTOR",
+      "reason": "Literate Haskell uses the Haskell lexical source inspector with Bird/LaTeX prose filtering",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Lilypond",
+      "referenceAliases": [
+        "lilypond",
+        "ly"
+      ],
+      "formatIDs": [
+        "reference-lilypond"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "ly"
+      ]
+    },
+    {
+      "reference": "Limbo",
+      "referenceAliases": [
+        "limbo",
+        "b"
+      ],
+      "formatIDs": [
+        "reference-limbo"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "b"
+      ]
+    },
+    {
+      "reference": "Linden Script",
+      "referenceAliases": [
+        "lindenscript",
+        "lsl"
+      ],
+      "formatIDs": [
+        "reference-linden-script"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "lsl"
+      ]
+    },
+    {
+      "reference": "Lisp",
+      "referenceAliases": [
+        "lisp",
+        "cl",
+        "clisp",
+        "el",
+        "fas",
+        "lsp",
+        "sbcl",
+        "scm",
+        "scom",
+        "ss",
+        "sls",
+        "sps",
+        "sld",
+        "sch",
+        "rkt"
+      ],
+      "formatIDs": [
+        "reference-lisp"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "cl",
+        "clisp",
+        "el",
+        "fas",
+        "lsp",
+        "sbcl",
+        "scm",
+        "scom",
+        "ss",
+        "sls",
+        "sps",
+        "sld",
+        "sch",
+        "rkt"
+      ]
+    },
+    {
+      "reference": "Logtalk",
+      "referenceAliases": [
+        "logtalk",
+        "lgt"
+      ],
+      "formatIDs": [
+        "reference-logtalk"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "lgt"
+      ]
+    },
+    {
+      "reference": "Lotos",
+      "referenceAliases": [
+        "lotos"
+      ],
+      "formatIDs": [
+        "reference-lotos"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Lotus",
+      "referenceAliases": [
+        "lotus",
+        "ls"
+      ],
+      "formatIDs": [
+        "reference-lotus"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "ls"
+      ]
+    },
+    {
+      "reference": "Lua",
+      "referenceAliases": [
+        "lua"
+      ],
+      "formatIDs": [
+        "lua"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Luban",
+      "referenceAliases": [
+        "luban",
+        "lbn"
+      ],
+      "formatIDs": [
+        "reference-luban"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "lbn"
+      ]
+    },
+    {
+      "reference": "Make",
+      "referenceAliases": [
+        "makefile"
+      ],
+      "formatIDs": [
+        "make"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Maple",
+      "referenceAliases": [
+        "maple",
+        "mpl"
+      ],
+      "formatIDs": [
+        "reference-maple"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "mpl"
+      ]
+    },
+    {
+      "reference": "GitHub Flavored Markdown",
+      "referenceAliases": [
+        "markdown",
+        "markdown",
+        "md"
+      ],
+      "formatIDs": [
+        "reference-github-flavored-markdown"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "markdown",
+        "md"
+      ]
+    },
+    {
+      "reference": "Matlab",
+      "referenceAliases": [
+        "matlab",
+        "m"
+      ],
+      "formatIDs": [
+        "matlab"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Maya",
+      "referenceAliases": [
+        "maya",
+        "mel"
+      ],
+      "formatIDs": [
+        "reference-maya"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "mel"
+      ]
+    },
+    {
+      "reference": "Mercury",
+      "referenceAliases": [
+        "mercury"
+      ],
+      "formatIDs": [
+        "reference-mercury"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Meson",
+      "referenceAliases": [
+        "meson"
+      ],
+      "formatIDs": [
+        "meson"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "MiniScript",
+      "referenceAliases": [
+        "ms"
+      ],
+      "formatIDs": [
+        "reference-miniscript"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Miranda",
+      "referenceAliases": [
+        "miranda"
+      ],
+      "formatIDs": [
+        "reference-miranda"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Modula2",
+      "referenceAliases": [
+        "mod2",
+        "def",
+        "mod"
+      ],
+      "formatIDs": [
+        "reference-modula2"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "def",
+        "mod"
+      ]
+    },
+    {
+      "reference": "Modula3",
+      "referenceAliases": [
+        "mod3",
+        "i3",
+        "m3"
+      ],
+      "formatIDs": [
+        "reference-modula3"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "i3",
+        "m3"
+      ]
+    },
+    {
+      "reference": "Modelica",
+      "referenceAliases": [
+        "modelica",
+        "mo"
+      ],
+      "formatIDs": [
+        "reference-modelica"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "mo"
+      ]
+    },
+    {
+      "reference": "Mojo",
+      "referenceAliases": [
+        "mojo"
+      ],
+      "formatIDs": [
+        "reference-mojo"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "MoonScript",
+      "referenceAliases": [
+        "moon"
+      ],
+      "formatIDs": [
+        "reference-moonscript"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "MaxScript",
+      "referenceAliases": [
+        "ms"
+      ],
+      "formatIDs": [
+        "reference-maxscript"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "mIRC Scripting",
+      "referenceAliases": [
+        "msl",
+        "nbs"
+      ],
+      "formatIDs": [
+        "reference-mirc-scripting"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "nbs"
+      ]
+    },
+    {
+      "reference": "MSSQL",
+      "referenceAliases": [
+        "mssql"
+      ],
+      "formatIDs": [
+        "reference-mssql"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Magic eXtensible Markup",
+      "referenceAliases": [
+        "mxml"
+      ],
+      "formatIDs": [
+        "reference-magic-extensible-markup"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Notation3 (N3), N-Triples, Turtle, SPARQL",
+      "referenceAliases": [
+        "n3",
+        "nt",
+        "ttl"
+      ],
+      "formatIDs": [
+        "reference-notation3-n3-n-triples-turtle-sparql"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "nt",
+        "ttl"
+      ]
+    },
+    {
+      "reference": "Nasal",
+      "referenceAliases": [
+        "nasal",
+        "nas"
+      ],
+      "formatIDs": [
+        "reference-nasal"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "nas"
+      ]
+    },
+    {
+      "reference": "NeXT Byte Codes",
+      "referenceAliases": [
+        "nbc"
+      ],
+      "formatIDs": [
+        "reference-next-byte-codes"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Nemerle",
+      "referenceAliases": [
+        "nemerle",
+        "n"
+      ],
+      "formatIDs": [
+        "reference-nemerle"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "n"
+      ]
+    },
+    {
+      "reference": "NetRexx",
+      "referenceAliases": [
+        "netrexx",
+        "nrx"
+      ],
+      "formatIDs": [
+        "reference-netrexx"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "nrx"
+      ]
+    },
+    {
+      "reference": "Nginx configuration",
+      "referenceAliases": [
+        "nginx"
+      ],
+      "formatIDs": [
+        "reference-nginx-configuration"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Nice",
+      "referenceAliases": [
+        "nice"
+      ],
+      "formatIDs": [
+        "reference-nice"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Nim",
+      "referenceAliases": [
+        "nim"
+      ],
+      "formatIDs": [
+        "nim"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Bounded Nim source highlighting and a verified showcase cover .nim",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Nix Expression Language",
+      "referenceAliases": [
+        "nix"
+      ],
+      "formatIDs": [
+        "reference-nix-expression-language"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "NSIS",
+      "referenceAliases": [
+        "nsis",
+        "nsh",
+        "nsi"
+      ],
+      "formatIDs": [
+        "reference-nsis"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "nsh",
+        "nsi"
+      ]
+    },
+    {
+      "reference": "Not eXactly C",
+      "referenceAliases": [
+        "nxc"
+      ],
+      "formatIDs": [
+        "reference-not-exactly-c"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Oberon",
+      "referenceAliases": [
+        "oberon",
+        "ooc"
+      ],
+      "formatIDs": [
+        "reference-oberon"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "ooc"
+      ]
+    },
+    {
+      "reference": "Objective C",
+      "referenceAliases": [
+        "objc"
+      ],
+      "formatIDs": [
+        "objective-c"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Objective Caml",
+      "referenceAliases": [
+        "ocaml",
+        "ml",
+        "mli"
+      ],
+      "formatIDs": [
+        "reference-objective-caml"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "ml",
+        "mli"
+      ]
+    },
+    {
+      "reference": "Octave",
+      "referenceAliases": [
+        "octave"
+      ],
+      "formatIDs": [
+        "reference-octave"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "OpenObjectRexx",
+      "referenceAliases": [
+        "oorexx"
+      ],
+      "formatIDs": [
+        "reference-openobjectrexx"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Emacs Org-Mode",
+      "referenceAliases": [
+        "org"
+      ],
+      "formatIDs": [
+        "org"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Bounded native Org Mode source lexer with valid showcase and malformed fixture; source only, no block execution",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Object Script",
+      "referenceAliases": [
+        "os"
+      ],
+      "formatIDs": [
+        "reference-object-script"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Oz",
+      "referenceAliases": [
+        "oz"
+      ],
+      "formatIDs": [
+        "reference-oz"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Paradox",
+      "referenceAliases": [
+        "paradox",
+        "sc"
+      ],
+      "formatIDs": [
+        "reference-paradox"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "sc"
+      ]
+    },
+    {
+      "reference": "Pascal",
+      "referenceAliases": [
+        "pas",
+        "dpr",
+        "dpk",
+        "lpr"
+      ],
+      "formatIDs": [
+        "pascal"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Bounded Pascal/Delphi source highlighting with showcase and malformed/truncated fixtures; .pp requires structural content evidence to avoid Puppet conflicts",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Portable Document Format",
+      "referenceAliases": [
+        "pdf"
+      ],
+      "formatIDs": [
+        "reference-portable-document-format"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Perl",
+      "referenceAliases": [
+        "perl",
+        "cgi",
+        "perl",
+        "pl",
+        "plex",
+        "plx",
+        "pm"
+      ],
+      "formatIDs": [
+        "perl"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "cgi",
+        "perl",
+        "plex",
+        "plx"
+      ]
+    },
+    {
+      "reference": "PHP",
+      "referenceAliases": [
+        "php",
+        "php3",
+        "php4",
+        "php5",
+        "php6",
+        "php7",
+        "phps",
+        "phpt"
+      ],
+      "formatIDs": [
+        "php"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "php3",
+        "php4",
+        "php5",
+        "php6",
+        "php7",
+        "phps",
+        "phpt"
+      ]
+    },
+    {
+      "reference": "Pike",
+      "referenceAliases": [
+        "pike",
+        "pmod"
+      ],
+      "formatIDs": [
+        "reference-pike"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "pmod"
+      ]
+    },
+    {
+      "reference": "PL/1",
+      "referenceAliases": [
+        "pl1",
+        "bdy",
+        "ff",
+        "fp",
+        "fpp",
+        "rpp",
+        "sf",
+        "sp",
+        "spb",
+        "spe",
+        "spp",
+        "sps",
+        "wf",
+        "wp",
+        "wpb",
+        "wpp",
+        "wps"
+      ],
+      "formatIDs": [
+        "reference-pl-1"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "bdy",
+        "ff",
+        "fp",
+        "fpp",
+        "rpp",
+        "sf",
+        "sp",
+        "spb",
+        "spe",
+        "spp",
+        "sps",
+        "wf",
+        "wp",
+        "wpb",
+        "wpp",
+        "wps"
+      ]
+    },
+    {
+      "reference": "PL/Perl",
+      "referenceAliases": [
+        "plperl"
+      ],
+      "formatIDs": [
+        "reference-pl-perl"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "PL/Python",
+      "referenceAliases": [
+        "plpython"
+      ],
+      "formatIDs": [
+        "reference-pl-python"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "PL/Tcl",
+      "referenceAliases": [
+        "pltcl"
+      ],
+      "formatIDs": [
+        "reference-pl-tcl"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "PO translation",
+      "referenceAliases": [
+        "po",
+        "pot"
+      ],
+      "formatIDs": [
+        "gettext"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Bounded gettext PO/POT source highlighting covers directives, comments, strings, plural entries and malformed/truncated fixtures",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Polygen",
+      "referenceAliases": [
+        "polygen",
+        "grm"
+      ],
+      "formatIDs": [
+        "reference-polygen"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "grm"
+      ]
+    },
+    {
+      "reference": "Pony",
+      "referenceAliases": [
+        "pony"
+      ],
+      "formatIDs": [
+        "reference-pony"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "POV-Ray",
+      "referenceAliases": [
+        "pov"
+      ],
+      "formatIDs": [
+        "reference-pov-ray"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Microsoft PowerShell",
+      "referenceAliases": [
+        "powershell"
+      ],
+      "formatIDs": [
+        "reference-microsoft-powershell"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Prolog",
+      "referenceAliases": [
+        "pro",
+        "pro"
+      ],
+      "formatIDs": [
+        "reference-prolog"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "pro"
+      ]
+    },
+    {
+      "reference": "Progress",
+      "referenceAliases": [
+        "progress",
+        "p",
+        "w"
+      ],
+      "formatIDs": [
+        "reference-progress"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "p",
+        "w"
+      ]
+    },
+    {
+      "reference": "PostScript",
+      "referenceAliases": [
+        "ps"
+      ],
+      "formatIDs": [
+        "reference-postscript"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "PATROL",
+      "referenceAliases": [
+        "psl"
+      ],
+      "formatIDs": [
+        "reference-patrol"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Pure",
+      "referenceAliases": [
+        "pure"
+      ],
+      "formatIDs": [
+        "reference-pure"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "PureBASIC",
+      "referenceAliases": [
+        "purebasic",
+        "pb",
+        "pbf",
+        "pbi"
+      ],
+      "formatIDs": [
+        "reference-purebasic"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "pb",
+        "pbf",
+        "pbi"
+      ]
+    },
+    {
+      "reference": "PureScript",
+      "referenceAliases": [
+        "purs",
+        "pureScript"
+      ],
+      "formatIDs": [
+        "reference-purescript"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "pureScript"
+      ]
+    },
+    {
+      "reference": "Pyrex",
+      "referenceAliases": [
+        "pyrex",
+        "pyx"
+      ],
+      "formatIDs": [
+        "reference-pyrex"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "pyx"
+      ]
+    },
+    {
+      "reference": "Python",
+      "referenceAliases": [
+        "python",
+        "cpy",
+        "gyp",
+        "gypi",
+        "pxd",
+        "pxi",
+        "py",
+        "py3",
+        "pyi",
+        "pyw",
+        "rpy",
+        "sconstruct",
+        "snakefile",
+        "wscript"
+      ],
+      "formatIDs": [
+        "python"
+      ],
+      "status": "PLANNED",
+      "reason": "Core format supported; full reference definition has unverified aliases or additional grammars. Not counted as complete parity.",
+      "unverifiedAliases": [
+        "cpy",
+        "gyp",
+        "gypi",
+        "pxd",
+        "pxi",
+        "py3",
+        "pyw",
+        "rpy",
+        "wscript"
+      ]
+    },
+    {
+      "reference": "Qore",
+      "referenceAliases": [
+        "q"
+      ],
+      "formatIDs": [
+        "reference-qore"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "QMake Project",
+      "referenceAliases": [
+        "qmake"
+      ],
+      "formatIDs": [
+        "reference-qmake-project"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "QML",
+      "referenceAliases": [
+        "qml"
+      ],
+      "formatIDs": [
+        "qml"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Bounded QML source highlighting covers .qml with showcase and malformed/truncated fixtures",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Qu",
+      "referenceAliases": [
+        "qu"
+      ],
+      "formatIDs": [
+        "reference-qu"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "R",
+      "referenceAliases": [
+        "r"
+      ],
+      "formatIDs": [
+        "r"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Rebol",
+      "referenceAliases": [
+        "rebol"
+      ],
+      "formatIDs": [
+        "reference-rebol"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Rego",
+      "referenceAliases": [
+        "rego"
+      ],
+      "formatIDs": [
+        "rego"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Rexx",
+      "referenceAliases": [
+        "rexx",
+        "rex",
+        "rx",
+        "the"
+      ],
+      "formatIDs": [
+        "reference-rexx"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "rex",
+        "rx",
+        "the"
+      ]
+    },
+    {
+      "reference": "Relax NG",
+      "referenceAliases": [
+        "rnc"
+      ],
+      "formatIDs": [
+        "reference-relax-ng"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "RPG",
+      "referenceAliases": [
+        "rpg"
+      ],
+      "formatIDs": [
+        "reference-rpg"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "RPL Programming Language",
+      "referenceAliases": [
+        "rpl"
+      ],
+      "formatIDs": [
+        "reference-rpl-programming-language"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "reStructured Text",
+      "referenceAliases": [
+        "rst"
+      ],
+      "formatIDs": [
+        "reference-restructured-text"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Ruby",
+      "referenceAliases": [
+        "appfile",
+        "appraisals",
+        "berksfile",
+        "brewfile",
+        "capfile",
+        "cheffile",
+        "config.ru",
+        "deliverfile",
+        "fastfile",
+        "fcgi",
+        "gemfile",
+        "gemspec",
+        "guardfile",
+        "irbrc",
+        "jbuilder",
+        "podfile",
+        "podspec",
+        "pp",
+        "prawn",
+        "rabl",
+        "rake",
+        "rakefile",
+        "rantfile",
+        "rb",
+        "rbx",
+        "rjs",
+        "ruby",
+        "scanfile",
+        "simplecov",
+        "snapfile",
+        "thor",
+        "thorfile",
+        "vagrantfile"
+      ],
+      "formatIDs": [
+        "ruby"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "appraisals",
+        "berksfile",
+        "brewfile",
+        "capfile",
+        "cheffile",
+        "config.ru",
+        "deliverfile",
+        "fastfile",
+        "fcgi",
+        "gemspec",
+        "guardfile",
+        "irbrc",
+        "jbuilder",
+        "podspec",
+        "pp",
+        "prawn",
+        "rabl",
+        "rake",
+        "rantfile",
+        "rbx",
+        "rjs",
+        "ruby",
+        "scanfile",
+        "simplecov",
+        "snapfile",
+        "thor",
+        "thorfile"
+      ]
+    },
+    {
+      "reference": "Rust",
+      "referenceAliases": [
+        "rust",
+        "rs"
+      ],
+      "formatIDs": [
+        "rust"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "PowerPC Assembler",
+      "referenceAliases": [
+        "s"
+      ],
+      "formatIDs": [
+        "reference-powerpc-assembler"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Sequence Alignment Map (use with sam_seq.lua plug-in)",
+      "referenceAliases": [
+        "sam"
+      ],
+      "formatIDs": [
+        "reference-sequence-alignment-map-use-with-sam-seq-lua-plug-in"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "SAS",
+      "referenceAliases": [
+        "sas"
+      ],
+      "formatIDs": [
+        "reference-sas"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "OpenSCAD",
+      "referenceAliases": [
+        "scad"
+      ],
+      "formatIDs": [
+        "openscad"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Dedicated bounded OpenSCAD source highlighting and a showcase cover .scad; geometry is not rendered",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Scala",
+      "referenceAliases": [
+        "scala"
+      ],
+      "formatIDs": [
+        "scala"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Scilab",
+      "referenceAliases": [
+        "scilab",
+        "sce",
+        "sci"
+      ],
+      "formatIDs": [
+        "reference-scilab"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "sce",
+        "sci"
+      ]
+    },
+    {
+      "reference": "SASS/SCSS",
+      "referenceAliases": [
+        "scss"
+      ],
+      "formatIDs": [
+        "reference-sass-scss"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Bash",
+      "referenceAliases": [
+        "shellscript",
+        "bash",
+        "ebuild",
+        "eclass",
+        "sh",
+        "zsh"
+      ],
+      "formatIDs": [
+        "shell"
+      ],
+      "status": "PLANNED",
+      "reason": "Core format supported; full reference definition has unverified aliases or additional grammars. Not counted as complete parity.",
+      "unverifiedAliases": [
+        "ebuild",
+        "eclass"
+      ]
+    },
+    {
+      "reference": "Slim (experimental)",
+      "referenceAliases": [
+        "slim"
+      ],
+      "formatIDs": [
+        "reference-slim-experimental"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "SMALL",
+      "referenceAliases": [
+        "small",
+        "sma"
+      ],
+      "formatIDs": [
+        "reference-small"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "sma"
+      ]
+    },
+    {
+      "reference": "Smalltalk",
+      "referenceAliases": [
+        "smalltalk",
+        "gst",
+        "sq",
+        "st"
+      ],
+      "formatIDs": [
+        "reference-smalltalk"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "gst",
+        "sq",
+        "st"
+      ]
+    },
+    {
+      "reference": "Standard ML",
+      "referenceAliases": [
+        "sml"
+      ],
+      "formatIDs": [
+        "reference-standard-ml"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "SNMP",
+      "referenceAliases": [
+        "snmp",
+        "mib",
+        "smi"
+      ],
+      "formatIDs": [
+        "reference-snmp"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "mib",
+        "smi"
+      ]
+    },
+    {
+      "reference": "SNOBOL",
+      "referenceAliases": [
+        "snobol",
+        "sno"
+      ],
+      "formatIDs": [
+        "reference-snobol"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "sno"
+      ]
+    },
+    {
+      "reference": "Solidity",
+      "referenceAliases": [
+        "solidity",
+        "sol"
+      ],
+      "formatIDs": [
+        "solidity"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Bounded Solidity source highlighting covers .sol with showcase and malformed/truncated fixtures",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "RPM Spec",
+      "referenceAliases": [
+        "spec"
+      ],
+      "formatIDs": [
+        "reference-rpm-spec"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "SPIN SQL",
+      "referenceAliases": [
+        "spn"
+      ],
+      "formatIDs": [
+        "reference-spin-sql"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "PL/SQL",
+      "referenceAliases": [
+        "sql"
+      ],
+      "formatIDs": [
+        "plsql"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Squirrel",
+      "referenceAliases": [
+        "squirrel",
+        "nut"
+      ],
+      "formatIDs": [
+        "reference-squirrel"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "nut"
+      ]
+    },
+    {
+      "reference": "Stylus",
+      "referenceAliases": [
+        "styl"
+      ],
+      "formatIDs": [
+        "reference-stylus"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Svelte",
+      "referenceAliases": [
+        "svelte"
+      ],
+      "formatIDs": [
+        "svelte"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "SVG",
+      "referenceAliases": [
+        "svg"
+      ],
+      "formatIDs": [
+        "reference-svg"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Swift",
+      "referenceAliases": [
+        "swift"
+      ],
+      "formatIDs": [
+        "swift"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Validated showcase and normal inspection/rendering",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Sybase SQL",
+      "referenceAliases": [
+        "sybase"
+      ],
+      "formatIDs": [
+        "reference-sybase-sql"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Tcl/Tk",
+      "referenceAliases": [
+        "tcl",
+        "itcl",
+        "wish"
+      ],
+      "formatIDs": [
+        "tcl-tk"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Bounded Tcl/Tk source highlighting and a verified showcase cover the .tcl, .itcl and .wish aliases",
+      "unverifiedAliases": [
+        "itcl",
+        "wish"
+      ]
+    },
+    {
+      "reference": "TCSH",
+      "referenceAliases": [
+        "tcsh"
+      ],
+      "formatIDs": [
+        "reference-tcsh"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Terraform",
+      "referenceAliases": [
+        "terraform"
+      ],
+      "formatIDs": [
+        "terraform"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "TeX and LaTeX",
+      "referenceAliases": [
+        "tex",
+        "cls",
+        "sty"
+      ],
+      "formatIDs": [
+        "reference-tex-and-latex"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": [
+        "cls",
+        "sty"
+      ]
+    },
+    {
+      "reference": "TOML",
+      "referenceAliases": [
+        "toml"
+      ],
+      "formatIDs": [
+        "toml"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Transact-SQL",
+      "referenceAliases": [
+        "tsql"
+      ],
+      "formatIDs": [
+        "tsql"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "TSX (TypeScript with React)",
+      "referenceAliases": [
+        "tsx"
+      ],
+      "formatIDs": [
+        "tsx"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "TTCN3",
+      "referenceAliases": [
+        "ttcn3"
+      ],
+      "formatIDs": [
+        "reference-ttcn3"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Plain text",
+      "referenceAliases": [
+        "txt",
+        "text"
+      ],
+      "formatIDs": [
+        "text"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Validated showcase and normal inspection/rendering",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "TypeScript",
+      "referenceAliases": [
+        "typescript",
+        "ts"
+      ],
+      "formatIDs": [
+        "typescript"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Validated showcase and normal inspection/rendering",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "UPC (and C, technically)",
+      "referenceAliases": [
+        "upc"
+      ],
+      "formatIDs": [
+        "reference-upc-and-c-technically"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "V",
+      "referenceAliases": [
+        "v"
+      ],
+      "formatIDs": [
+        "reference-v"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Vala",
+      "referenceAliases": [
+        "vala"
+      ],
+      "formatIDs": [
+        "vala"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Bounded Vala source highlighting and a verified showcase cover .vala and .vapi",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Visual Basic",
+      "referenceAliases": [
+        "vb",
+        "bas",
+        "basic",
+        "bi",
+        "vbs"
+      ],
+      "formatIDs": [
+        "visual-basic"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Bounded Visual Basic and VBScript source highlighting with a verified showcase covers all listed extensions",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Verilog",
+      "referenceAliases": [
+        "verilog",
+        "vh",
+        "v"
+      ],
+      "formatIDs": [
+        "verilog"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Bounded Verilog source highlighting; .vh routes by suffix and shared .v requires module boundaries plus Verilog markers outside comments and strings",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "VHDL",
+      "referenceAliases": [
+        "vhd",
+        "vhdl"
+      ],
+      "formatIDs": [
+        "vhdl"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Bounded VHDL source highlighting with showcase and malformed/truncated fixtures",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "vimscript",
+      "referenceAliases": [
+        "vimscript",
+        "vim",
+        "vimrc"
+      ],
+      "formatIDs": [
+        "vimscript"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Bounded Vimscript highlighting and a verified showcase cover .vim and common vimrc filenames",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "vue.js (beta)",
+      "referenceAliases": [
+        "vue"
+      ],
+      "formatIDs": [
+        "vue"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Web Assembly Text",
+      "referenceAliases": [
+        "wat"
+      ],
+      "formatIDs": [
+        "webassembly-text"
+      ],
+      "status": "SUPPORTED",
+      "reason": "Bounded WebAssembly text highlighting and a verified showcase cover .wat",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Whiley",
+      "referenceAliases": [
+        "whiley"
+      ],
+      "formatIDs": [
+        "reference-whiley"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Wren",
+      "referenceAliases": [
+        "wren"
+      ],
+      "formatIDs": [
+        "reference-wren"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "XML",
+      "referenceAliases": [
+        "xml",
+        "csproj",
+        "dtd",
+        "ecf",
+        "ent",
+        "glade",
+        "hdr",
+        "hub",
+        "jnlp",
+        "nrm",
+        "resx",
+        "sgm",
+        "sgml",
+        "tld",
+        "vxml",
+        "wml",
+        "xsd",
+        "xsl"
+      ],
+      "formatIDs": [
+        "xml"
+      ],
+      "status": "PLANNED",
+      "reason": "Core format supported; full reference definition has unverified aliases or additional grammars. Not counted as complete parity.",
+      "unverifiedAliases": [
+        "csproj",
+        "dtd",
+        "ecf",
+        "ent",
+        "glade",
+        "hdr",
+        "hub",
+        "jnlp",
+        "nrm",
+        "resx",
+        "sgm",
+        "sgml",
+        "tld",
+        "vxml",
+        "wml",
+        "xsd",
+        "xsl"
+      ]
+    },
+    {
+      "reference": "SuperX++",
+      "referenceAliases": [
+        "xpp"
+      ],
+      "formatIDs": [
+        "reference-superx"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Yaiff",
+      "referenceAliases": [
+        "yaiff"
+      ],
+      "formatIDs": [
+        "reference-yaiff"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Generic YAML",
+      "referenceAliases": [
+        "yaml",
+        "yml"
+      ],
+      "formatIDs": [
+        "yaml"
+      ],
+      "status": "REPLACED_BY_BETTER_GLIMT_INSPECTOR",
+      "reason": "Validated showcase and normal inspection/rendering",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Ansible YAML",
+      "referenceAliases": [
+        "yaml_ansible"
+      ],
+      "formatIDs": [
+        "reference-ansible-yaml"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Yang",
+      "referenceAliases": [
+        "yang"
+      ],
+      "formatIDs": [
+        "reference-yang"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Zig",
+      "referenceAliases": [
+        "zig"
+      ],
+      "formatIDs": [
+        "zig"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    },
+    {
+      "reference": "Zonnon",
+      "referenceAliases": [
+        "znn"
+      ],
+      "formatIDs": [
+        "reference-zonnon"
+      ],
+      "status": "PLANNED",
+      "reason": "Requires verified showcase and suitable highlighting or semantic backend; aliases not yet claimed",
+      "unverifiedAliases": []
+    }
+  ],
+  "markdownReference": {
+    "source": "https://github.com/sbarex/QLMarkdown",
+    "formatIDs": [
+      "markdown",
+      "rmarkdown",
+      "quarto",
+      "mdx",
+      "mdc",
+      "apib",
+      "mermaid",
+      "textbundle"
+    ],
+    "definitions": [
+      {
+        "formatID": "markdown",
+        "status": "SUPPORTED",
+        "reason": "Normal bounded Markdown pipeline and showcase"
+      },
+      {
+        "formatID": "rmarkdown",
+        "status": "PLANNED",
+        "reason": "Safe non-executing inspection planned; TextBundle requires separate bounded package handling; no remote resources"
+      },
+      {
+        "formatID": "quarto",
+        "status": "PLANNED",
+        "reason": "Safe non-executing inspection planned; TextBundle requires separate bounded package handling; no remote resources"
+      },
+      {
+        "formatID": "mdx",
+        "status": "PLANNED",
+        "reason": "Safe non-executing inspection planned; TextBundle requires separate bounded package handling; no remote resources"
+      },
+      {
+        "formatID": "mdc",
+        "status": "SUPPORTED",
+        "reason": "Uses the shared bounded Markdown renderer; Cursor rule frontmatter and execution semantics are not interpreted"
+      },
+      {
+        "formatID": "apib",
+        "status": "SUPPORTED",
+        "reason": "Uses the shared bounded Markdown renderer; API Blueprint-specific semantics are not interpreted"
+      },
+      {
+        "formatID": "mermaid",
+        "status": "PLANNED",
+        "reason": "Safe non-executing inspection planned; TextBundle requires separate bounded package handling; no remote resources"
+      },
+      {
+        "formatID": "textbundle",
+        "status": "PLANNED",
+        "reason": "Safe non-executing inspection planned; TextBundle requires separate bounded package handling; no remote resources"
+      }
+    ]
+  }
+}

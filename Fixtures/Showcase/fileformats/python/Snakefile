@@ -1,0 +1,10 @@
+# Produce the summary report.
+rule all:
+    input:
+        "results/summary.txt"
+
+rule summarize:
+    output:
+        "results/summary.txt"
+    shell:
+        "printf 'ready\\n' > {output}"

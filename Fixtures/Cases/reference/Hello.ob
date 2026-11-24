@@ -1,0 +1,6 @@
+MODULE Hello;
+  IMPORT Out;
+  (* Oberon *)
+BEGIN
+  Out.String("Hej"); Out.Ln
+END Hello.

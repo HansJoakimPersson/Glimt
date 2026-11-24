@@ -1,0 +1,5 @@
+// Frink
+distance = 100 meters
+time = 9.58 s
+speed = distance / time
+println["Hastighet: " + (speed -> "km/hour")]

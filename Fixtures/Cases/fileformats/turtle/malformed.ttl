@@ -1,0 +1,2 @@
+@prefix ex: <https://example.invalid/> .
+ex:subject ex:predicate "unterminated

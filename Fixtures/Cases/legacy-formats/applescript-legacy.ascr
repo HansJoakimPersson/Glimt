@@ -1,0 +1,3 @@
+on run
+    return "Hello from AppleScript"
+end run

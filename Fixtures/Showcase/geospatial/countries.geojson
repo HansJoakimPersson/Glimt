@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "island",
+      "properties": { "name": "Harbor Island", "country": "Example" },
+      "geometry": { "type": "Polygon", "coordinates": [[[18.0, 59.3], [18.1, 59.3], [18.1, 59.4], [18.0, 59.3]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "title": "Ferry route" },
+      "geometry": { "type": "LineString", "coordinates": [[18.0, 59.3], [18.2, 59.35]] }
+    }
+  ]
+}

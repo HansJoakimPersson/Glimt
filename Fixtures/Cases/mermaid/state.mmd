@@ -1,0 +1,7 @@
+stateDiagram-v2
+  [*] --> Requested
+  Requested --> Inspecting : accepted
+  Inspecting --> Rendered : supported
+  Inspecting --> RawFallback : unsupported
+  Rendered --> [*]
+  RawFallback --> [*]

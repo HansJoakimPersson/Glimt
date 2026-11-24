@@ -1,0 +1,3 @@
+$items = @(1, 2, 3)
+foreach ($item in $items) { Write-Output $item }
+"unterminated

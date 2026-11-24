@@ -1,0 +1,2 @@
+time=2026-11-18T10:00:00Z level=info service=payments msg="request finished"
+time=2026-11-18T10:00:01Z level=warn path="/tmp/log file" msg="quoted \"value\" and equals=a"

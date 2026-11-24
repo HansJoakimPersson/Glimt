@@ -1,0 +1,5 @@
+<?
+// Biferno greeting page
+var name = "Glimt"
+print("Hej " + name)
+?>

@@ -1,0 +1,9 @@
+[Unit]
+Description=Glimt worker socket
+
+[Socket]
+ListenStream=/run/glimt-worker.sock
+SocketMode=0660
+
+[Install]
+WantedBy=sockets.target

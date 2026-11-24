@@ -1,0 +1,3 @@
+/* OpenStep strings format with escaped quotes and comments. */
+"hello" = "Hello, \"world\"!";
+"multiline" = "First line\nSecond line";

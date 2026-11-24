@@ -1,0 +1,5 @@
+# RELAX NG compact
+default namespace = "https://example.test/glimt"
+start = element formats {
+  element format { attribute id { text }, text }*
+}

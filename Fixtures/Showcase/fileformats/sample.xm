@@ -1,0 +1,1 @@
+%hookf(CFRunLoopRun, void, ()) { %orig; }

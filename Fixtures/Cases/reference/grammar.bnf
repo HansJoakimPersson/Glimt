@@ -1,0 +1,3 @@
+<postal-address> ::= <name-part> <street-address> <zip-part>
+<name-part>      ::= <personal-part> <last-name> <EOL>
+<zip-part>       ::= <town-name> "," <state-code> <ZIP-code> <EOL>

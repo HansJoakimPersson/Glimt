@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns:preview="urn:glimt:preview">
+  <!-- Library catalog. -->
+  <book id="1" language="sv">
+    <title>Example</title>
+  </book>
+  <preview:settings enabled="true">
+    <preview:mode>tree</preview:mode>
+  </preview:settings>
+</catalog>

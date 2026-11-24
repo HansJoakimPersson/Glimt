@@ -1,0 +1,11 @@
+requirementDiagram
+  requirement bounded_input {
+    id: R1
+    text: Input size is bounded
+    risk: high
+    verifymethod: test
+  }
+  element markdown_inspector {
+    type: software
+  }
+  markdown_inspector - satisfies -> bounded_input

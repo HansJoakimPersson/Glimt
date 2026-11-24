@@ -1,0 +1,1 @@
+<!DOCTYPE xs:schema [<!ENTITY outside SYSTEM "file:///etc/passwd">]><xs:schema>&outside;</xs:schema>

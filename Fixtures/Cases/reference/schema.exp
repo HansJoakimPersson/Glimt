@@ -1,0 +1,7 @@
+SCHEMA glimt;
+  (* EXPRESS *)
+  ENTITY point;
+    x : REAL;
+    y : REAL;
+  END_ENTITY;
+END_SCHEMA;

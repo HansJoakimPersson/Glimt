@@ -1,0 +1,9 @@
+The hall IsA location
+  Description "A quiet hall."
+  Exit north To kitchen.
+End The hall.
+
+The kitchen IsA location
+End The kitchen.
+
+Start At hall.

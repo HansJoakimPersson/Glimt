@@ -1,0 +1,10 @@
+! Hugo
+routine main
+{
+    print "Hej från Hugo"
+    local n = 3
+    while n > 0
+    {
+        n--
+    }
+}

@@ -1,0 +1,4 @@
+function main() {
+  const message = "UPX JavaScript";
+  return message;
+}

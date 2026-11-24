@@ -1,0 +1,4 @@
+/* W3C-stil EBNF */
+Document ::= Prolog Element Misc*
+Name     ::= NameStartChar (NameChar)*
+S        ::= (#x20 | #x9 | #xD | #xA)+

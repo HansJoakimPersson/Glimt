@@ -1,0 +1,10 @@
+---
+title: Report
+---
+
+A report with inline `code`.
+
+```{r}
+summary(cars)
+```
+"unterminated

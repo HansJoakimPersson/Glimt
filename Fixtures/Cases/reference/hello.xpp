@@ -1,0 +1,7 @@
+<!-- SuperX++ greeting -->
+<xpp>
+  <func name="main">
+    <var name="msg" value="Hej"/>
+    <print><eval>msg</eval></print>
+  </func>
+</xpp>

@@ -1,0 +1,4 @@
+[submodule "shared-components"]
+	path = vendor/shared-components
+	url = ../shared-components.git
+	branch = stable

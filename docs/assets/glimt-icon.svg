@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Glimt icon</title>
+  <desc id="desc">A rounded blue square with a light document and a magnifying lens.</desc>
+  <defs>
+    <linearGradient id="app-fill" x1="512" y1="64" x2="512" y2="960" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0086db"/>
+      <stop offset="0.55" stop-color="#0078cc"/>
+      <stop offset="1" stop-color="#0068bd"/>
+    </linearGradient>
+    <linearGradient id="page-fill" x1="512" y1="224" x2="512" y2="784" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f7fbfd"/>
+      <stop offset="0.1" stop-color="#f2f9fd"/>
+      <stop offset="1" stop-color="#f2f8fc"/>
+    </linearGradient>
+  </defs>
+  <rect x="64" y="64" width="896" height="896" rx="200" fill="url(#app-fill)"/>
+  <path d="M280 232 H610 L744 366 V792 H280 Z" fill="#005fa8" opacity="0.2"/>
+  <path d="M280 224 H610 L744 358 V784 H280 Z" fill="#6bb0e1" opacity="0.76" stroke="#6bb0e1" stroke-opacity="0.76" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M280 224 H610 L744 358 V784 H280 Z" fill="url(#page-fill)"/>
+  <path d="M283 227 H608.8 L741 359.2 V781 H283 Z" fill="none" stroke="#ffffff" stroke-opacity="0.68" stroke-width="6"/>
+  <g stroke="#0078cc" stroke-width="28" stroke-linecap="round">
+    <path d="M350 364 H520"/>
+    <path d="M350 464 H590"/>
+    <path d="M350 564 H490"/>
+  </g>
+  <circle cx="645" cy="677" r="115" fill="url(#page-fill)" stroke="#0078cc" stroke-width="32"/>
+  <path d="M728 762 L830 864" stroke="#f2f8fc" stroke-width="60" stroke-linecap="round"/>
+  <path d="M728 762 L830 864" stroke="#0078cc" stroke-width="30" stroke-linecap="round"/>
+</svg>

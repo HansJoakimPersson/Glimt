@@ -1,0 +1,8 @@
+erDiagram
+  DOCUMENT ||--o{ PREVIEW_REQUEST : receives
+  PREVIEW_REQUEST ||--|| INSPECTION : creates
+  INSPECTION ||--o{ DIAGNOSTIC : reports
+  DOCUMENT {
+    string name
+    string content_type
+  }

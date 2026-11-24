@@ -1,0 +1,8 @@
+# A local directory entry shown as source only.
+dn: cn=Joakim Persson,ou=People,dc=example,dc=invalid
+objectClass: inetOrgPerson
+cn: Joakim Persson
+sn: Persson
+mail: joakim@example.invalid
+uidNumber: 42
+description: "Example record"

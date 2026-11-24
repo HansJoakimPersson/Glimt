@@ -1,0 +1,20 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+		A0000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			mainGroup = A0000000000000000000002;
+		};
+		A0000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+			);
+			sourceTree = "<group>";
+		};
+	};
+	rootObject = A0000000000000000000001 /* Project object */;
+}

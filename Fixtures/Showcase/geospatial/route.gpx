@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Glimt" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata><name>Coastal route</name></metadata>
+  <wpt lat="59.3293" lon="18.0686"><name>Start</name><ele>12.5</ele></wpt>
+  <rte><name>Harbor loop</name>
+    <rtept lat="59.3293" lon="18.0686"/><rtept lat="59.3320" lon="18.0750"/>
+  </rte>
+  <trk><name>Walk</name><trkseg>
+    <trkpt lat="59.3293" lon="18.0686"><time>2025-01-01T09:00:00Z</time></trkpt>
+    <trkpt lat="59.3320" lon="18.0750"/>
+  </trkseg></trk>
+</gpx>

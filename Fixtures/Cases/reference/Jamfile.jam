@@ -1,0 +1,4 @@
+# Jamfile
+SubDir TOP src ;
+Main glimt : main.c util.c ;
+LinkLibraries glimt : libcore ;

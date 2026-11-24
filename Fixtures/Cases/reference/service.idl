@@ -1,0 +1,7 @@
+// IDL
+module Glimt {
+  interface Inspector {
+    readonly attribute string name;
+    long inspect(in string path);
+  };
+};

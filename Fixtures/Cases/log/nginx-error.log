@@ -1,0 +1,2 @@
+2026/11/18 12:00:00 [error] 123#123: *1 open() failed (2: No such file or directory)
+2026/11/18 12:00:01 [crit] 123#123: *2 worker process exited

@@ -1,0 +1,7 @@
+// MEL
+global proc glimtSpheres(int $count) {
+    for ($i = 0; $i < $count; $i++) {
+        sphere -r 1 -n ("ball" + $i);
+    }
+}
+glimtSpheres(3);

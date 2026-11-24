@@ -1,0 +1,7 @@
+import ballerina/io;
+
+// huvudfunktion
+public function main() {
+    int count = 3;
+    io:println("Hej ", count);
+}

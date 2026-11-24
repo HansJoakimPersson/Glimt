@@ -1,0 +1,8 @@
+From: alex@example.test
+Subject: Incomplete multipart
+Content-Type: multipart/mixed; boundary=x
+
+--x
+Content-Type: text/plain
+
+Partial body

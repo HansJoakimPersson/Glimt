@@ -1,0 +1,10 @@
+/dts-v1/;
+
+/ {
+    model = "Glimt board";
+    /* LED */
+    led@0 {
+        compatible = "gpio-leds";
+        status = "okay";
+    };
+};

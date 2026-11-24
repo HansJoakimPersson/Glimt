@@ -1,0 +1,7 @@
+@prefix ex: <https://example.test/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+# Turtle
+ex:glimt a foaf:Project ;
+    foaf:name "Glimt" ;
+    ex:formats 349 .

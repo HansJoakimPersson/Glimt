@@ -1,0 +1,5 @@
+# Doxygen configuration uses INI-like assignments
+PROJECT_NAME = "Glimt"
+INPUT = Fixtures
+RECURSIVE = YES
+GENERATE_HTML = YES

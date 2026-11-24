@@ -1,0 +1,6 @@
+'Avenue-skript
+theView = av.GetActiveDoc
+theTheme = theView.GetActiveThemes.Get(0)
+if (theTheme = nil) then
+  MsgBox.Info("Inget tema", "Glimt")
+end

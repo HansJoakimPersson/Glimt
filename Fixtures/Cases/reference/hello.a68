@@ -1,0 +1,7 @@
+BEGIN
+  INT n := 3;
+  # kommentar #
+  FOR i TO n DO
+    print(("Hej ", i, newline))
+  OD
+END

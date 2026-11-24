@@ -1,0 +1,3 @@
+from collections.abc import Sequence
+
+def summarize(values: Sequence[int]) -> int: ...

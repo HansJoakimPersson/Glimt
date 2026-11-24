@@ -1,0 +1,8 @@
+architecture-beta
+  group client(cloud)[Client]
+  group preview(server)[Preview]
+  service finder(browser)[Finder] in client
+  service extension(server)[Quick Look] in preview
+  service core(database)[Inspector Core] in preview
+  finder:R --> L:extension
+  extension:B --> T:core

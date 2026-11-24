@@ -1,0 +1,6 @@
+flowchart LR
+  Request[Open Markdown] --> Inspect{Supported text?}
+  Inspect -->|yes| Parse[Build preview model]
+  Parse --> Render[Render locally]
+  Inspect -->|no| Raw[Keep source visible]
+  Render --> Preview[Show Quick Look]

@@ -1,0 +1,13 @@
+// Device Tree Source for the Glimt board.
+/dts-v1/;
+
+/ {
+    model = "Glimt board";
+    compatible = "example,glimt-board";
+    #address-cells = <1>;
+
+    memory@0 {
+        device_type = "memory";
+        reg = <0x0 42>;
+    };
+};

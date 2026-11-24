@@ -1,0 +1,5 @@
+# Answer settings
+answer:
+  label: "answer"
+  value: 42
+  enabled: true

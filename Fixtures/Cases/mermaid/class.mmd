@@ -1,0 +1,12 @@
+classDiagram
+  class PreviewRequest {
+    +URL file
+    +String contentType
+    +cancel()
+  }
+  class InspectionResult {
+    +String rawText
+    +String detectedFormat
+  }
+  PreviewRequest --> InspectionResult : produces
+  InspectionResult <|-- MarkdownResult

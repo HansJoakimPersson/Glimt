@@ -1,0 +1,10 @@
+GLIMT-MIB DEFINITIONS ::= BEGIN
+IMPORTS enterprises FROM RFC1155-SMI;
+-- SNMP MIB
+glimt OBJECT IDENTIFIER ::= { enterprises 99999 }
+glimtCount OBJECT-TYPE
+    SYNTAX INTEGER
+    ACCESS read-only
+    STATUS mandatory
+    ::= { glimt 1 }
+END

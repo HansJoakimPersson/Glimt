@@ -1,0 +1,10 @@
+-- Top users by display name.
+SET NOCOUNT ON;
+DECLARE @TopN int = 10;
+
+SELECT TOP (@TopN)
+    ISNULL(name, N'Unknown') AS display_name,
+    GETDATE() AS inspected_at
+FROM dbo.Users;
+
+GO

@@ -1,0 +1,6 @@
+' ClearBasic
+Sub Main
+  Dim count As Integer
+  count = 3
+  MsgBox "Hej " & count
+End Sub

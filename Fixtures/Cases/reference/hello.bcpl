@@ -1,0 +1,7 @@
+GET "libhdr"
+
+// BCPL
+LET start() = VALOF
+{ writef("Hej %n*n", 3)
+  RESULTIS 0
+}

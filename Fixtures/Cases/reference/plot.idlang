@@ -1,0 +1,6 @@
+; Interactive Data Language
+PRO hello
+  x = FINDGEN(10)
+  y = SIN(x)
+  PRINT, 'Hej', TOTAL(y)
+END

@@ -1,0 +1,2 @@
+// Release pipeline
+pipeline { agent any; stages { stage("Glimt 42") {} } }

@@ -1,0 +1,6 @@
+@ RPL
+« → x
+  « x x * »
+»
+'SQUARE' STO
+3 SQUARE

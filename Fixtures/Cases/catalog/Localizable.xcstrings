@@ -1,0 +1,11 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Hello" : {
+      "localizations" : {
+        "sv" : { "stringUnit" : { "state" : "translated", "value" : "Hej" } }
+      }
+    }
+  },
+  "version" : "1.0"
+}

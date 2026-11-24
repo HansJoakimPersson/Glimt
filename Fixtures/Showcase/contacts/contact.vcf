@@ -1,0 +1,9 @@
+BEGIN:VCARD
+VERSION:4.0
+FN:Alex Example
+N:Example;Alex;;;
+EMAIL;TYPE=work:alex@example.test
+TEL;TYPE=work,voice:+1-555-0100
+ORG:Example Company
+PHOTO;MEDIATYPE=image/png;ENCODING=b:UEhPVE9EQVRB
+END:VCARD

@@ -1,0 +1,3 @@
+defaults: &defaults
+  enabled: true
+copy: *defaults

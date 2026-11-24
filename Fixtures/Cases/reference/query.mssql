@@ -1,0 +1,6 @@
+-- MSSQL
+SELECT TOP (10) [Name], [CreatedAt]
+FROM [dbo].[Formats]
+WHERE [Status] = N'supported'
+ORDER BY [CreatedAt] DESC;
+GO

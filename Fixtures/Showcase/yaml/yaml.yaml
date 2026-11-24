@@ -1,0 +1,14 @@
+name: Glimt
+enabled: true
+items: [one, two]
+version: 1
+formats: [JSON, YAML, Swift]
+message: "Hello from Glimt"
+description: |
+  A local preview example.
+  No external resources are loaded.
+defaults: &defaults
+    mode: tree
+    lines: 12
+preview:
+    <<: *defaults

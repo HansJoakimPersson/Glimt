@@ -1,0 +1,11 @@
+diff --git a/settings/example.json b/settings/example.json
+index 2a01f6b..fa3c902 100644
+--- a/settings/example.json
++++ b/settings/example.json
+@@ -1,4 +1,5 @@ user preferences
+ {
+-  "lineNumbers": false,
++  "lineNumbers": true,
++  "wrap": "soft",
+   "theme": "system"
+ }

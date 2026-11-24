@@ -1,0 +1,6 @@
+C     Fixed-form Fortran source
+      PROGRAM GREETING
+      CHARACTER*20 MESSAGE
+      MESSAGE = 'Hello, Glimt'
+      PRINT *, MESSAGE
+      END

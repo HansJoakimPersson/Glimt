@@ -1,0 +1,2 @@
+proc answer(): int =
+  return 42

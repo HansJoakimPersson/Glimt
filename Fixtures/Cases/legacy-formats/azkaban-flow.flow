@@ -1,0 +1,4 @@
+- name: example
+  type: command
+  config:
+    command: echo hello

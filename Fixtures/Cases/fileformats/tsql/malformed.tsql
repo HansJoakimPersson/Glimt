@@ -1,0 +1,3 @@
+DECLARE @label nvarchar(40);
+SELECT TOP (10) 'unfinished
+GO

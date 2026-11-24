@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lib:catalog xmlns:lib="urn:glimt:library">
+  <lib:book xml:lang="sv">
+    <lib:title>Example</lib:title>
+  </lib:book>
+</lib:catalog>

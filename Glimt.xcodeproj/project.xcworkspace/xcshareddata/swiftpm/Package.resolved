@@ -1,0 +1,33 @@
+{
+  "originHash" : "b0bc7374a64615b5d1f67394e4b2d0ebdc55666cf27712cf1e71b23f4ce50257",
+  "pins" : [
+    {
+      "identity" : "mermaidkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/2389-research/MermaidKit.git",
+      "state" : {
+        "revision" : "8556a1b80a1f624d35a4c6e13dcb7a5d427f65c3",
+        "version" : "2.10.2"
+      }
+    },
+    {
+      "identity" : "swiftmath",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mgriebling/SwiftMath.git",
+      "state" : {
+        "revision" : "fa8244ed032f4a1ade4cb0571bf87d2f1a9fd2d7",
+        "version" : "1.7.3"
+      }
+    },
+    {
+      "identity" : "yams",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jpsim/Yams.git",
+      "state" : {
+        "revision" : "a27b21e0c81c5bf42049b897a62aaf387e80f279",
+        "version" : "6.2.2"
+      }
+    }
+  ],
+  "version" : 3
+}

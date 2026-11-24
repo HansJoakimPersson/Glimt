@@ -1,0 +1,4 @@
+dn: cn=Malformed,dc=example,dc=invalid
+changetype: add
+objectClass: inetOrgPerson
+cn:: !!! not valid base64 !!!

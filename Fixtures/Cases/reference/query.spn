@@ -1,0 +1,4 @@
+-- Planned formats
+SELECT name, count
+FROM formats
+WHERE status = 'planned';

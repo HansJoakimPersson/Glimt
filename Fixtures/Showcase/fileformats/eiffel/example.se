@@ -1,0 +1,26 @@
+class
+    ACCOUNT
+
+create
+    make
+
+feature {NONE} -- Initialization
+
+    make
+        do
+            balance := 42
+        end
+
+feature -- Access
+
+    balance: INTEGER
+
+    deposit (amount: INTEGER)
+        require
+            positive_amount: amount > 0
+        do
+            balance := balance + amount
+        ensure
+            deposited: balance = old balance + amount
+        end
+end

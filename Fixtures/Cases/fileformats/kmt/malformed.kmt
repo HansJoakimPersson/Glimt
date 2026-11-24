@@ -1,0 +1,4 @@
+model Sample
+  attribute name : String
+end
+"unterminated

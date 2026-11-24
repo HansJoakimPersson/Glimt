@@ -1,0 +1,8 @@
+**FREE
+// RPG
+dcl-s count int(10) inz(3);
+dcl-s i int(10);
+for i = 1 to count;
+  dsply ('Hej ' + %char(i));
+endfor;
+*inlr = *on;

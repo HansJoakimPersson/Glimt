@@ -1,0 +1,5 @@
+specification Buffer [inp, out] : noexit
+  (* LOTOS *)
+  behaviour
+    inp ?x:Nat; out !x; stop
+endspec

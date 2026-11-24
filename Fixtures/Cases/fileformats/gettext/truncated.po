@@ -1,0 +1,4 @@
+msgid "A translated phrase"
+msgstr "En översatt fras"
+msgid "Second phrase"
+msgstr "Andra frasen"

@@ -1,0 +1,8 @@
+---
+- name: Configure web servers
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Skriv hälsning
+      ansible.builtin.debug:
+        msg: "Hej {{ inventory_hostname }}"

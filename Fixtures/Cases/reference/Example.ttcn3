@@ -1,0 +1,8 @@
+module Example {
+  // TTCN-3
+  type component Tester {}
+  testcase tc_hello() runs on Tester {
+    log("Hej");
+    setverdict(pass);
+  }
+}

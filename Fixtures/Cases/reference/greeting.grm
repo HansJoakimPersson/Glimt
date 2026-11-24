@@ -1,0 +1,4 @@
+(* Polygen *)
+S ::= Greeting Name "!" ;
+Greeting ::= Hej | Hallå | Tjena ;
+Name ::= Glimt | världen ;

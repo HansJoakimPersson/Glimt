@@ -1,0 +1,9 @@
+# VCS and local build output
+.git
+**/.DS_Store
+node_modules
+
+# Keep release metadata
+!dist/release.json
+Dockerfile*
+!Dockerfile.release

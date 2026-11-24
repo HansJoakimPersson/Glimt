@@ -1,0 +1,3 @@
+Release notes
+Faster previews ÿş for every file
+See cafÃ for details

@@ -1,0 +1,8 @@
+; Blitz Basic
+Graphics 640,480
+Local x = 10
+While Not KeyHit(1)
+    Text x, 10, "Hej"
+    Flip
+Wend
+End

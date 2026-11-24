@@ -1,0 +1,2 @@
+<!DOCTYPE bom [<!ENTITY x SYSTEM "file:///etc/passwd">]>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.6" version="1"><metadata>&x;</metadata></bom>

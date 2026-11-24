@@ -1,0 +1,7 @@
+C4Context
+  title Local preview context
+  Person(reader, "Reader", "Inspects local files")
+  System(finder, "Finder", "Requests Quick Look")
+  System_Ext(glimt, "Glimt", "Renders bounded previews")
+  Rel(reader, finder, "selects file")
+  Rel(finder, glimt, "requests preview")

@@ -1,0 +1,5 @@
+/* NetRexx */
+count = 3
+loop i = 1 to count
+  say 'Hej' i
+end

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f7f8">
+  <meta name="description" content="Glimt is a native, local, read-only file inspector for macOS with a standalone app and Quick Look extensions.">
+  <link rel="canonical" href="https://hansjoakimpersson.github.io/Glimt/">
+  <meta property="og:title" content="Glimt - See what's inside a file, safely">
+  <meta property="og:description" content="Inspect source code, Markdown and structured files in the Glimt app or when Finder selects its Quick Look extensions. Local, offline and read-only.">
+  <meta property="og:image" content="https://hansjoakimpersson.github.io/Glimt/assets/glimt-hero.jpg">
+  <title>Glimt - Quick Look inspector for macOS</title>
+  <link rel="icon" href="./assets/glimt-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <svg class="icon-sprite" aria-hidden="true">
+    <symbol id="icon-file-text" viewBox="0 0 24 24">
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"></path>
+      <path d="M14 2v6h6"></path>
+      <path d="M16 13H8"></path>
+      <path d="M16 17H8"></path>
+      <path d="M10 9H8"></path>
+    </symbol>
+    <symbol id="icon-circle-help" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10"></circle>
+      <path d="M9.09 9a3 3 0 1 1 5.83 1c0 2-3 2-3 4"></path>
+      <path d="M12 18h.01"></path>
+    </symbol>
+    <symbol id="icon-github" viewBox="0 0 24 24">
+      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.28-.36 6.72-1.61 6.72-7.25A5.65 5.65 0 0 0 19.22 3.3 5.4 5.4 0 0 0 19.08 0S17.9-.36 15 1.5a13.4 13.4 0 0 0-7 0C5.1-.36 3.92 0 3.92 0a5.4 5.4 0 0 0-.14 3.3 5.65 5.65 0 0 0-1.5 3.95c0 5.63 3.44 6.88 6.72 7.25A4.8 4.8 0 0 0 8 18v4"></path>
+      <path d="M8 19c-3 .92-3-1.5-4-2"></path>
+    </symbol>
+    <symbol id="icon-heart" viewBox="0 0 24 24">
+      <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+    </symbol>
+  </svg>
+  <header class="site-header" data-site-header>
+    <a class="brand" href="#top" aria-label="Glimt home" data-header-brand>
+      <img src="./assets/glimt-icon.svg" alt="" width="38" height="38">
+      <span>Glimt</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#features" data-section-link="features">Features</a>
+      <a href="#formats" data-section-link="formats">Formats</a>
+      <a href="#setup" data-section-link="setup">Setup</a>
+      <a class="nav-download" href="https://github.com/HansJoakimPersson/Glimt">GitHub</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="kicker">Quick Look inspector for macOS</p>
+        <div class="hero-identity" data-hero-identity>
+          <img class="hero-icon" src="./assets/glimt-icon.svg" alt="" width="92" height="92">
+          <h1 id="hero-title">Glimt</h1>
+        </div>
+        <p class="hero-lede">Open a file in Glimt to inspect source code, Markdown or structured data. When Finder selects Glimt, press Space to see the same inspection in Quick Look.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#setup">Build from source</a>
+          <a class="button button-quiet" href="https://github.com/HansJoakimPersson/Glimt">View on GitHub</a>
+        </div>
+        <p class="hero-meta">Requires macOS 15 or later · Open source · No release yet</p>
+      </div>
+      <figure class="hero-shot">
+        <img src="./assets/glimt-hero.jpg" alt="Glimt's settings window with a rendered Markdown preview beside the settings" width="1600" height="1018">
+      </figure>
+    </section>
+
+    <section class="intro" aria-labelledby="intro-title">
+      <p class="section-label">One inspector instead of many plugins</p>
+      <h2 id="intro-title">Readable, honest previews for the files you work with.</h2>
+      <p>Glimt uses the filename, file type and up to 64 KiB of content to choose how to inspect a regular file. It then reads within the selected inspector’s limits and shows a diagnostic when a view is unavailable.</p>
+    </section>
+
+    <section class="feature-band" id="features" aria-label="Glimt features">
+      <article class="feature">
+        <div class="feature-copy">
+          <p class="section-label">Structured data</p>
+          <h2>Tree, Pretty or Raw.</h2>
+          <p>JSON, YAML and XML offer a collapsible tree, formatted text when available, and original text in Raw. YAML files with multiple documents show each document separately in Tree. Invalid input keeps Raw available with a diagnostic. Property lists open in a typed Tree by default. Raw shows original text for text property lists and a bounded hexadecimal view of the original bytes for binary property lists. JSON Lines (.jsonl and .ndjson) opens in Tree with one JSON value per record and keeps the source available in Raw.</p>
+          <p class="feature-note">The original file is never changed. Every view is presentation only.</p>
+        </div>
+        <figure class="shot">
+          <img src="./assets/glimt-json-dark.jpg" alt="Glimt in dark mode with a JSON file shown as a typed tree beside the settings" width="1600" height="1018" loading="lazy">
+        </figure>
+      </article>
+
+      <article class="feature feature-reverse">
+        <figure class="shot">
+          <img src="./assets/glimt-general.jpg" alt="Glimt's settings beside a live Swift source preview with line numbers" width="1600" height="1018" loading="lazy">
+        </figure>
+        <div class="feature-copy">
+          <p class="section-label">Settings</p>
+          <h2>Tune it once, see it live.</h2>
+          <p>Adjust appearance, fonts, wrapping and limits in Settings, then configure each format’s views and default in Formats &amp; Views. The preview beside the settings updates as you change them.</p>
+          <p>VCS Support in Advanced settings is off by default. When enabled, Glimt can mark changed lines for files in local Git or Subversion working copies after the preview opens. Repository access is read-only.</p>
+          <p class="feature-note">Inquiry shows how Glimt reads any file you drop on it.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="layouts" id="formats" aria-labelledby="formats-title">
+      <div class="layouts-heading">
+        <div>
+          <p class="section-label">Supported formats</p>
+          <h2 id="formats-title">From plain text to property lists.</h2>
+        </div>
+        <p>These families use Glimt’s bounded engine. Individual syntax, views and format coverage have documented limits; Finder may select another provider. See the <a href="https://github.com/HansJoakimPersson/Glimt/blob/main/docs/formats/README.md">format coverage and limitations</a>.</p>
+      </div>
+      <div class="format-gallery">
+        <article class="format-item">
+          <p class="format-tag">&lt;/&gt;</p>
+          <h3>Source code</h3>
+          <p>Swift, Python, JavaScript, TypeScript, Java, C, C++ and Shell with syntax colours and line numbers.</p>
+          <p>Graphviz DOT files (<code>.dot</code>, <code>.gv</code>) open in Source with syntax colours for keywords, edge operators, strings and comments. Raw shows the original text, and Hex shows the underlying bytes. The preview leaves HTML-like labels as source text and skips graph layout and drawing.</p>
+          <p>Pyrex and Cython source files (<code>.pyx</code>) open in Source with Python syntax colours. Raw shows the original text, and Hex shows the underlying bytes. Glimt leaves compiler directives unapplied and displays the code without compiling or running it.</p>
+          <p>Verilog headers (<code>.vh</code>) open in Source with bounded syntax colours. Files ending in <code>.v</code> use Verilog highlighting when their contents show Verilog module structure. Ambiguous readable <code>.v</code> files open as plain text. For Verilog previews, Raw shows the original text, and Hex shows the underlying bytes. Glimt leaves the hardware description inert.</p>
+          <p>Dockerfiles, standalone DTDs and XQuery files open in Source with syntax colours, with Raw and Hex also available. Glimt keeps build instructions, entity declarations and queries inert.</p>
+          <p>Makefiles (<code>Makefile</code>, <code>makefile</code>, <code>GNUmakefile</code>, <code>.mk</code> and <code>.mak</code>) open in Source with syntax colours for targets, directives, variables and comments. Preview keeps Make recipes inert.</p>
+          <p>CMake files (<code>CMakeLists.txt</code> and <code>.cmake</code>) open in Source with syntax colours for recognised commands and comments. Glimt keeps CMake scripts inert.</p>
+          <p>Meson files (<code>meson.build</code> and <code>meson_options.txt</code>) open in Source with syntax colours for keywords, comments, strings and numbers. Preview leaves Meson build instructions inert.</p>
+          <p>Terraform configuration and variable files (<code>.tf</code> and <code>.tfvars</code>) open in Source with bounded HCL syntax highlighting. Raw shows the original text. Glimt leaves configuration unevaluated and never provisions resources.</p>
+          <p>Glimt recognises <code>Jenkinsfile</code> by filename and opens it in Source with Groovy syntax colours. Raw shows the original text. Pipeline steps stay inert.</p>
+          <p>TeX and LaTeX files (<code>.tex</code>, <code>.ltx</code>, <code>.cls</code> and <code>.sty</code>) open in Source with syntax colours for control words and comments. Raw shows the original text, and Hex shows the underlying bytes. Glimt leaves macros and embedded code inert and skips external file includes.</p>
+          <p>BibTeX files (<code>.bib</code>) open in Source with syntax colours for recognised entry types and field names. Raw shows the original text, and Hex shows the underlying bytes. The preview leaves bibliography entries in source form.</p>
+          <p>WebAssembly Text files (<code>.wat</code>) open in Source with syntax colours for recognised instructions, types, and line and block comments. Raw shows the original text, and Hex shows the underlying bytes. Glimt leaves the module unvalidated and inert.</p>
+          <p>Bison grammars (<code>.y</code> and <code>.yy</code>) open in Source with syntax colours for directives, grammar sections and production labels. Raw shows the original text, and Hex shows the underlying bytes. Preview leaves embedded C code inert and performs no grammar validation or parser generation.</p>
+          <p>YANG modules (<code>.yang</code>) open in Source with syntax colours for recognised statement words, comments, strings and numbers. Raw shows the original text, and Hex shows the underlying bytes. Preview leaves imports unresolved and performs no schema validation.</p>
+          <p>OpenSCAD files (<code>.scad</code>) open in Source with syntax colours for module declarations, geometry commands, comments and strings. Raw shows the original text. Glimt leaves the code inert and displays the model as source text.</p>
+          <p>Nim files (<code>.nim</code>) open in Source with syntax colours for keywords, types, strings and comments, including nested block comments. Raw shows the original text, and Hex shows the underlying bytes. Glimt keeps Nim code inert.</p>
+          <p>Nix files (<code>.nix</code>) open in Source with syntax colours for recognised keywords, comments, strings and numbers. Raw shows the original text, and Hex shows the underlying bytes. Glimt leaves Nix expressions unevaluated.</p>
+          <p>Elm files (<code>.elm</code>) open in Source with syntax colours for keywords, type and constructor names, strings and nested block comments. Raw shows the original text, and Hex shows the underlying bytes. Glimt previews Elm without compiling it or resolving packages.</p>
+          <p>OCaml implementation and interface files (<code>.ml</code> and <code>.mli</code>) open in Source with syntax colours for keywords, strings, numbers and nested comments. Raw shows the original text, and Hex shows the underlying bytes. Glimt keeps OCaml source inert.</p>
+          <p>Haskell files (<code>.hs</code>) open in Source with syntax colours. Literate Haskell (<code>.lhs</code>) highlights Bird-style code lines and LaTeX code blocks while leaving prose uncoloured. Raw shows the original text, and Hex shows the underlying bytes.</p>
+          <p>Julia files (<code>.jl</code>) open in Source with syntax colours for keywords, strings, numbers and comments. Raw shows the original text, and Hex shows the underlying bytes. Preview leaves Julia code inert.</p>
+          <p>Kotlin source and scripts (<code>.kt</code> and <code>.kts</code>) open in Source with syntax colours. Raw shows the original text, and Hex shows the underlying bytes. Preview keeps Kotlin scripts inert.</p>
+          <p>Scala files (<code>.scala</code>) open in Source with syntax colours for recognised keywords, strings, numbers and comments. Raw shows the original text, and Hex shows the underlying bytes. Preview keeps Scala code inert.</p>
+          <p>Groovy files (<code>.groovy</code>) and Gradle build scripts (<code>.gradle</code>) open in Source with Groovy syntax colours. Raw shows the original text, and Hex shows the underlying bytes. Preview keeps build scripts inert.</p>
+          <p>Zig files (<code>.zig</code>) open in Source with syntax colours. Raw shows the original text, and Hex shows the underlying bytes. Preview keeps Zig code inert.</p>
+          <p>PHP (<code>.php</code>) and Ruby (<code>.rb</code>) files open in Source with syntax colours for keywords, comments and strings. Raw shows the original text, and Hex shows the underlying bytes. Glimt keeps both languages inert.</p>
+          <p>Lua (<code>.lua</code>) and PowerShell (<code>.ps1</code>, <code>.psm1</code> and <code>.psd1</code>) files open in Source with syntax colours for keywords, comments and strings. Raw shows the original text, and Hex shows the underlying bytes. Glimt keeps scripts and modules inert.</p>
+          <p>Erlang (<code>.erl</code> and <code>.hrl</code>) and Clojure family files (<code>.clj</code>, <code>.cljs</code>, <code>.cljc</code> and <code>.edn</code>) open in Source with syntax colours. Raw shows the original text, and Hex shows the underlying bytes. Glimt leaves code and data unevaluated.</p>
+          <p>Fortran files in fixed form (<code>.f</code>, <code>.for</code> and <code>.ftn</code>) or free form (<code>.f90</code> and <code>.f95</code>) and COBOL files (<code>.cbl</code> and <code>.cob</code>) open in Source with syntax colours. Raw shows the original text, and Hex shows the underlying bytes. Glimt keeps the code inert.</p>
+          <p>Device Tree source (<code>.dts</code> and <code>.dtsi</code>) and gettext translation files (<code>.po</code> and <code>.pot</code>) open in Source with syntax colours. Raw shows the original text, and Hex shows the underlying bytes. Preview leaves both formats unvalidated and uncompiled.</p>
+          <p>Go source (<code>.go</code>) and Rust source (<code>.rs</code>) open in Source with syntax colours. Raw shows the original text, and Hex shows the underlying bytes. Preview leaves both languages uncompiled and inert.</p>
+          <p>C# source (<code>.cs</code>) and Perl scripts and modules (<code>.cgi</code>, <code>.pl</code>, <code>.plex</code>, <code>.plx</code> and <code>.pm</code>) open in Source with syntax colours. Raw shows the original text, and Hex shows the underlying bytes. Glimt keeps the code inert.</p>
+          <p>Git and Docker ignore files (<code>.gitignore</code>, <code>.dockerignore</code> and <code>Dockerfile.dockerignore</code>) open in Source with syntax colours for comments and patterns. Raw shows the original text. Previewing an ignore file leaves its patterns unevaluated.</p>
+          <p>INI files (<code>.ini</code>), desktop entries (<code>.desktop</code>), Doxygen configuration (<code>.doxyfile</code>) and KDevelop project files (<code>.kdev3</code>) open in Source with INI syntax colours. Raw shows the original text. Glimt displays these files without launching desktop entries or loading projects or documentation.</p>
+          <p>Glimt recognises <code>.editorconfig</code> and <code>.gitattributes</code> by exact filename. EditorConfig uses INI syntax colours, and Git attributes highlights comments, path patterns and attributes. Raw shows the original text. The preview leaves EditorConfig rules and Git filters unapplied.</p>
+          <p>Glimt opens <code>.npmrc</code>, <code>.gitmodules</code> and systemd units ending in <code>.service</code>, <code>.socket</code> or <code>.timer</code> in Source with INI syntax colours. Use Raw to see the original configuration text. Glimt displays systemd units without loading or starting them.</p>
+          <p>SQL scripts (<code>.sql</code>) open in Source with syntax colours. Glimt uses Transact-SQL highlighting for <code>.tsql</code>, <code>.mssql</code> and <code>.sql</code> files with multiple SQL Server markers outside comments and strings. Oracle PL/SQL files with suffixes such as <code>.pks</code> and <code>.pkb</code> have dedicated syntax colours. Raw shows the original text. Glimt never executes queries.</p>
+          <p>TOML (<code>.toml</code>) and Java Properties (<code>.properties</code>) files also open in Source with syntax colours. Raw shows the original text. TOML inspection recognises simple assignments and table headers within a bounded subset.</p>
+          <p>HTML files (<code>.html</code>, <code>.htm</code>) open in Source with syntax colours for tags, attributes and comments. Jinja and Twig also highlight template syntax and keep expressions inert. XHTML uses the XML views. Glimt leaves scripts inert and never loads page resources.</p>
+          <p>Svelte (<code>.svelte</code>) and Vue (<code>.vue</code>) components open in Source with HTML syntax colours for tags and attributes. Raw shows the original text, and Hex shows the underlying bytes. Embedded scripts and template expressions have no dedicated highlighting. Glimt previews components without compiling or running them.</p>
+          <p>CSS (<code>.css</code>) and SCSS (<code>.scss</code>) stylesheets open in Source with syntax colours, including variable highlighting for SCSS. Raw shows the original text, and Hex shows the underlying bytes. Glimt previews stylesheet source without applying styles or compiling SCSS.</p>
+          <p>Visual Basic and VBScript files (<code>.vb</code>, <code>.vbs</code>, <code>.bas</code>, <code>.basic</code> and <code>.bi</code>) open in Source with case-insensitive syntax colours for keywords, types, comments and strings. Raw shows the original text, and Hex shows the underlying bytes. Glimt previews these files without compiling or running them.</p>
+          <p>Gleam files (<code>.gleam</code>) open in Source with syntax colours. Raw shows the original text, and Hex shows the underlying bytes. Glimt previews Gleam without compiling or running it.</p>
+          <p>Crystal files (<code>.cr</code>) open in Source with syntax colours for keywords, comments and strings. Raw shows the original text, and Hex shows the underlying bytes. Glimt previews Crystal without compiling or running it.</p>
+          <p>Vala source and API files (<code>.vala</code> and <code>.vapi</code>) open in Source with syntax colours for keywords, types, comments and strings. Raw shows the original text, and Hex shows the underlying bytes. Glimt previews Vala without compiling or running it.</p>
+          <p>Vim scripts (<code>.vim</code>) and configuration files (<code>.vimrc</code>, <code>.gvimrc</code>, <code>_vimrc</code>, <code>_gvimrc</code>, <code>vimrc</code> and <code>gvimrc</code>) open in Source with syntax colours for recognised commands, strings and full-line comments. Raw shows the original text, and Hex shows the underlying bytes. Glimt previews these files without executing Vim commands or applying configuration.</p>
+          <p>AWK scripts (<code>.awk</code>), including GNU AWK scripts, open in Source with syntax colours. Raw shows the original text, and Hex shows the underlying bytes. Glimt previews AWK scripts without running them.</p>
+          <p>Gentoo package scripts (<code>.ebuild</code> and <code>.eclass</code>) open in Source with Shell syntax colours. Raw shows the original text, and Hex shows the underlying bytes. Glimt previews these files without running scripts or building packages.</p>
+          <p>Fish shell scripts (<code>.fish</code>) open in Source with syntax colours. Raw shows the original text, and Hex shows the underlying bytes. Glimt displays scripts without running them.</p>
+          <p>Tcl/Tk scripts (<code>.tcl</code>, <code>.tk</code>, <code>.itcl</code> and <code>.wish</code>) open in Source with bounded syntax colours. Raw shows the original text, and Hex shows the underlying bytes. Glimt keeps Tcl/Tk scripts unevaluated.</p>
+          <p>Embedded Ruby templates (<code>.erb</code>) open in Source with syntax colours for HTML and Ruby inside template tags. Raw shows the original text. Glimt previews the template without evaluating its Ruby code.</p>
+          <p>Qt Modeling Language files (<code>.qml</code>) open in Source with syntax colours for keywords, type names, comments, strings and numbers. Raw shows the original text. Glimt previews QML without compiling or running it.</p>
+          <p>Solidity smart contracts (<code>.sol</code>) open in Source with syntax colours for keywords, type names, comments, strings and numbers. Raw shows the original text. The preview leaves contracts uncompiled, unvalidated and inert.</p>
+          <p>Org Mode files (<code>.org</code>) open in Source with syntax colours for heading markers, TODO keywords, directives and comments. Raw shows the original text. Glimt keeps Org Babel code blocks inert.</p>
+          <p>AsciiDoc (<code>.adoc</code> and <code>.asciidoc</code>) and reStructuredText (<code>.rst</code>) open in Source with syntax colours for markup. Raw shows the original text. Glimt leaves directives inert and does not render these formats.</p>
+          <p>JavaServer Pages (<code>.jsp</code>) open in Source with bounded syntax colours for markup and JSP scriptlets. Raw shows the original text. Glimt leaves server-side code unevaluated.</p>
+          <p>Haml templates (<code>.haml</code>) open in Source with bounded syntax colours for tags, classes, comments and attributes. Raw shows the original text, and Hex shows the underlying bytes. Glimt leaves embedded Ruby expressions unevaluated.</p>
+          <p>Pascal and Delphi files (<code>.pas</code>, <code>.dpr</code>, <code>.dpk</code> and <code>.lpr</code>) open in Source with bounded syntax colours. Raw shows the original text, and Hex shows the underlying bytes. Files ending in <code>.pp</code> use Pascal highlighting when their contents show a Pascal program, library or unit. Other readable <code>.pp</code> files, including Puppet manifests, open as plain text.</p>
+          <p>VHDL files (<code>.vhd</code> and <code>.vhdl</code>) open in Source with bounded syntax colours for keywords, types, comments, strings and numbers. Highlighting is case-insensitive. Raw shows the original text, and Hex shows the underlying bytes. Preview keeps the hardware description inert.</p>
+          <p>Files ending in <code>.m</code> use MATLAB or Objective-C highlighting when the contents identify the language. Ambiguous files open as plain text.</p>
+          <p>Ada files (<code>.ada</code>, <code>.adb</code>, <code>.ads</code> and <code>.gnad</code>) open in Source with Ada syntax colours. Raw shows the original text, and Hex shows the underlying bytes. Glimt displays compiler directives as text without compiling the file. Glimt excludes <code>.a</code> from Ada suffix matching because static libraries share it.</p>
+          <p>Eiffel files (<code>.e</code> and <code>.se</code>) open in Source with Eiffel syntax colours. Files ending in <code>.ex</code> or <code>.exs</code> use Elixir highlighting by default and switch to Eiffel when their contents show Eiffel class structure.</p>
+          <p>Glimt opens <code>nginx.conf</code> in Source with Nginx syntax colours. Other <code>.conf</code> files get Nginx highlighting when Glimt recognises distinctive directives such as <code>proxy_pass</code>. Unclassified configuration files open as plain text. Raw shows the original text. Glimt displays the configuration without applying it.</p>
+          <p>Glimt opens <code>.htaccess</code>, <code>httpd.conf</code> and <code>apache2.conf</code> in Source with Apache syntax colours. Other <code>.conf</code> files use Apache highlighting when Glimt finds enough distinctive Apache directives. Unclassified configuration files open as plain text. Raw shows the original text. Glimt displays the configuration without applying it.</p>
+          <p>AppleScript source files (<code>.applescript</code>) open in Source with syntax colours. Raw shows the original text, and Hex shows the underlying bytes. Compiled AppleScript files (<code>.scpt</code>) with binary contents use the Hex fallback. Glimt previews these files without running scripts.</p>
+          <p>AutoHotkey scripts (<code>.ahk</code>), Inno Setup scripts (<code>.iss</code>) and NSIS scripts and headers (<code>.nsi</code> and <code>.nsh</code>) open in Source with syntax colours. Raw shows the original text, and Hex shows the underlying bytes. Glimt displays these files as text without running scripts or building installers.</p>
+          <p>Rego policies (<code>.rego</code>), LDAP Data Interchange Format files (<code>.ldif</code>), and RDF files in Turtle (<code>.ttl</code>), N3 (<code>.n3</code>) or N-Triples (<code>.nt</code>) open in Source with syntax highlighting. Raw shows the original text and Hex shows the underlying bytes. Highlighting works on the source text, including malformed or truncated input. Glimt leaves policies unevaluated, leaves directory entries unapplied, and displays RDF source without resolving identifiers or running queries.</p>
+          <p>CUE configuration files (<code>.cue</code>) and KDL documents (<code>.kdl</code>) open in Source with syntax colours for comments, strings and numbers. Raw shows the original text, and Hex shows the underlying bytes. Glimt displays CUE constraints without evaluating them and KDL nodes without interpreting them.</p>
+          <p>Glimt uses the <code>.ts</code> suffix to identify TypeScript source. macOS also associates that suffix with MPEG transport streams, so Finder may choose a different Quick Look provider.</p>
+          <p>Files ending in <code>.bb</code> use Clojure highlighting for Babashka, and <code>.ms</code> files use MiniScript highlighting. Blitz Basic and MAXScript files sharing those suffixes may display incorrect syntax colours.</p>
+          <p>Readable <code>.fs</code> files use F# highlighting even when macOS identifies them as GLSL fragment shaders.</p>
+          <p>Go module and workspace files open in Source with syntax colours for the exact filenames <code>go.mod</code>, <code>go.sum</code>, <code>go.work</code> and <code>go.work.sum</code>. Raw shows the original text. Glimt does not resolve or download modules. AMPL and Modula-2 also use <code>.mod</code> and have no dedicated format route.</p>
+          <p>Readable <code>.pro</code> files open as plain text. Prolog, QMake and IDL share this suffix. Readable Prolog source saved with the <code>.pl</code> suffix uses Perl highlighting.</p>
+          <p>Readable <code>.r</code> and <code>.R</code> files use R highlighting, including Rebol files that share those suffixes. Glimt has no dedicated Rebol highlighting.</p>
+          <p>Readable <code>.d</code> files use D highlighting, including GCC dependency files that share the suffix. GCC <code>.ld</code> and <code>.map</code> files offer Raw and Hex views.</p>
+        </article>
+        <article class="format-item">
+          <p class="format-tag">#</p>
+          <h3>Markdown</h3>
+          <p>Markdown files (<code>.md</code>, <code>.markdown</code>, <code>.mdown</code>, <code>.mkd</code>) and TextBundle packages open in Rendered or Source, with tables, tasks, footnotes, math and Mermaid diagrams available in Rendered. Glimt previews <code>.textbundle</code> directories with a version 1 or 2 Markdown manifest in <code>info.json</code> and Markdown content in <code>text.md</code> at the package root. Rendered can show eligible local images under <code>assets/</code>. Compressed <code>.textpack</code> files are unsupported.</p>
+          <p>R Markdown (<code>.rmd</code>) uses the Markdown views. Glimt leaves code chunks inert and displays them without R syntax colouring. Standalone Mermaid files (<code>.mmd</code>, <code>.mermaid</code>) render supported diagrams and keep the source available in Raw.</p>
+          <p>API Blueprint (<code>.apib</code>) and Cursor MDC (<code>.mdc</code>) use the Markdown Rendered and Source views. API Blueprint content is treated as Markdown, and Cursor frontmatter stays visible as text. Quarto (<code>.qmd</code>) and MDX (<code>.mdx</code>) open in Source with Raw available. Quarto code cells, MDX JSX and imports, and Cursor rules stay inert.</p>
+          <p>Math and Mermaid render offline within size and syntax limits. When an expression or diagram cannot render, its source stays visible. Links to headings in the same document can navigate within the preview. External links stay inert, and remote images display as alt text.</p>
+        </article>
+        <article class="format-item">
+          <p class="format-tag">{ }</p>
+          <h3>Structured data</h3>
+          <p>JSON, YAML and XML (<code>.xml</code>) offer Tree, Pretty when available, and Raw. For XML documents with repeated records directly under the root, Table can show one row per record, with attributes and immediate child elements as columns. Tree still shows the XML hierarchy. XML Schema (<code>.xsd</code>) and XSLT (<code>.xsl</code>, <code>.xslt</code>) use the XML views. Glimt rejects external DTDs, never loads external resources, and performs no schema validation or transformations.</p>
+          <p>Property lists (<code>.plist</code>, <code>.loctable</code>, <code>.wflow</code>) open in Tree and offer Pretty when formatted text is available. Raw shows the original text for XML and OpenStep property lists and a bounded hexadecimal view of the original bytes for binary property lists.</p>
+          <p>Glimt accepts a subset of JSON5 (<code>.json5</code>) with comments, trailing commas and single-quoted strings. Supported Zig Object Notation files (<code>.zon</code>) also use the JSON tree. Raw preserves the original source. YAML files (<code>.yaml</code>, <code>.yml</code>, <code>.flow</code>) show each document separately in Tree when the file contains multiple documents.</p>
+          <p>JSON Lines (<code>.jsonl</code>, <code>.ndjson</code>) accepts one JSON value per line, including objects, arrays and scalars. Tree keeps records in file order, skips blank lines and shows a line-numbered diagnostic for malformed records. Raw keeps the original text.</p>
+          <p>Local X.509 previews show the subject, issuer when available, serial number, validity dates and SHA-256 fingerprint. Glimt accepts up to 16 certificates per PEM bundle (<code>.pem</code>, <code>.crt</code>) and one certificate per DER file (<code>.der</code>, <code>.cer</code>). Private-key PEM blocks are rejected. Glimt does not import certificates or evaluate trust. Raw and Hex remain available for unreadable certificates.</p>
+          <p>Supported certificate-only PKCS#7 bundles (<code>.p7b</code>, <code>.p7c</code>) show certificate subjects and SHA-256 fingerprints in Tree. Glimt accepts up to 16 certificates in a DER or PEM bundle. Signature and trust status remain unchecked. Unreadable bundles retain Raw or Hex according to the file’s contents.</p>
+          <p>Supported DER PKCS#12 version 3 files (<code>.p12</code>, <code>.pfx</code>) show the version, count and types of up to 16 envelopes, and whether MAC data is present. Glimt leaves the payload opaque and performs no decryption or MAC verification. Hex is available when inspection fails.</p>
+          <p>GeoJSON (<code>.geojson</code>) opens in Tree. For supported features and geometries, Tree shows a bounded summary of feature names, geometry types, coordinate counts and longitude and latitude bounds where available. Pretty formats parsed JSON, and Raw shows the original source. If valid JSON cannot be summarized as GeoJSON, Glimt keeps the standard JSON views. Previewing GeoJSON requires no maps or network requests.</p>
+          <p>KML (<code>.kml</code>) and GPX (<code>.gpx</code>) offer a Tree summary of placemarks and geometries or waypoints, routes and tracks, with coordinate bounds where available. Pretty shows formatted XML when available, and Raw shows the original XML. Glimt displays the summary without loading maps or external resources.</p>
+          <p>Readable mount tables named exactly <code>fstab</code> offer a bounded Tree of filesystem specifications, mount points, filesystem types and options. Raw shows the original text within the preview’s read limit. Glimt leaves mount settings unapplied.</p>
+          <p>Dotenv files such as <code>.env</code>, <code>.env.local</code> and <code>service.env</code> open in Tree with parsed entries. Raw shows the original text, and Glimt leaves variable references and commands unevaluated. Windows Registry exports (<code>.reg</code>) offer a bounded Tree of keys and values, Raw for the original text, and Hex for the underlying bytes. Glimt never applies the export.</p>
+          <p>Glimt recognises SQLite databases by the <code>.sqlite</code> and <code>.sqlite3</code> extensions or the SQLite 3 file signature. Tree shows table and view names and definitions within inspection limits. Glimt opens the database read-only and never queries stored rows. Thumbnails show schema counts only. Raw and Hex remain available when schema inspection fails.</p>
+          <p>Glimt uses the <code>.zip</code> suffix to identify supported classic, single-disk ZIP archives. Table lists entries in archive order with names, file or directory types, and declared compressed and uncompressed sizes. Empty ZIP archives show an explicit empty state. Glimt reads archive metadata without extracting or verifying member contents. Malformed archives, archives that exceed inspection limits, and unsupported variants such as ZIP64 or encrypted archives fall back to Raw or Hex without showing a partial inventory.</p>
+          <p>USTAR archives (<code>.tar</code>, <code>.tar.gz</code> and <code>.tgz</code>) open in Table with a bounded inventory of entry names, types, sizes and link targets. Thumbnails show entry counts only. Glimt never extracts files or renders their contents. Unsupported variants such as PAX and GNU long-name archives show a diagnostic with Raw and Hex available.</p>
+          <p>Supported provisioning profiles (<code>.mobileprovision</code>) contain a property list wrapped in CMS SignedData. The preview shows selected declarations such as the profile name, UUID, team identifiers, dates, platforms and entitlements. It omits embedded developer certificates. Glimt leaves the signature and profile usability unchecked and never installs the profile. Encrypted, malformed, incomplete or oversized profiles fall back to Hex without showing partial metadata.</p>
+          <p>Supported compact JWS tokens (<code>.jwt</code>) show the decoded header and claims, the declared algorithm, and whether a signature is present. Glimt labels the claims as unverified and performs no signature verification or claim validation. The header and claims must both be JSON objects. Encrypted five-segment JWE tokens, duplicate JSON keys, invalid base64url and other malformed, incomplete or oversized inputs retain Raw and Hex without showing partial claims.</p>
+          <p>JSON Web Key files (<code>.jwk</code>) show one RSA, EC, OKP or octet key in Tree. JSON Web Key Sets (<code>.jwks</code>) show 1–256 keys of those types. Tree redacts standard private and symmetric key values, and thumbnails omit those values. Glimt previews key metadata locally without importing or verifying keys. Duplicate JSON members and malformed key objects fall back to Raw and Hex. Those views can expose private key material from the original file.</p>
+          <p>Glimt uses the contents of <code>.pub</code> files to distinguish OpenSSH public keys from PEM public keys. OpenSSH previews show the algorithm, key size, comment when present and SHA-256 fingerprint. Supported PEM public keys show metadata such as the algorithm and key size. Glimt reads public key metadata locally without importing keys or assessing trust.</p>
+          <p>Glimt previews CycloneDX JSON 1.4–1.7 (<code>.cdx.json</code> or <code>bom.json</code>) and SPDX JSON 2.2–2.3 (<code>.spdx.json</code>) in Tree. Glimt checks format and version markers within its JSON inspection limits. Thumbnails show counts without exposing component values. Glimt leaves external references unopened and performs no schema or semantic validation. Duplicate JSON members, malformed or incomplete files, unsupported versions and files that exceed inspection limits retain Raw and Hex without showing partial SBOM data.</p>
+          <p>Tree also supports CycloneDX XML 1.4–1.7 (<code>.cdx.xml</code> or <code>bom.xml</code>) and SPDX 2.2–2.3 in Tag-Value (<code>.spdx</code>) or single-document YAML (<code>.spdx.yaml</code>, <code>.spdx.yml</code>). Glimt checks format markers and structure within inspection limits. Tag-Value keeps repeated tags and continuation lines in order, and XML rejects DTDs and external entities. Thumbnails show summary counts and omit component values. Glimt leaves external references unopened and performs no full schema or semantic validation. Malformed, incomplete, unsupported or oversized files retain Raw and Hex without showing partial SBOM data.</p>
+          <p>Glimt uses the <code>.cdx.pb</code> suffix for CycloneDX protobuf versions 1.5–1.7. Tree shows selected document and component fields, including component names and versions when present. Thumbnails show the schema version and component count. Glimt reads a bounded set of fields without validating the full schema or following external references. Malformed files and unsupported versions fall back to Raw or Hex.</p>
+          <p>Email files (<code>.eml</code>) show headers, plain-text bodies and attachment metadata in Tree. The preview omits HTML and encoded payloads. Attachments stay unopened.</p>
+          <p>iCalendar files (<code>.ics</code>) show components and their properties in Tree without expanding recurrences or resolving time zones. vCard files (<code>.vcf</code>) show one or more contact cards, with inline binary data omitted. Glimt previews both formats without importing events or contacts. Across all three formats, links stay inert and Raw remains available when structured inspection fails.</p>
+          <p>Apple privacy manifests (<code>PrivacyInfo.xcprivacy</code> and other <code>.xcprivacy</code> files) show declared tracking, collected data and accessed API reasons in Tree and Pretty. Glimt checks the structure of recognized property-list keys and preserves unknown keys. Thumbnails show counts only. The preview performs no App Store compliance review. Malformed manifests retain Raw or Hex.</p>
+          <p>Xcode string catalogs (<code>.xcstrings</code>) and supported version 1 test plans (<code>.xctestplan</code>) open in Tree by default. Pretty shows formatted JSON when available, Raw shows the original text, and Hex shows the underlying bytes. String catalog thumbnails show only string and locale counts. Test plan thumbnails show target and configuration counts only. Glimt previews test plans without running tests or opening referenced project files. Malformed or unsupported catalogs and test plans retain Raw or Hex.</p>
+          <p>Xcode schemes (<code>.xcscheme</code>) offer Tree, Pretty when available, and Raw for the original XML. Glimt rejects DTDs and external entities, and never runs scheme actions or builds targets. Malformed or unsupported schemes retain Raw or Hex.</p>
+          <p>Xcode project files (<code>.pbxproj</code>) open as OpenStep property lists, and workspace metadata (<code>.xcworkspacedata</code>) opens as XML. Both offer Tree, Pretty when available, and Raw. Glimt never evaluates project objects or opens referenced projects. Build configuration files (<code>.xcconfig</code>) offer syntax highlighting in Source without expanding includes or build settings. Raw remains available for retained content when inspection fails or reaches a limit.</p>
+          <p>Files named exactly <code>CodeResources</code> use the property-list views when their resource-map structure is recognized. Thumbnails show counts only. Glimt displays the resource metadata without verifying code signatures or bundle integrity. Malformed or unsupported files retain Raw or Hex.</p>
+        </article>
+        <article class="format-item">
+          <p class="format-tag">Aa</p>
+          <h3>Text and tables</h3>
+          <p>Plain text with encoding and line-ending detection. CSV and TSV open in Table by default, using the first record as column headers. Table supports quoted fields that span lines and rows of different lengths. Malformed or incomplete input and files that exceed inspection limits can show a diagnostic with Raw available for the retained text.</p>
+          <p>Log files (<code>.log</code>, <code>.syslog</code>, <code>.cef</code> and <code>.leef</code>) offer Table and Tree for recognised records, including Syslog, JSON logs, logfmt and common web server access logs. Table shows event fields such as timestamp, severity and message. Tree preserves nested fields. Raw shows the retained original text, including unrecognised lines, and remains available when the structured preview reaches its limits.</p>
+          <p>Unified and Git diff files (<code>.diff</code> and <code>.patch</code>) show changed files and hunks in Diff, with added, removed and context lines. Glimt shows diagnostics for malformed hunks or inspection limits. Raw shows the retained patch text. Glimt previews patches without applying them.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="details" aria-label="Safety">
+      <article>
+        <span class="detail-number">01</span>
+        <h3>Local and offline</h3>
+        <p>Glimt never uses the network. Remote images and links stay inert text.</p>
+      </article>
+      <article>
+        <span class="detail-number">02</span>
+        <h3>Never executes content</h3>
+        <p>Rendering is native. Glimt never runs scripts or external tools and never loads file content in a browser engine.</p>
+      </article>
+      <article>
+        <span class="detail-number">03</span>
+        <h3>Bounded by design</h3>
+        <p>Quick Look previews and thumbnails use at most 64 KiB of regular-file content to select an inspector. A TextBundle shares that budget across its manifest and Markdown sample. The selected inspector has its own limits. Oversized or unsupported input can fall back to a limited readable view. Inspection has a 2-second deadline for previews and a 1-second deadline for thumbnails. If it times out, Glimt can fall back to the bytes already read.</p>
+      </article>
+    </section>
+
+    <section class="setup" id="setup" aria-labelledby="setup-title">
+      <div class="setup-copy">
+        <p class="section-label">Build from source</p>
+        <h2 id="setup-title">Build and try Glimt.</h2>
+        <p>Beta builds are published on <a href="https://github.com/HansJoakimPersson/Glimt/releases">GitHub Releases</a>; they are not yet notarized. You can also build and run the host app with Xcode on macOS 15 or later. Finder and Quick Look provider selection remains unverified for the current candidate and can be affected by other installed apps.</p>
+        <p>Start with the <a href="https://github.com/HansJoakimPersson/Glimt#readme">README</a> for building, testing and installing, and <a href="https://github.com/HansJoakimPersson/Glimt/blob/main/RELEASING.md">RELEASING.md</a> for packaging and releases.</p>
+      </div>
+      <ol class="setup-steps">
+        <li><span>1</span><div><strong>Clone the repository</strong><p>Get the source from GitHub.</p></div></li>
+        <li><span>2</span><div><strong>Build and test</strong><p>Open <code>Glimt.xcodeproj</code> and build the Glimt scheme. Routine builds and tests need no local config or developer team.</p></div></li>
+        <li><span>3</span><div><strong>Run it</strong><p>Run the Glimt scheme with Xcode's Sign to Run Locally. <code>make test</code> runs the full unsigned test gate and <code>make package</code> builds the release archive.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="final-cta" aria-labelledby="cta-title">
+      <img src="./assets/glimt-icon.svg" alt="" width="76" height="76">
+      <div>
+        <h2 id="cta-title">Inspect files safely.</h2>
+        <p>Glimt is free and open source for macOS 15 and later.</p>
+      </div>
+      <a class="button button-primary" href="https://github.com/HansJoakimPersson/Glimt">View on GitHub</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <img src="./assets/glimt-icon.svg" alt="" width="30" height="30">
+      <span>Glimt</span>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/HansJoakimPersson/Glimt/releases"><svg aria-hidden="true"><use href="#icon-file-text"></use></svg><span>Release notes</span></a>
+      <a href="https://github.com/HansJoakimPersson/Glimt/issues/new/choose"><svg aria-hidden="true"><use href="#icon-circle-help"></use></svg><span>Report an issue</span></a>
+      <a href="https://github.com/HansJoakimPersson/Glimt"><svg aria-hidden="true"><use href="#icon-github"></use></svg><span>Source</span></a>
+      <a href="https://github.com/sponsors/hansjoakimpersson"><svg aria-hidden="true"><use href="#icon-heart"></use></svg><span>GitHub Sponsors</span></a>
+    </div>
+    <p>AGPL-3.0</p>
+  </footer>
+  <script>
+    const header = document.querySelector("[data-site-header]");
+    const headerBrand = document.querySelector("[data-header-brand]");
+    const heroIdentity = document.querySelector("[data-hero-identity]");
+    const sectionLinks = [...document.querySelectorAll("[data-section-link]")];
+    const sections = sectionLinks
+      .map((link) => document.getElementById(link.dataset.sectionLink))
+      .filter(Boolean);
+
+    const updateHeader = () => {
+      header.classList.toggle("is-scrolled", window.scrollY > 24);
+
+      const identityBottom = heroIdentity.getBoundingClientRect().bottom;
+      const hasCollectedBrand = identityBottom <= header.offsetHeight + 18;
+      headerBrand.classList.toggle("is-visible", hasCollectedBrand);
+      headerBrand.setAttribute("aria-hidden", String(!hasCollectedBrand));
+      headerBrand.tabIndex = hasCollectedBrand ? 0 : -1;
+
+      const marker = window.scrollY + header.offsetHeight + 120;
+      let activeSection = "";
+      for (const section of sections) {
+        if (section.offsetTop <= marker) activeSection = section.id;
+      }
+
+      sectionLinks.forEach((link) => {
+        const isActive = link.dataset.sectionLink === activeSection;
+        link.classList.toggle("is-active", isActive);
+        if (isActive) link.setAttribute("aria-current", "location");
+        else link.removeAttribute("aria-current");
+      });
+    };
+
+    updateHeader();
+    window.addEventListener("scroll", updateHeader, { passive: true });
+    window.addEventListener("resize", updateHeader);
+  </script>
+</body>
+</html>

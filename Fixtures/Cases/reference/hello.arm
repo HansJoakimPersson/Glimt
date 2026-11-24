@@ -1,0 +1,9 @@
+    .text
+    .global _start
+_start:
+    mov r0, #1          @ stdout
+    ldr r1, =message
+    mov r2, #6
+    swi 0
+message:
+    .ascii "Hello\n"

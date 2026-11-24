@@ -1,0 +1,21 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "Glimt Demonstration",
+  "documentNamespace": "https://example.invalid/spdx/glimt-demo",
+  "creationInfo": {
+    "creators": ["Tool: glimt-1.0"],
+    "created": "2026-11-21T00:00:00Z"
+  },
+  "packages": [
+    {
+      "name": "Example Library",
+      "SPDXID": "SPDXRef-Package-ExampleLibrary",
+      "versionInfo": "2.4.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false
+    }
+  ],
+  "relationships": []
+}

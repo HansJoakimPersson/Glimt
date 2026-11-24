@@ -1,0 +1,9 @@
+agentflow TB
+  flow reviewer["Review Agent"]
+    changes["Gather changes"]@{ shape: input }
+    analyse["Analyse diff"]@{ shape: task }
+    inspect["run_linter"]@{ shape: tool }
+    decision["Clean?"]@{ shape: decision }
+
+    changes --> analyse --> inspect --> decision
+  end

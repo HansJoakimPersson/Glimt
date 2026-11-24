@@ -1,0 +1,5 @@
+// Greet three times
+var count = 3
+for i = 1 to count
+  print "Hej " + i
+next

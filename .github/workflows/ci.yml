@@ -1,0 +1,90 @@
+name: CI
+
+# The single build pipeline: pushes and pull requests run it directly, and release.yml calls it for
+# a tag so the published artifact is the one this workflow built and tested. All logic lives in
+# the Makefile and scripts/, so `make test` and `make package` reproduce a run locally.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name != 'workflow_call' && !startsWith(github.ref, 'refs/tags/') }}
+
+env:
+  # Pinned toolchain: the Xcode Glimt is developed with (see RELEASING.md).
+  DEVELOPER_DIR: /Applications/Xcode_27.0.app/Contents/Developer
+
+jobs:
+  build:
+    name: Test and package
+    runs-on: xcode-27
+    timeout-minutes: 90
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Check release tag
+        if: startsWith(github.ref, 'refs/tags/')
+        run: bash scripts/version.sh --check-tag "$GITHUB_REF_NAME"
+
+      - name: Toolchain
+        run: |
+          xcodebuild -version
+          swift --version
+          python3 --version
+          brew install shellcheck
+          make version
+
+      - name: Test
+        run: make test
+
+      - name: Package
+        env:
+          # Optional. Without these secrets the app is ad-hoc signed and not notarized.
+          GLIMT_SIGN_IDENTITY: ${{ secrets.GLIMT_SIGN_IDENTITY }}
+          GLIMT_DEVELOPMENT_TEAM: ${{ secrets.GLIMT_DEVELOPMENT_TEAM }}
+          GLIMT_SIGNING_CERTIFICATE_P12: ${{ secrets.GLIMT_SIGNING_CERTIFICATE_P12 }}
+          GLIMT_SIGNING_CERTIFICATE_PASSWORD: ${{ secrets.GLIMT_SIGNING_CERTIFICATE_PASSWORD }}
+          GLIMT_NOTARY_KEY_P8: ${{ secrets.GLIMT_NOTARY_KEY_P8 }}
+          GLIMT_NOTARY_KEY_ID: ${{ secrets.GLIMT_NOTARY_KEY_ID }}
+          GLIMT_NOTARY_ISSUER: ${{ secrets.GLIMT_NOTARY_ISSUER }}
+        run: |
+          if [[ -n "$GLIMT_SIGN_IDENTITY" ]]; then
+            keychain="$RUNNER_TEMP/signing.keychain-db"
+            keychain_password="$(uuidgen)"
+            printf '%s' "$GLIMT_SIGNING_CERTIFICATE_P12" | base64 --decode >"$RUNNER_TEMP/signing.p12"
+            security create-keychain -p "$keychain_password" "$keychain"
+            security set-keychain-settings -lut 21600 "$keychain"
+            security unlock-keychain -p "$keychain_password" "$keychain"
+            security import "$RUNNER_TEMP/signing.p12" -k "$keychain" -P "$GLIMT_SIGNING_CERTIFICATE_PASSWORD" -T /usr/bin/codesign
+            security set-key-partition-list -S apple-tool:,apple: -s -k "$keychain_password" "$keychain" >/dev/null
+            security list-keychains -d user -s "$keychain" $(security list-keychains -d user | tr -d '"')
+            rm -f "$RUNNER_TEMP/signing.p12"
+            if [[ -n "$GLIMT_NOTARY_KEY_P8" ]]; then
+              export GLIMT_NOTARY_KEY_PATH="$RUNNER_TEMP/notary.p8"
+              printf '%s' "$GLIMT_NOTARY_KEY_P8" >"$GLIMT_NOTARY_KEY_PATH"
+            fi
+          else
+            unset GLIMT_SIGN_IDENTITY GLIMT_DEVELOPMENT_TEAM
+          fi
+          make package
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: glimt-dist
+          path: dist/*
+          if-no-files-found: error
+
+      - name: Remove signing material
+        if: always()
+        run: |
+          security delete-keychain "$RUNNER_TEMP/signing.keychain-db" 2>/dev/null || true
+          rm -f "$RUNNER_TEMP/notary.p8" "$RUNNER_TEMP/signing.p12"

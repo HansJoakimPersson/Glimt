@@ -1,0 +1,5 @@
+// Felix
+fun square (x:int) => x * x;
+for i in 1..3 do
+  println$ "Hej " + str (square i);
+done
