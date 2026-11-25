@@ -1,3 +1,4 @@
+import AppKit
 import Foundation
 
 /// Glimt's version as built into a bundle's Info.plist from `Config/Version.xcconfig`.
@@ -40,5 +41,10 @@ struct GlimtVersion: Equatable {
             return "\(marketingVersion) \(prerelease)"
         }
         return "\(marketingVersion) \(stage) \(parts[1])"
+    }
+
+    /// Options for the standard About panel, which shows them as "Version 0.1.0 Beta 1 (1)".
+    var aboutPanelOptions: [NSApplication.AboutPanelOptionKey: Any] {
+        [.applicationVersion: displayVersion, .version: buildNumber]
     }
 }

@@ -1,3 +1,4 @@
+import AppKit
 import Foundation
 import XCTest
 
@@ -56,7 +57,30 @@ final class GlimtVersionTests: XCTestCase {
         XCTAssertEqual(hostVersion.prerelease, configured["GLIMT_PRERELEASE"].flatMap { $0.isEmpty ? nil : $0 })
     }
 
+    // MARK: About window
+
+    /// Opens the standard About panel with the app's options, as its About Glimt menu item does, and
+    /// reads what the panel shows for the configured version.
+    @MainActor func testAboutWindowShowsConfiguredVersionAndBuild() throws {
+        let configured = try configuredVersion()
+        let marketing = try XCTUnwrap(configured["MARKETING_VERSION"])
+        let build = try XCTUnwrap(configured["CURRENT_PROJECT_VERSION"])
+        let version = try XCTUnwrap(GlimtVersion(infoDictionary: info(marketing, build, configured["GLIMT_PRERELEASE"])))
+        let application = NSApplication.shared
+        let before = Set(application.windows.map(ObjectIdentifier.init))
+
+        application.orderFrontStandardAboutPanel(options: version.aboutPanelOptions)
+
+        let about = try XCTUnwrap(application.windows.first { !before.contains(ObjectIdentifier($0)) })
+        addTeardownBlock { @MainActor in about.close() }
+        let texts = descendants(try XCTUnwrap(about.contentView)).compactMap { ($0 as? NSTextField)?.stringValue }
+        XCTAssertTrue(texts.contains { $0.contains(version.displayVersion) && $0.contains("(\(build))") },
+                      texts.joined(separator: " | "))
+    }
+
     // MARK: Helpers
+
+    @MainActor private func descendants(_ view: NSView) -> [NSView] { [view] + view.subviews.flatMap(descendants) }
 
     private func info(_ marketing: String, _ build: String, _ prerelease: String?) -> [String: Any] {
         var info: [String: Any] = ["CFBundleShortVersionString": marketing, "CFBundleVersion": build]

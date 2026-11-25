@@ -33,12 +33,7 @@ struct GlimtApp: App {
 
     /// Standard About panel showing the pre-release label, e.g. "Version 0.1.0 Beta 1 (1)".
     @MainActor private static func showAboutPanel() {
-        var options: [NSApplication.AboutPanelOptionKey: Any] = [:]
-        if let version = GlimtVersion.current {
-            options[.applicationVersion] = version.displayVersion
-            options[.version] = version.buildNumber
-        }
-        NSApp.orderFrontStandardAboutPanel(options: options)
+        NSApp.orderFrontStandardAboutPanel(options: GlimtVersion.current?.aboutPanelOptions ?? [:])
         NSApp.activate()
     }
 }
