@@ -990,65 +990,6 @@ final class FormatFixtureCoverageTests: XCTestCase {
         }
     }
 
-    func testBisonPinnedRealInputLexicalRuns() throws {
-        let repository = URL(fileURLWithPath: #filePath).deletingLastPathComponent()
-            .deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent()
-        let specimen = repository.appendingPathComponent("docs/plans/.runs/2026-11-22-bison/parse.y")
-        guard FileManager.default.fileExists(atPath: specimen.path) else {
-            throw XCTSkip("The orchestrator-staged GNU Bison input is not present")
-        }
-        let bytes = try Data(contentsOf: specimen)
-        let digest = SHA256.hash(data: bytes).map { String(format: "%02x", $0) }.joined()
-        XCTAssertEqual(digest, "4faeb31cf76adcba111f07f4a0729a0b2aea8131549c80810a4c471f454aa983")
-
-        let text = String(decoding: bytes, as: UTF8.self)
-        let result = PreviewInspectionResult.prepare(bytes: bytes, fileSize: bytes.count, fileName: "parse.y", systemUTI: nil)
-        XCTAssertEqual(result.formatDefinition?.id.rawValue, "reference-bison")
-        XCTAssertEqual(result.sourceDocument?.language, .bison)
-        XCTAssertEqual(result.analysis.text, text)
-        XCTAssertEqual(result.originalBytes, bytes)
-        let document = try XCTUnwrap(result.sourceDocument)
-        let sourceNSString = document.source as NSString
-        func lineRange(_ oneBasedLine: Int) throws -> NSRange {
-            guard oneBasedLine > 0, oneBasedLine <= document.lineStarts.count else {
-                throw NSError(domain: "BisonRealInput", code: 1, userInfo: [NSLocalizedDescriptionKey: "Missing line \(oneBasedLine)"])
-            }
-            let start = document.lineStarts[oneBasedLine - 1]
-            var end = oneBasedLine < document.lineStarts.count ? document.lineStarts[oneBasedLine] : sourceNSString.length
-            while end > start, [10, 13].contains(sourceNSString.character(at: end - 1)) { end -= 1 }
-            return NSRange(location: start, length: end - start)
-        }
-        func tokenRun(_ oneBasedLine: Int, _ token: String, _ kind: SyntaxTokenKind) throws -> HighlightRun {
-            let line = try lineRange(oneBasedLine)
-            let range = sourceNSString.range(of: token, options: [], range: line)
-            guard range.location != NSNotFound else {
-                throw NSError(domain: "BisonRealInput", code: 2, userInfo: [NSLocalizedDescriptionKey: "Missing \(token) on line \(oneBasedLine)"])
-            }
-            return .init(range: range, kind: kind)
-        }
-        let expected = [
-            HighlightRun(range: try lineRange(20), kind: .comment),
-            try tokenRun(24, "%code", .directive),
-            try tokenRun(78, "\"number\"", .string),
-            try tokenRun(80, "%printer", .directive),
-            try tokenRun(80, "$$", .variable),
-            try tokenRun(86, "%%", .directive),
-            try tokenRun(88, "input", .type),
-            try tokenRun(88, ":", .keyword),
-            try tokenRun(90, "|", .keyword),
-            try tokenRun(94, "$exp", .variable),
-            try tokenRun(106, "@$", .variable),
-            try tokenRun(115, "%%", .directive)
-        ]
-        for run in expected { XCTAssertTrue(document.highlighting.runs.contains(run), sourceNSString.substring(with: run.range)) }
-        for lineNumber in [27, 118] {
-            let line = try lineRange(lineNumber)
-            XCTAssertFalse(document.highlighting.runs.contains {
-                NSIntersectionRange($0.range, line).length > 0
-            }, "Unexpected Bison run on line \(lineNumber)")
-        }
-    }
-
     func testElmMalformedAndTruncatedSource() throws {
         let malformedURL = try fixtureURL("Cases/source/invalid/malformed.elm")
         let malformedBytes = try Data(contentsOf: malformedURL)

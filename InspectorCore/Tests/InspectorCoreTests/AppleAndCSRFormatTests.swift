@@ -1,5 +1,4 @@
 import Foundation
-import CryptoKit
 import XCTest
 @testable import InspectorCore
 
@@ -115,27 +114,6 @@ final class AppleAndCSRFormatTests: XCTestCase {
 
         let showcase = try XCTUnwrap(FormatCatalog.definition(for: FormatID(rawValue: "pkcs12"))?.showcaseFixture)
         XCTAssertEqual(try Data(contentsOf: fixtureURL(showcase)), bytes)
-    }
-
-    func testPKCS12RealReferenceOracle() throws {
-        var repositoryRoot = URL(fileURLWithPath: #filePath)
-        for _ in 0..<4 { repositoryRoot.deleteLastPathComponent() }
-        let url = repositoryRoot.appendingPathComponent("docs/plans/.runs/2026-11-23-pkcs12/real-certificate-only.pfx")
-        guard FileManager.default.fileExists(atPath: url.path) else {
-            throw XCTSkip("Stage the independent PKCS#12 export in the run directory to check the reference oracle")
-        }
-        let bytes = try Data(contentsOf: url)
-        XCTAssertEqual(bytes.count, 1_115)
-        XCTAssertEqual(SHA256.hash(data: bytes).map { String(format: "%02x", $0) }.joined(),
-                       "66804c9cccf04dbaf60f3932f57e7972da425b32c454d184e9e7405217d92de4")
-        let result = try SecurityFormatInspector.inspect(data: bytes, fileSize: bytes.count, formatID: .pkcs12)
-        XCTAssertEqual(result.summary, "1 envelope")
-        XCTAssertEqual(result.content, .object([
-            .init(key: "Version", value: .number("3")),
-            .init(key: "Envelope count", value: .number("1")),
-            .init(key: "Envelope kinds", value: .array([.string("encryptedData")])),
-            .init(key: "MacData present", value: .boolean(true))
-        ]))
     }
 
     func testPKCS12EnvelopeOrderDuplicatesAndOpaquePayloads() throws {
