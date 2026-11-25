@@ -21,7 +21,7 @@ shows, and it does not use the network.
 
 <img src="docs/assets/glimt-icon.svg" width="96" alt="Glimt icon">
 
-<img src="docs/assets/glimt-quicklook.png" width="800" alt="Two Quick Look windows: a Swift file with syntax highlighting and line numbers, and a rendered Markdown file with a table and a code block">
+<img src="docs/assets/glimt-overview.png" width="800" alt="The Glimt app with its settings beside a rendered Markdown preview, and in front of it a Quick Look window showing a Swift file with syntax highlighting and line numbers">
 
 ## Features
 
@@ -32,6 +32,8 @@ shows, and it does not use the network.
 - Tree, Pretty and Table views for JSON, YAML, XML, property lists, CSV, logs, certificates,
   SQLite schemas and more. Archives are listed, never extracted.
 - Finder thumbnails from the same engine.
+- Apple developer files such as provisioning profiles, entitlements and privacy manifests, shown as
+  readable metadata without installing or trusting anything.
 - An app for opening files directly, changing appearance and choosing which views each format
   offers.
 
@@ -42,20 +44,24 @@ macOS 15 or later, on Apple silicon or Intel. Glimt needs no special permissions
 ## Installation
 
 1. Download `Glimt-<version>-macOS.zip` from
-   [GitHub Releases](https://github.com/HansJoakimPersson/Glimt/releases).
+   [Releases](https://github.com/HansJoakimPersson/Glimt/releases).
 2. Unzip it and move `Glimt.app` to `/Applications`.
-3. Open Glimt once. Beta builds are not notarized yet, so macOS blocks the first launch: choose
+3. Open Glimt once. Builds are not notarized yet, so macOS blocks the first launch: choose
    **Done**, open **System Settings › Privacy & Security**, click **Open Anyway** next to the
    message about Glimt and confirm.
+4. If Finder previews do not appear, enable Glimt under
+   **System Settings › General › Login Items & Extensions › Quick Look**.
 
 ## How to Use It
 
-Select a file in Finder and press Space, or open the Preview pane. The tabs at the bottom switch
+Select a file in Finder and press **Space**, or open the Preview pane. The tabs at the bottom switch
 between the file's views, such as Source, Rendered, Tree and Raw.
 
 In the app, `File › Open File…` (⌘O) opens any file, and the settings beside the preview control
 appearance, fonts and wrapping. `View › Formats & Views…` (⌘1) chooses each format's views and
 which one opens first. Quick Look uses the same settings.
+
+<img src="docs/assets/glimt-quicklook.png" width="800" alt="Two Quick Look windows: a Swift file in the Source view with line numbers, and a Markdown file in the Rendered view with a table and a code block">
 
 ## Supported Formats
 
@@ -76,10 +82,20 @@ Look extensions the first time the app runs.
 
 **Finder still shows another preview.** macOS picks one Quick Look provider per file type, and
 another installed app may win. Check that Glimt is enabled under
-**System Settings › General › Login Items & Extensions › Quick Look**. `.ts` files are a known
-conflict, because macOS may treat them as MPEG video.
+**System Settings › General › Login Items & Extensions › Quick Look**. The file may also be a
+format Glimt does not support yet, or one that macOS keeps for its own preview, such as `.txt` on
+macOS 27. `.ts` files are a known conflict, because macOS may treat them as MPEG video.
 
-**macOS says it cannot verify Glimt.** Beta builds are not notarized. Approve the first launch with
+**Why doesn't Glimt appear in Open With, and why doesn't double-clicking a file open it?** Glimt
+is a previewer, not an editor, so it does not register as an app for opening files. Use
+`File › Open File…` (⌘O) in Glimt instead.
+
+**Why does macOS ask for access to a folder such as Desktop or Documents?** This can happen when
+VCS Support is turned on under Advanced settings. Glimt then reads the Git or Subversion data next
+to the file to mark changed lines, and macOS asks before it reads protected folders. VCS Support is
+off by default, and Glimt only reads, never writes.
+
+**macOS says it cannot verify Glimt.** Builds are not notarized yet. Approve the first launch with
 **Open Anyway**, as described under Installation.
 
 **A preview is blank, partial or only shows Raw or Hex.** The file may be malformed or larger than
