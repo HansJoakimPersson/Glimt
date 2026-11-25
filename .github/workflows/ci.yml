@@ -36,6 +36,10 @@ jobs:
 
       - name: Toolchain
         run: |
+          # Processes that do not inherit DEVELOPER_DIR, such as the test host running /usr/bin/git,
+          # use the system default; point it at the pinned Xcode too.
+          sudo xcode-select --switch "$DEVELOPER_DIR"
+          xcode-select --print-path
           xcodebuild -version
           swift --version
           python3 --version
