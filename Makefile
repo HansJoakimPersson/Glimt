@@ -1,5 +1,5 @@
 # Entry points shared by developers and GitHub Actions. The logic lives in scripts/, so a local
-# `make test` or `make package` runs exactly what CI runs. See RELEASING.md.
+# `make test` or `make package` runs exactly what CI runs. See Development in README.md.
 SHELL := /bin/bash
 SOURCE_PACKAGES := build/SourcePackages
 

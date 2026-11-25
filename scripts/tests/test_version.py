@@ -18,15 +18,26 @@ def xcconfig(marketing="0.1.0", build="1", prerelease="beta.1"):
     )
 
 
+PUBLISHED = "\n".join([
+    "v0.1.0-beta.1", "v0.1.0-beta.2", "v0.1.0-rc.1", "v0.1.0", "v0.1.1", "v0.2.0-alpha.1",
+    "v0.10.0-beta.1", "not-a-release", "v0.3.0-preview.1",
+]) + "\n"
+
+
 class VersionScriptTests(unittest.TestCase):
-    def run_script(self, config, *arguments):
+    def run_script(self, config, *arguments, stdin=None):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "Version.xcconfig"
             path.write_text(config)
             environment = dict(os.environ, GLIMT_VERSION_CONFIG=str(path))
             return subprocess.run(
-                ["bash", str(SCRIPT), *arguments], capture_output=True, text=True, env=environment
+                ["bash", str(SCRIPT), *arguments], capture_output=True, text=True, env=environment, input=stdin
             )
+
+    def previous_tag(self, config, published=PUBLISHED):
+        result = self.run_script(config, "--previous-tag", stdin=published)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        return result.stdout
 
     def fields(self, config):
         result = self.run_script(config)
@@ -71,6 +82,22 @@ class VersionScriptTests(unittest.TestCase):
         mismatch = self.run_script(xcconfig(), "--check-tag", "v0.1.0-beta.2")
         self.assertNotEqual(mismatch.returncode, 0)
         self.assertIn("does not match", mismatch.stderr)
+
+    def test_prerelease_notes_start_at_the_closest_earlier_release_of_any_stage(self):
+        self.assertEqual(self.previous_tag(xcconfig("0.1.0", "3", "beta.3")), "v0.1.0-beta.2\n")
+        self.assertEqual(self.previous_tag(xcconfig("0.1.0", "5", "rc.2")), "v0.1.0-rc.1\n")
+        self.assertEqual(self.previous_tag(xcconfig("0.2.0", "9", "alpha.2")), "v0.2.0-alpha.1\n")
+        self.assertEqual(self.previous_tag(xcconfig("0.2.0", "9", "beta.1")), "v0.2.0-alpha.1\n")
+        self.assertEqual(self.previous_tag(xcconfig("0.11.0", "20", "alpha.1")), "v0.10.0-beta.1\n")
+
+    def test_stable_notes_start_at_the_previous_stable_release(self):
+        self.assertEqual(self.previous_tag(xcconfig("0.2.0", "10", "")), "v0.1.1\n")
+        self.assertEqual(self.previous_tag(xcconfig("0.1.1", "8", "")), "v0.1.0\n")
+
+    def test_first_release_has_no_previous_tag(self):
+        self.assertEqual(self.previous_tag(xcconfig()), "")
+        self.assertEqual(self.previous_tag(xcconfig("0.1.0", "4", ""), "v0.1.0-beta.1\nv0.1.0-rc.1\n"), "")
+        self.assertEqual(self.previous_tag(xcconfig(), ""), "")
 
     def test_rejects_invalid_versions(self):
         for config in (

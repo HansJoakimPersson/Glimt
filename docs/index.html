@@ -58,10 +58,10 @@
         </div>
         <p class="hero-lede">Open a file in Glimt to inspect source code, Markdown or structured data. When Finder selects Glimt, press Space to see the same inspection in Quick Look.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#setup">Build from source</a>
+          <a class="button button-primary" href="https://github.com/HansJoakimPersson/Glimt/releases">Download beta</a>
           <a class="button button-quiet" href="https://github.com/HansJoakimPersson/Glimt">View on GitHub</a>
         </div>
-        <p class="hero-meta">Requires macOS 15 or later · Open source · No release yet</p>
+        <p class="hero-meta">Requires macOS 15 or later · Open source · Public beta</p>
       </div>
       <figure class="hero-shot">
         <img src="./assets/glimt-hero.jpg" alt="Glimt's settings window with a rendered Markdown preview beside the settings" width="1600" height="1018">
@@ -260,15 +260,15 @@
 
     <section class="setup" id="setup" aria-labelledby="setup-title">
       <div class="setup-copy">
-        <p class="section-label">Build from source</p>
-        <h2 id="setup-title">Build and try Glimt.</h2>
-        <p>Beta builds are published on <a href="https://github.com/HansJoakimPersson/Glimt/releases">GitHub Releases</a>; they are not yet notarized. You can also build and run the host app with Xcode on macOS 15 or later. Finder and Quick Look provider selection remains unverified for the current candidate and can be affected by other installed apps.</p>
-        <p>Start with the <a href="https://github.com/HansJoakimPersson/Glimt#readme">README</a> for building, testing and installing, and <a href="https://github.com/HansJoakimPersson/Glimt/blob/main/RELEASING.md">RELEASING.md</a> for packaging and releases.</p>
+        <p class="section-label">Get Glimt</p>
+        <h2 id="setup-title">Install the beta.</h2>
+        <p>Beta builds are published on <a href="https://github.com/HansJoakimPersson/Glimt/releases">GitHub Releases</a>. They are not notarized yet, so macOS asks you to approve the first launch. Which Quick Look provider Finder uses for a file type can be affected by other installed apps.</p>
+        <p>See the <a href="https://github.com/HansJoakimPersson/Glimt#readme">README</a> for known issues, uninstalling, and building from source.</p>
       </div>
       <ol class="setup-steps">
-        <li><span>1</span><div><strong>Clone the repository</strong><p>Get the source from GitHub.</p></div></li>
-        <li><span>2</span><div><strong>Build and test</strong><p>Open <code>Glimt.xcodeproj</code> and build the Glimt scheme. Routine builds and tests need no local config or developer team.</p></div></li>
-        <li><span>3</span><div><strong>Run it</strong><p>Run the Glimt scheme with Xcode's Sign to Run Locally. <code>make test</code> runs the full unsigned test gate and <code>make package</code> builds the release archive.</p></div></li>
+        <li><span>1</span><div><strong>Download</strong><p>Get <code>Glimt-&lt;version&gt;-macOS.zip</code> from the latest release, unzip it and move <code>Glimt.app</code> to Applications.</p></div></li>
+        <li><span>2</span><div><strong>Approve the first launch</strong><p>Open Glimt, then choose Open Anyway in System Settings › Privacy &amp; Security.</p></div></li>
+        <li><span>3</span><div><strong>Enable Quick Look</strong><p>Check that Glimt is on under System Settings › General › Login Items &amp; Extensions › Quick Look, then press Space on a file in Finder.</p></div></li>
       </ol>
     </section>
 

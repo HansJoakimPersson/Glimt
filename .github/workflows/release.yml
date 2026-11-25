@@ -1,8 +1,9 @@
 name: Release
 
 # Pushing a tag v<semver> that matches Config/Version.xcconfig builds, tests and packages it with
-# ci.yml, then publishes a GitHub Release with the zip, its SHA-256 checksums and
-# release-notes/<tag>.md. alpha, beta and rc versions are published as pre-releases.
+# ci.yml, then publishes a GitHub Release with the zip and its SHA-256 checksums. The notes are
+# GitHub's generated changes since the previous release (see `scripts/version.sh --previous-tag`),
+# preceded by the build identity and checksums. alpha, beta and rc versions are pre-releases.
 on:
   push:
     tags: ["v*"]
@@ -44,12 +45,30 @@ jobs:
       - name: Publish
         env:
           GH_TOKEN: ${{ github.token }}
+          # ci.yml signs with a Developer ID and notarizes only when this secret is set.
+          NOTARIZED: ${{ secrets.GLIMT_SIGN_IDENTITY != '' }}
         run: |
-          bash scripts/release-notes.sh dist >"$RUNNER_TEMP/notes.md"
-          flags=()
-          [[ "$(bash scripts/version.sh --get IS_PRERELEASE)" == true ]] && flags+=(--prerelease) || flags+=(--latest)
+          if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            echo "::error::$GITHUB_REF_NAME is already published; release a new build number instead"
+            exit 1
+          fi
+          value() { bash scripts/version.sh --get "$1"; }
+          previous="$(gh release list --limit 1000 --exclude-drafts --json tagName --jq '.[].tagName' |
+            bash scripts/version.sh --previous-tag)"
+          {
+            printf '**%s** · version %s, build %s · [installation](%s/blob/%s/README.md#installation)\n' \
+              "$(value RELEASE_TITLE)" "$(value MARKETING_VERSION)" "$(value BUILD_NUMBER)" \
+              "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY" "$GITHUB_REF_NAME"
+            if [[ "$NOTARIZED" != true ]]; then
+              printf '\n> [!NOTE]\n> This build is ad-hoc signed and not notarized. macOS asks you to approve its first launch in System Settings › Privacy & Security.\n'
+            fi
+            printf '\n### SHA-256 checksums\n\n```\n%s\n```\n' "$(cat "dist/$(value CHECKSUMS_NAME)")"
+          } >"$RUNNER_TEMP/notes.md"
+          flags=(--generate-notes)
+          [[ -z "$previous" ]] || flags+=(--notes-start-tag "$previous")
+          [[ "$(value IS_PRERELEASE)" == true ]] && flags+=(--prerelease) || flags+=(--latest)
           gh release create "$GITHUB_REF_NAME" dist/* \
             --verify-tag \
-            --title "$(bash scripts/version.sh --get RELEASE_TITLE)" \
+            --title "$(value RELEASE_TITLE)" \
             --notes-file "$RUNNER_TEMP/notes.md" \
             "${flags[@]}"

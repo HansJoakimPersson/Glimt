@@ -53,7 +53,7 @@ exempelmenyn sorteras alfabetiskt efter visningsnamn (och sökväg vid lika namn
    showcase och fixtures. Kör steg 2 igen.
 
 Kvalitetskravet för fullt stöd är att formatet klarar `make test` med egna fixtures; bygg och
-release beskrivs i [RELEASING.md](../../RELEASING.md).
+release beskrivs under [Development](../../README.md#development) i README.
 
 ## Format som appen presenterar
 

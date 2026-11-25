@@ -4,6 +4,8 @@
 #   scripts/version.sh                    KEY=VALUE lines (SEMVER, TAG, RELEASE_TITLE, ARCHIVE_NAME, …)
 #   scripts/version.sh --get KEY          one value
 #   scripts/version.sh --check-tag TAG    fails unless TAG is the configured release tag
+#   scripts/version.sh --previous-tag     reads published release tags on stdin and prints the one
+#                                         the configured release's notes start from, or nothing
 #
 # GLIMT_VERSION_CONFIG overrides the configuration path (tests).
 # shellcheck disable=SC2034 # The derived values are printed through ${!key}.
@@ -56,6 +58,20 @@ CHECKSUMS_NAME="Glimt-$SEMVER-SHA256SUMS.txt"
 KEYS=(MARKETING_VERSION BUILD_NUMBER PRERELEASE SEMVER TAG DISPLAY_VERSION RELEASE_TITLE IS_PRERELEASE
     ARCHIVE_NAME CHECKSUMS_NAME)
 
+# Prints a key that sorts release tags in SemVer precedence: MAJOR, MINOR, PATCH as ten digits each,
+# then the stage (0 alpha, 1 beta, 2 rc, 3 stable) and its number. Fails for other tags.
+tag_key() {
+    [[ "$1" =~ ^v(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)(-(alpha|beta|rc)\.([1-9][0-9]*))?$ ]] || return 1
+    local rank=3
+    case "${BASH_REMATCH[5]}" in
+        alpha) rank=0 ;;
+        beta) rank=1 ;;
+        rc) rank=2 ;;
+    esac
+    printf '%010d%010d%010d%d%010d' "${BASH_REMATCH[1]}" "${BASH_REMATCH[2]}" "${BASH_REMATCH[3]}" \
+        "$rank" "${BASH_REMATCH[6]:-0}"
+}
+
 case "${1:-}" in
     "")
         for key in "${KEYS[@]}"; do printf '%s=%s\n' "$key" "${!key}"; done
@@ -68,8 +84,22 @@ case "${1:-}" in
     --check-tag)
         [[ "${2:-}" == "$TAG" ]] || fail "tag '${2:-}' does not match Config/Version.xcconfig ($TAG)"
         ;;
+    --previous-tag)
+        # A pre-release lists the changes since the closest earlier release of any stage; a stable
+        # release lists everything since the previous stable release.
+        current="$(tag_key "$TAG")"
+        previous="" previous_key=""
+        while IFS= read -r candidate; do
+            key="$(tag_key "$candidate")" || continue
+            [[ "$IS_PRERELEASE" == true || "${key:30:1}" == 3 ]] || continue
+            if [[ "$key" < "$current" && "$key" > "$previous_key" ]]; then
+                previous="$candidate" previous_key="$key"
+            fi
+        done
+        [[ -z "$previous" ]] || printf '%s\n' "$previous"
+        ;;
     *)
-        printf 'usage: %s [--get KEY | --check-tag TAG]\n' "$0" >&2
+        printf 'usage: %s [--get KEY | --check-tag TAG | --previous-tag]\n' "$0" >&2
         exit 2
         ;;
 esac
