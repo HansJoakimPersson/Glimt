@@ -14,8 +14,15 @@ CLONED_PACKAGES="${GLIMT_CLONED_SOURCE_PACKAGES_DIR:-$ROOT/build/SourcePackages}
 rm -rf "$WORK_DIR/Glimt-Debug.xcresult" "$WORK_DIR/Glimt-Release.xcresult"
 
 pass() { printf 'SAFE_SMOKE %s\n' "$1"; }
-# The tail of an xcodebuild log lists failing tests by name only; their assertion messages come earlier.
-show_failures() { grep -E ': error: ' "$1" | head -n 40 >&2 || true; tail -n 50 "$1" >&2; }
+# The xcodebuild log names failing tests only; their assertion messages are in the result bundle.
+show_failures() {
+    local log="$1" result_bundle="$2"
+    tail -n 50 "$log" >&2
+    TMPDIR="$WORK_DIR" xcrun xcresulttool get test-results summary --path "$result_bundle" --compact 2>/dev/null |
+        python3 -c 'import json, sys
+for failure in json.load(sys.stdin).get("testFailures", [])[:20]:
+    print("SAFE_SMOKE FAILURE {testIdentifierString}: {failureText}".format(**failure))' >&2 || true
+}
 fail() { printf 'SAFE_SMOKE FAIL stage=%s details=%s\n' "$1" "$2" >&2; exit 1; }
 
 bash "$ROOT/scripts/lint.sh" --sanitize || fail lint "scripts/lint.sh reported findings"
@@ -52,7 +59,7 @@ if ! xcodebuild \
     -resultBundlePath "$WORK_DIR/Glimt-Debug.xcresult" \
     CODE_SIGNING_ALLOWED=NO \
     test >"$XCODE_LOG" 2>&1; then
-    show_failures "$XCODE_LOG"
+    show_failures "$XCODE_LOG" "$WORK_DIR/Glimt-Debug.xcresult"
     fail xcode-debug-tests "executed Xcode Debug tests failed"
 fi
 SUMMARY_JSON="$WORK_DIR/xcode-summary.json"
@@ -82,7 +89,7 @@ if ! xcodebuild \
     -resultBundlePath "$WORK_DIR/Glimt-Release.xcresult" \
     CODE_SIGNING_ALLOWED=NO \
     test >"$WORK_DIR/xcode-release-test.log" 2>&1; then
-    show_failures "$WORK_DIR/xcode-release-test.log"
+    show_failures "$WORK_DIR/xcode-release-test.log" "$WORK_DIR/Glimt-Release.xcresult"
     fail xcode-release-tests "executed Xcode Release tests failed"
 fi
 extract_summary Release "$WORK_DIR/Glimt-Release.xcresult"
