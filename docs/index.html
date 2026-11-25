@@ -339,7 +339,7 @@
       <article>
         <span class="detail-number">03</span>
         <h3>Bounded by design</h3>
-        <p>Quick Look previews and thumbnails use at most 64 KiB of regular-file content to select an inspector. A TextBundle shares that budget across its manifest and Markdown sample. The selected inspector has its own limits. Oversized or unsupported input can fall back to a limited readable view. Inspection has a 2-second deadline for previews and a 1-second deadline for thumbnails. If it times out, Glimt can fall back to the bytes already read.</p>
+        <p>Every preview reads a bounded amount of the file and has a deadline. Large or unsupported files fall back to a readable view.</p>
       </article>
     </section>
 
