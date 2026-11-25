@@ -27,7 +27,8 @@ shows, and it does not use the network.
 
 - Syntax-highlighted source with line numbers for programming, markup, configuration and template
   languages.
-- Rendered Markdown, including TextBundle packages and Mermaid diagrams.
+- Rendered Markdown with support for most formatting, such as tables, footnotes, math and Mermaid
+  diagrams, and a dynamic table of contents.
 - Tree, Pretty and Table views for JSON, YAML, XML, property lists, CSV, logs, certificates,
   SQLite schemas and more. Archives are listed, never extracted.
 - Finder thumbnails from the same engine.
@@ -96,12 +97,6 @@ Glimt is an Xcode project: the app, its Quick Look Preview and Thumbnail extensi
 `InspectorCore` Swift package. You need Xcode 27, Python 3 and ShellCheck. Open `Glimt.xcodeproj`
 and run the `Glimt` scheme to build from source. `make test` runs the same checks as CI, and
 `make help` lists the other targets.
-
-### Releasing
-
-The version lives in `Config/Version.xcconfig`. Raise it, commit, then push a matching tag such as
-`v0.1.0-beta.2`. The release workflow builds and tests the tag and publishes the zip and checksums
-to GitHub Releases with generated release notes. Published releases are never replaced.
 
 ## Contributing
 

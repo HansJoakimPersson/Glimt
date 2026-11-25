@@ -1,6 +1,6 @@
 // Glimt version: the single source for every bundle's Info.plist, the About window, the Git tag,
 // the GitHub Release and the artifact names. `scripts/version.sh` derives everything else from it.
-// See Development › Releasing in README.md before changing a value.
+// Publishing a release: push a matching tag; see .github/workflows/release.yml.
 //
 // MARKETING_VERSION        Semantic version core, MAJOR.MINOR.PATCH (CFBundleShortVersionString).
 // CURRENT_PROJECT_VERSION  Build number (CFBundleVersion): a positive integer, raised for every
