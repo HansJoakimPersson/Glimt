@@ -2,7 +2,7 @@
 """Report parity links and verify or enrich the manually maintained format masterlist.
 
 docs/formats/README.md owns the format register. Every column except Status is manual. Status is
-derived from the catalog (formats.json) unless the Kommentar cell contains "Manuell status".
+derived from the catalog (formats.json) unless the Comment cell contains "Manual status".
 reference-parity.json is historical evidence only; it never affects the masterlist or its statuses.
 
   python3 scripts/format-parity.py            parity report
@@ -20,12 +20,12 @@ from urllib.parse import unquote
 ROOT = Path(__file__).resolve().parents[1]
 FIXTURES = ROOT / 'Fixtures'
 MASTERLIST = ROOT / 'docs/formats/README.md'
-MASTERLIST_STATUSES = ('Stöds', 'Delvis', 'Känns igen (Raw)', 'Saknas', 'Utesluten')
-COLUMNS = ('Format', 'Filändelse', 'Beskrivning', 'Status', 'Exempelfiler', 'Kommentar')
+MASTERLIST_STATUSES = ('Supported', 'Partial', 'Recognized (Raw)', 'Missing', 'Excluded')
+COLUMNS = ('Format', 'Extensions', 'Description', 'Status', 'Fixtures', 'Comment')
 STATUS_COLUMN = COLUMNS.index('Status')
-MANUAL_STATUS = 'Manuell status'
-SUMMARY_START = '<!-- härlett: sammanfattning -->'
-SUMMARY_END = '<!-- /härlett -->'
+MANUAL_STATUS = 'Manual status'
+SUMMARY_START = '<!-- derived: summary -->'
+SUMMARY_END = '<!-- /derived -->'
 
 
 def load(relative):
@@ -92,7 +92,7 @@ def _interpret(cells):
     if len(cells) != len(COLUMNS):
         return {'format': cells[0] if cells else '', 'invalid': f'{len(cells)} cells'}
     name, names, _, status, fixtures, comment = cells
-    katalog = re.search(r'Katalog: ((?:`[^`]+`(?:, )?)+)', comment)
+    katalog = re.search(r'Catalog: ((?:`[^`]+`(?:, )?)+)', comment)
     return {
         'format': name,
         'names': [token.lower() for token in re.findall(r'`([^`]+)`', names)],
@@ -147,15 +147,15 @@ def derive(row, catalog):
     if not row['names']:
         native, raw, providers = semantic(own), [id for id in own if id not in semantic(own)], own
     if native and not (foreign or raw or unrouted):
-        status = 'Stöds'
+        status = 'Supported'
     elif native or foreign:
-        status = 'Delvis'
+        status = 'Partial'
     elif raw:
-        status = 'Känns igen (Raw)'
+        status = 'Recognized (Raw)'
     else:
-        status = 'Saknas'
+        status = 'Missing'
     kinds = sorted({by_id[id]['inspectionKind'] for id in providers})
-    explanation = f'egen={native} via-annat={foreign} raw={raw} ej-routad={unrouted}'
+    explanation = f'own={native} via-other={foreign} raw={raw} unrouted={unrouted}'
     return status, kinds, explanation
 
 
@@ -165,7 +165,7 @@ def derive(row, catalog):
 def _summary(rows):
     counts = collections.Counter(row['status'] for row in rows)
     return [SUMMARY_START,
-            '| Rader | ' + ' | '.join(MASTERLIST_STATUSES) + ' |',
+            '| Rows | ' + ' | '.join(MASTERLIST_STATUSES) + ' |',
             '|---|' + '---|' * len(MASTERLIST_STATUSES),
             f'| {len(rows)} | ' + ' | '.join(str(counts[s]) for s in MASTERLIST_STATUSES) + ' |',
             SUMMARY_END]
@@ -215,11 +215,11 @@ def check(text, catalog=None):
             problems.append(f"{label}: {row['invalid']}, expected {len(COLUMNS)}")
             continue
         if not row['format'] or not row['cells'][2]:
-            problems.append(f'{label}: Format and Beskrivning are required')
+            problems.append(f'{label}: Format and Description are required')
         if row['status'] not in MASTERLIST_STATUSES:
             problems.append(f"{label}: unknown status {row['status']!r}")
-        if row['status'] == 'Utesluten' and not row['manual'] and (row['names'] or row['formatIDs']):
-            problems.append(f'{label}: Utesluten requires "{MANUAL_STATUS}"')
+        if row['status'] == 'Excluded' and not row['manual'] and (row['names'] or row['formatIDs']):
+            problems.append(f'{label}: Excluded requires "{MANUAL_STATUS}"')
         for id in row['formatIDs']:
             linked[id] += 1
             if id not in by_id:
@@ -250,10 +250,10 @@ if __name__ == '__main__':
         for row in parse_masterlist(MASTERLIST.read_text())[1]:
             derived = derive(row, catalog)
             if derived is None:
-                print(f"{row['format']}: {row['status']} ({MANUAL_STATUS.lower() if row['manual'] else 'ingen route'})")
+                print(f"{row['format']}: {row['status']} ({MANUAL_STATUS.lower() if row['manual'] else 'no route'})")
                 continue
             status, kinds, explanation = derived
-            print(f"{row['format']}: {status} inspektör={','.join(kinds) or '-'} {explanation}")
+            print(f"{row['format']}: {status} inspector={','.join(kinds) or '-'} {explanation}")
     if '--check' in sys.argv:
         problems = check(MASTERLIST.read_text())
         print('\n'.join(problems) or 'Masterlist OK')

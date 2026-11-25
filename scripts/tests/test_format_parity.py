@@ -33,7 +33,7 @@ class FormatParityTests(unittest.TestCase):
 
     def test_new_unimplemented_row_survives_repeated_enrich_and_check(self):
         document = (ROOT / 'docs/formats/README.md').read_text()
-        row = '| Zz Glimt Probe | `.zzglimt`, `ZZFILE` | Påhittat format som ännu inte implementerats | Saknas | — | |'
+        row = '| Zz Glimt Probe | `.zzglimt`, `ZZFILE` | Invented format not implemented yet | Missing | — | |'
         added = self._insert_row(document, row)
         once = module.enrich(added)
         twice = module.enrich(once)
@@ -45,7 +45,7 @@ class FormatParityTests(unittest.TestCase):
     def test_enrich_only_rewrites_derived_status_cell(self):
         document = (ROOT / 'docs/formats/README.md').read_text()
         line = next(l for l in document.split('\n') if l.startswith('| Swift | '))
-        stale = line.replace('| Stöds |', '| Saknas |')
+        stale = line.replace('| Supported |', '| Missing |')
         self.assertNotEqual(stale, line)
         broken = document.replace(line, stale)
         self.assertIn('Derived Status or summary is stale; run --enrich', module.check(broken))
@@ -53,28 +53,28 @@ class FormatParityTests(unittest.TestCase):
 
     def test_manual_status_and_implemented_extensions_are_respected(self):
         document = (ROOT / 'docs/formats/README.md').read_text()
-        manual = '| Zz Manual | `.swift` | Manuellt bedömt format | Delvis | — | Manuell status: test. |'
-        derived = '| Zz Routed | `.swift` | Härlett format | Saknas | — | |'
+        manual = '| Zz Manual | `.swift` | Manually assessed format | Partial | — | Manual status: test. |'
+        derived = '| Zz Routed | `.swift` | Derived format | Missing | — | |'
         enriched = module.enrich(self._insert_row(self._insert_row(document, manual), derived))
         self.assertIn('\n' + manual + '\n', enriched)
-        self.assertIn('| Zz Routed | `.swift` | Härlett format | Delvis |', enriched)
+        self.assertIn('| Zz Routed | `.swift` | Derived format | Partial |', enriched)
 
     def test_explain_reports_inspector_and_routing(self):
         catalog = module.load('InspectorCore/Sources/InspectorCore/Resources/formats.json')
         _, rows = module.parse_masterlist((ROOT / 'docs/formats/README.md').read_text())
         swift = next(row for row in rows if row['format'] == 'Swift')
         status, kinds, explanation = module.derive(swift, catalog)
-        self.assertEqual((status, kinds), ('Stöds', ['source']))
-        self.assertIn("egen=['.swift']", explanation)
+        self.assertEqual((status, kinds), ('Supported', ['source']))
+        self.assertIn("own=['.swift']", explanation)
 
     def test_native_mermaid_renderer_counts_as_specialist_presentation(self):
         catalog = module.load('InspectorCore/Sources/InspectorCore/Resources/formats.json')
         _, rows = module.parse_masterlist((ROOT / 'docs/formats/README.md').read_text())
         mermaid = next(row for row in rows if row['format'] == 'Mermaid source')
         status, kinds, explanation = module.derive(mermaid, catalog)
-        self.assertEqual(status, 'Stöds')
+        self.assertEqual(status, 'Supported')
         self.assertEqual(kinds, ['text'])
-        self.assertIn("egen=['.mmd', '.mermaid']", explanation)
+        self.assertIn("own=['.mmd', '.mermaid']", explanation)
 
     def test_implemented_rows_still_require_their_showcase(self):
         document = (ROOT / 'docs/formats/README.md').read_text()
@@ -98,7 +98,7 @@ class FormatParityTests(unittest.TestCase):
 
     def test_check_rejects_unsorted_duplicate_and_missing_fixture_rows(self):
         document = (ROOT / 'docs/formats/README.md').read_text()
-        row = '| Swift | `.zz` | Dubblett | Saknas | [x](../../Fixtures/missing.zz) | |'
+        row = '| Swift | `.zz` | Duplicate | Missing | [x](../../Fixtures/missing.zz) | |'
         problems = module.check(document.replace('| Swift | ', row + '\n| Swift | ', 1))
         self.assertIn('Duplicate format: swift', problems)
         self.assertIn('Swift: fixture not found ../../Fixtures/missing.zz', problems)

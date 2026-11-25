@@ -66,7 +66,7 @@ which one opens first. Quick Look uses the same settings.
 - **Specialist files:** certificates, software bills of materials, SQLite, ZIP and TAR, diffs.
 - **Anything else:** plain text in Raw, binary files in Hex.
 
-The [format masterlist](docs/formats/README.md) (in Swedish) lists every format with its views and
+The [format masterlist](docs/formats/README.md) lists every format with its views and
 limits.
 
 ## FAQ
