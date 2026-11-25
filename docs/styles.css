@@ -10,11 +10,12 @@
   --green: #267a62;
   --coral: #c95646;
   --yellow: #d6a12b;
-  /* Quick Look panel and Glimt's default source theme, as the app draws them in light mode. */
-  --ql-frame-top: #9a9a9a;
-  --ql-frame: #8c8c8c;
-  --ql-frame-edge: #7a7a7a;
-  --ql-pill: rgba(0, 0, 0, 0.1);
+  /* Quick Look panel and Glimt's default source theme in light mode. The panel frame is Liquid Glass,
+     so it is drawn as the frosted light surface it becomes over a light page, not the dark one in screenshots. */
+  --ql-frame-top: #f1f2f3;
+  --ql-frame: #e6e8e9;
+  --ql-frame-edge: rgba(20, 33, 41, 0.16);
+  --ql-pill: rgba(20, 33, 41, 0.07);
   --ql-label: #1d1d1f;
   --ql-secondary: #6e6e73;
   --ql-separator: #e2e2e4;
@@ -521,8 +522,20 @@ footer > p {
   box-shadow: var(--shadow);
 }
 
+/* The overview image carries its own window shadows on a transparent background. */
 .hero-shot img {
-  border-radius: 14px;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Feature shots are tall crops of one pane, so they are capped and centred. */
+.shot img {
+  width: auto;
+  max-width: 100%;
+  max-height: 620px;
+  margin-inline: auto;
 }
 
 code {
@@ -758,6 +771,7 @@ code {
   overflow: hidden;
   background: var(--paper);
   border-radius: 11px;
+  box-shadow: 0 0 0 1px var(--ql-frame-edge);
 }
 
 .ql-view {
