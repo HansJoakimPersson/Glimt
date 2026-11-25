@@ -139,21 +139,34 @@
               </ul>
             </div>
             <figure class="format-example">
-              <div class="example-window" aria-hidden="true">
-                <div class="example-bar"><span class="example-file">Preview.swift</span><span class="example-views"><span class="is-active">Source</span><span>Raw</span><span>Hex</span></span></div>
-                <pre class="example-code"><span class="ln">1</span><span class="kw">import</span> Foundation
-<span class="ln">2</span>
-<span class="ln">3</span><span class="cm">/// A file Glimt can preview.</span>
-<span class="ln">4</span><span class="kw">struct</span> <span class="ty">Preview</span> {
-<span class="ln">5</span>    <span class="kw">let</span> name: <span class="ty">String</span>
-<span class="ln">6</span>    <span class="kw">var</span> lines = <span class="nu">0</span>
-<span class="ln">7</span>
-<span class="ln">8</span>    <span class="kw">func</span> title() -&gt; <span class="ty">String</span> {
-<span class="ln">9</span>        <span class="st">"\(name), \(lines) lines"</span>
-<span class="ln">10</span>    }
-<span class="ln">11</span>}</pre>
+              <div class="ql-window" aria-hidden="true">
+                <div class="ql-titlebar"><span class="ql-icon"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="7.5"/><path d="M5.3 5.3l5.4 5.4M10.7 5.3l-5.4 5.4"/></svg></span><span class="ql-icon"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="7.5"/><path d="M5 11l6-6M8.6 5H11v2.4M7.4 11H5V8.6"/></svg></span><span class="ql-file">Preview.swift</span><span class="ql-icon ql-share"><svg viewBox="0 0 16 20"><path d="M5 7H2.5v11.5h11V7H11M8 1.5v11M4.8 4.5L8 1.3l3.2 3.2"/></svg></span><span class="ql-open">Open with Xcode</span></div>
+                <div class="ql-content">
+                  <div class="ql-view ql-source"><pre class="ql-gutter">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre><pre class="ql-code"><span class="kw">import</span> <span class="ty">Foundation</span>
+
+<span class="cm">// A file Glimt can preview.</span>
+<span class="kw">struct</span> <span class="ty">Preview</span> {
+<i class="ig">    </i><span class="kw">let</span> name: <span class="ty">String</span>
+<i class="ig">    </i><span class="kw">var</span> lines = <span class="nu">0</span>
+
+<i class="ig">    </i><span class="kw">func</span> title() -&gt; <span class="ty">String</span> {
+<i class="ig">    </i><i class="ig">    </i><span class="st">&quot;\(name), \(lines) lines&quot;</span>
+<i class="ig">    </i>}
+}</pre></div>
+                  <div class="ql-footer"><span class="ql-tabs"><span class="is-active">Source</span><span>Raw</span></span><span class="ql-status"><span>Swift</span><span>UTF-8</span><span>LF</span><span>176 bytes</span><span>11 lines</span></span><span class="ql-icon ql-info"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.5"/><path d="M8 4.5v4.5M8 11v.6"/></svg></span></div>
+                </div>
               </div>
-              <figcaption>Source view with syntax colours and line numbers.</figcaption>
+              <figcaption>Source view with syntax colours, line numbers and indent guides.</figcaption>
             </figure>
           </div>
         </details>
@@ -184,24 +197,25 @@
               </ul>
             </div>
             <figure class="format-example">
-              <div class="example-window" aria-hidden="true">
-                <div class="example-bar"><span class="example-file">CHECKLIST.md</span><span class="example-views"><span class="is-active">Rendered</span><span>Source</span></span></div>
-                <div class="example-doc">
-                  <p class="doc-h">Release checklist</p>
-                  <ul class="doc-tasks">
-                    <li class="is-done">Update the changelog</li>
-                    <li class="is-done">Tag the release</li>
-                    <li>Publish the notes</li>
-                  </ul>
-                  <table class="doc-table">
-                    <tr><th>Step</th><th>Owner</th><th>Status</th></tr>
-                    <tr><td>Build</td><td>CI</td><td>Done</td></tr>
-                    <tr><td>Notarize</td><td>Release</td><td>Pending</td></tr>
-                  </table>
-                  <p class="doc-math"><i>E</i> = <i>mc</i><sup>2</sup></p>
+              <div class="ql-window" aria-hidden="true">
+                <div class="ql-titlebar"><span class="ql-icon"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="7.5"/><path d="M5.3 5.3l5.4 5.4M10.7 5.3l-5.4 5.4"/></svg></span><span class="ql-icon"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="7.5"/><path d="M5 11l6-6M8.6 5H11v2.4M7.4 11H5V8.6"/></svg></span><span class="ql-file">RELEASE.md</span><span class="ql-icon ql-share"><svg viewBox="0 0 16 20"><path d="M5 7H2.5v11.5h11V7H11M8 1.5v11M4.8 4.5L8 1.3l3.2 3.2"/></svg></span><span class="ql-open">Open with TextEdit</span></div>
+                <div class="ql-content">
+                  <div class="ql-view ql-doc">
+                    <span class="ql-toc"><span class="ql-toc-current">Release notes</span><span class="ql-toc-button"><svg viewBox="0 0 16 16"><path d="M5.5 4h8M5.5 8h8M5.5 12h8M2.5 4h.1M2.5 8h.1M2.5 12h.1"/></svg></span></span>
+                    <p class="md-h1">Release notes</p>
+                    <p>Glimt previews <em>Markdown</em>, <code>JSON</code> and source code in Finder.</p>
+                    <p class="md-h2">Formats</p>
+                    <table class="md-table">
+                      <tr><th>Family</th><th>Views</th></tr>
+                      <tr><td>Source code</td><td>Source, Raw</td></tr>
+                      <tr><td>Structured data</td><td>Tree, Pretty, Raw</td></tr>
+                    </table>
+                    <pre class="ql-code"><span class="kw">let</span> preview = <span class="ty">Preview</span>(name: <span class="st">&quot;Glimt&quot;</span>)</pre>
+                  </div>
+                  <div class="ql-footer"><span class="ql-tabs"><span class="is-active">Rendered</span><span>Source</span></span><span class="ql-status"><span>Markdown</span><span>UTF-8</span><span>LF</span><span>245 bytes</span><span>14 lines</span></span><span class="ql-icon ql-info"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.5"/><path d="M8 4.5v4.5M8 11v.6"/></svg></span></div>
                 </div>
               </div>
-              <figcaption>Rendered view with a task list, a table and math.</figcaption>
+              <figcaption>Rendered view with a table, a code block and an outline of the headings.</figcaption>
             </figure>
           </div>
         </details>
@@ -236,19 +250,27 @@
               </ul>
             </div>
             <figure class="format-example">
-              <div class="example-window" aria-hidden="true">
-                <div class="example-bar"><span class="example-file">glimt.json</span><span class="example-views"><span class="is-active">Tree</span><span>Pretty</span><span>Raw</span></span></div>
-                <ul class="example-tree">
-                  <li><span class="tw">▾</span><span class="key">root</span><span class="type">Object · 3</span></li>
-                  <li class="d1"><span class="key">name</span><span class="val st">"Glimt"</span><span class="type">String</span></li>
-                  <li class="d1"><span class="key">version</span><span class="val nu">1.0</span><span class="type">Number</span></li>
-                  <li class="d1"><span class="tw">▾</span><span class="key">formats</span><span class="type">Array · 3</span></li>
-                  <li class="d2"><span class="key">0</span><span class="val st">"json"</span><span class="type">String</span></li>
-                  <li class="d2"><span class="key">1</span><span class="val st">"yaml"</span><span class="type">String</span></li>
-                  <li class="d2"><span class="key">2</span><span class="val st">"plist"</span><span class="type">String</span></li>
-                </ul>
+              <div class="ql-window" aria-hidden="true">
+                <div class="ql-titlebar"><span class="ql-icon"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="7.5"/><path d="M5.3 5.3l5.4 5.4M10.7 5.3l-5.4 5.4"/></svg></span><span class="ql-icon"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="7.5"/><path d="M5 11l6-6M8.6 5H11v2.4M7.4 11H5V8.6"/></svg></span><span class="ql-file">glimt.json</span><span class="ql-icon ql-share"><svg viewBox="0 0 16 20"><path d="M5 7H2.5v11.5h11V7H11M8 1.5v11M4.8 4.5L8 1.3l3.2 3.2"/></svg></span><span class="ql-open">Open with Visual Studio Code</span></div>
+                <div class="ql-content">
+                  <div class="ql-view">
+                    <table class="ql-grid ql-tree">
+                      <tr><th>Key</th><th>Value</th><th>Type</th></tr>
+                      <tr><td><span class="ql-key" style="--depth: 0"><i class="dc is-open"></i>$</span></td><td>5 keys</td><td>Object</td></tr>
+                      <tr><td><span class="ql-key" style="--depth: 1"><i class="dc is-leaf"></i>name</span></td><td>&quot;Glimt&quot;</td><td>String</td></tr>
+                      <tr><td><span class="ql-key" style="--depth: 1"><i class="dc is-leaf"></i>version</span></td><td>&quot;1.0.0&quot;</td><td>String</td></tr>
+                      <tr><td><span class="ql-key" style="--depth: 1"><i class="dc is-open"></i>formats</span></td><td>3 items</td><td>Array</td></tr>
+                      <tr><td><span class="ql-key" style="--depth: 2"><i class="dc is-leaf"></i>[0]</span></td><td>&quot;json&quot;</td><td>String</td></tr>
+                      <tr><td><span class="ql-key" style="--depth: 2"><i class="dc is-leaf"></i>[1]</span></td><td>&quot;yaml&quot;</td><td>String</td></tr>
+                      <tr><td><span class="ql-key" style="--depth: 2"><i class="dc is-leaf"></i>[2]</span></td><td>&quot;plist&quot;</td><td>String</td></tr>
+                      <tr><td><span class="ql-key" style="--depth: 1"><i class="dc"></i>options</span></td><td>2 keys</td><td>Object</td></tr>
+                      <tr><td><span class="ql-key" style="--depth: 1"><i class="dc is-leaf"></i>beta</span></td><td>false</td><td>Boolean</td></tr>
+                    </table>
+                  </div>
+                  <div class="ql-footer"><span class="ql-tabs"><span class="is-active">Tree</span><span>Pretty</span><span>Raw</span></span><span class="ql-status"><span><span class="ql-icon ql-valid"><svg viewBox="0 0 16 16"><path d="M3 8.5l3 3.5 7-8.5"/></svg></span>Valid JSON</span><span>UTF-8</span><span>LF</span><span>119 bytes</span><span>1 line</span></span><span class="ql-icon ql-info"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.5"/><path d="M8 4.5v4.5M8 11v.6"/></svg></span></div>
+                </div>
               </div>
-              <figcaption>Tree view with value types and counts.</figcaption>
+              <figcaption>Tree view with keys, values and types, and a validity check.</figcaption>
             </figure>
           </div>
         </details>
@@ -280,18 +302,23 @@
               </ul>
             </div>
             <figure class="format-example">
-              <div class="example-window" aria-hidden="true">
-                <div class="example-bar"><span class="example-file">server.log</span><span class="example-views"><span class="is-active">Table</span><span>Tree</span><span>Raw</span></span></div>
-                <table class="example-table">
-                  <tr><th>Timestamp</th><th>Severity</th><th>Message</th></tr>
-                  <tr><td>09:41:02</td><td><span class="sev sev-info">info</span></td><td>Server started on port 8080</td></tr>
-                  <tr><td>09:41:07</td><td><span class="sev sev-info">info</span></td><td>GET /status 200</td></tr>
-                  <tr><td>09:42:15</td><td><span class="sev sev-warn">warning</span></td><td>Cache miss rate above 20%</td></tr>
-                  <tr><td>09:43:30</td><td><span class="sev sev-error">error</span></td><td>Upstream timed out after 30 s</td></tr>
-                  <tr><td>09:43:31</td><td><span class="sev sev-info">info</span></td><td>Retry succeeded</td></tr>
-                </table>
+              <div class="ql-window" aria-hidden="true">
+                <div class="ql-titlebar"><span class="ql-icon"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="7.5"/><path d="M5.3 5.3l5.4 5.4M10.7 5.3l-5.4 5.4"/></svg></span><span class="ql-icon"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="7.5"/><path d="M5 11l6-6M8.6 5H11v2.4M7.4 11H5V8.6"/></svg></span><span class="ql-file">server.log</span><span class="ql-icon ql-share"><svg viewBox="0 0 16 20"><path d="M5 7H2.5v11.5h11V7H11M8 1.5v11M4.8 4.5L8 1.3l3.2 3.2"/></svg></span><span class="ql-open">Open with Console</span></div>
+                <div class="ql-content">
+                  <div class="ql-view">
+                    <table class="ql-grid ql-log">
+                      <tr><th>Line</th><th>Timestamp</th><th>Source</th><th>Level</th><th>Message</th></tr>
+                      <tr><td>1</td><td>09:41:02</td><td>api</td><td>info</td><td>Server started on port 8080</td></tr>
+                      <tr><td>2</td><td>09:41:07</td><td>api</td><td>info</td><td>GET /status 200</td></tr>
+                      <tr><td>3</td><td>09:42:15</td><td>cache</td><td>warning</td><td>Cache miss rate above 20%</td></tr>
+                      <tr><td>4</td><td>09:43:30</td><td>proxy</td><td>error</td><td>Upstream timed out after 30 s</td></tr>
+                      <tr><td>5</td><td>09:43:31</td><td>proxy</td><td>info</td><td>Retry succeeded</td></tr>
+                    </table>
+                  </div>
+                  <div class="ql-footer"><span class="ql-tabs"><span class="is-active">Table</span><span>Tree</span><span>Raw</span></span><span class="ql-status"><span>Log</span><span>UTF-8</span><span>LF</span><span>336 bytes</span><span>5 lines</span></span><span class="ql-icon ql-info"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.5"/><path d="M8 4.5v4.5M8 11v.6"/></svg></span></div>
+                </div>
               </div>
-              <figcaption>Table view of a log with severity per row.</figcaption>
+              <figcaption>Table view with one row per log event.</figcaption>
             </figure>
           </div>
         </details>
