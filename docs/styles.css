@@ -522,12 +522,18 @@ footer > p {
   box-shadow: var(--shadow);
 }
 
-/* The overview image carries its own window shadows on a transparent background. */
+/* The hero image carries its own window shadows on a transparent background. It is drawn larger than its
+   column and reaches in behind the text, fading out on the left so the copy stays readable. */
 .hero-shot img {
+  width: 134%;
+  max-width: none;
+  margin-left: -30%;
   background: none;
   border: 0;
   border-radius: 0;
   box-shadow: none;
+  -webkit-mask-image: linear-gradient(90deg, transparent 10%, #000 46%);
+  mask-image: linear-gradient(90deg, transparent 10%, #000 46%);
 }
 
 /* Feature shots are tall crops of one pane, so they are capped and centred. */
@@ -1057,6 +1063,13 @@ code {
     grid-template-columns: 1fr;
     gap: 44px;
     padding: 64px 18px 76px;
+  }
+
+  .hero-shot img {
+    width: 100%;
+    margin-left: 0;
+    -webkit-mask-image: none;
+    mask-image: none;
   }
 
   h1 {
