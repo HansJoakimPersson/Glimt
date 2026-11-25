@@ -4,6 +4,7 @@ name: Release
 # ci.yml, then publishes a GitHub Release with the zip and its SHA-256 checksums. The notes are
 # GitHub's generated changes since the previous release (see `scripts/version.sh --previous-tag`),
 # preceded by the build identity and checksums. alpha, beta and rc versions are pre-releases.
+# A stable release also carries Glimt-latest-macOS.zip, the target of releases/latest/download links.
 on:
   push:
     tags: ["v*"]
@@ -66,7 +67,12 @@ jobs:
           } >"$RUNNER_TEMP/notes.md"
           flags=(--generate-notes)
           [[ -z "$previous" ]] || flags+=(--notes-start-tag "$previous")
-          [[ "$(value IS_PRERELEASE)" == true ]] && flags+=(--prerelease) || flags+=(--latest)
+          if [[ "$(value IS_PRERELEASE)" == true ]]; then
+            flags+=(--prerelease)
+          else
+            flags+=(--latest)
+            cp "dist/$(value ARCHIVE_NAME)" dist/Glimt-latest-macOS.zip
+          fi
           gh release create "$GITHUB_REF_NAME" dist/* \
             --verify-tag \
             --title "$(value RELEASE_TITLE)" \

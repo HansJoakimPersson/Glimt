@@ -43,9 +43,16 @@ macOS 15 or later, on Apple silicon or Intel. Glimt needs no special permissions
 
 ## Installation
 
-1. Download `Glimt-<version>-macOS.zip` from
-   [Releases](https://github.com/HansJoakimPersson/Glimt/releases).
-2. Unzip it and move `Glimt.app` to `/Applications`.
+Download the latest release archive:
+
+- [Glimt-latest-macOS.zip](https://github.com/HansJoakimPersson/Glimt/releases/latest/download/Glimt-latest-macOS.zip)
+- [Project website](https://hansjoakimpersson.github.io/Glimt/)
+- [Releases page](https://github.com/HansJoakimPersson/Glimt/releases/latest)
+
+Then:
+
+1. Unzip the archive.
+2. Move `Glimt.app` to `/Applications`.
 3. Open Glimt once. Builds are not notarized yet, so macOS blocks the first launch: choose
    **Done**, open **System Settings › Privacy & Security**, click **Open Anyway** next to the
    message about Glimt and confirm.
