@@ -3,9 +3,14 @@
 <p>
   <a href="https://github.com/HansJoakimPersson/Glimt/actions/workflows/ci.yml"><img src="https://github.com/HansJoakimPersson/Glimt/actions/workflows/ci.yml/badge.svg" alt="CI"/></a>
   <a href="https://github.com/HansJoakimPersson/Glimt/actions/workflows/release.yml"><img src="https://github.com/HansJoakimPersson/Glimt/actions/workflows/release.yml/badge.svg" alt="Release"/></a>
+  <a href="https://github.com/HansJoakimPersson/Glimt/releases"><img src="https://img.shields.io/github/v/release/HansJoakimPersson/Glimt?include_prereleases&sort=semver&style=flat&label=version" alt="latest version"/></a>
+  <a href="https://github.com/HansJoakimPersson/Glimt/releases"><img src="https://img.shields.io/github/downloads/HansJoakimPersson/Glimt/total.svg?style=flat" alt="downloads"/></a>
+  <a href="https://hansjoakimpersson.github.io/Glimt/"><img src="https://img.shields.io/badge/website-GitHub%20Pages-222222.svg?style=flat&logo=githubpages&logoColor=white" alt="website"/></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-AGPL--3.0-blue.svg?style=flat" alt="license"/></a>
   <a href="https://github.com/HansJoakimPersson/Glimt"><img src="https://img.shields.io/badge/platform-macOS%2015%2B-0A84FF.svg?style=flat" alt="platform"/></a>
   <a href="https://github.com/HansJoakimPersson/Glimt"><img src="https://img.shields.io/badge/Swift-6-F05138.svg?style=flat&logo=swift&logoColor=white" alt="Swift 6"/></a>
+  <a href="https://github.com/HansJoakimPersson/Glimt"><img src="https://img.shields.io/badge/Quick%20Look-preview%20%2B%20thumbnails-6E6E73.svg?style=flat" alt="Quick Look preview and thumbnails"/></a>
+  <a href="https://github.com/HansJoakimPersson/Glimt"><img src="https://img.shields.io/badge/network-none-34C759.svg?style=flat" alt="no network access"/></a>
   <a href="https://github.com/sponsors/hansjoakimpersson"><img src="https://img.shields.io/badge/GitHub%20Sponsors-Support-EA4AAA.svg?style=flat&logo=githubsponsors&logoColor=ffffff" alt="GitHub Sponsors"/></a>
 </p>
 
